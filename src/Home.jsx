@@ -82,7 +82,7 @@ export default class Home extends React.Component {
                     desk.
                   </p>
                   <div>
-                    <a href="" className="read-more">
+                    <a href="#" className="read-more">
                       read more
                     </a>
                   </div>
