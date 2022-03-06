@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-size: 15px;
   font-family: "Heebo", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 h1,
@@ -20,10 +22,50 @@ h6 {
   font-weight: 300;
 }
 
+.navbar {
+  background-color: black !important;
+  * {
+    color: white !important;
+  }
+}
+
 .intro {
+  position: relative;
   width: 100%;
   height: 100vh;
-  // background-color: rgb(77, 77, 77);
+//   background-color: black;
+
+  .intro-video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .fade-up {
+    //   transition: 2s;
+    animation: fade-up 2s forwards;
+    @keyframes fade-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .fade-intro {
+    transition: 3s;
+    opacity: 0;
+  }
+
   .init {
     display: flex;
     flex-direction: column;
@@ -33,11 +75,22 @@ h6 {
     .logo {
       text-align: center;
       margin: auto;
+      animation: fade-logo 40s forwards;
+      @keyframes fade-logo {
+          from{
+              opacity: 0;
+          }
+          to{
+              opacity: 1;
+          }
+      }
       img {
         width: 340px;
       }
 
       .slogan {
+        opacity: 0;
+        color: white;
         margin-top: 1rem;
       }
     }
@@ -46,10 +99,10 @@ h6 {
 
 .definition {
   padding: 3rem 0;
-  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/bg-2_rlguse.png)
-    no-repeat;
-  background-size: cover;
-  color: white;
+  //   background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/bg-2_rlguse.png)
+  //     no-repeat;
+  //   background-size: cover;
+  //   color: white;
   .ce-desc {
     margin-top: 1rem;
   }
@@ -87,7 +140,7 @@ h6 {
   }
 
   .sc {
-    background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_Capital_01.svg)
+    background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg)
       no-repeat;
     background-size: 50%;
     background-position: center;
@@ -106,5 +159,13 @@ h6 {
     height: 70vh;
     margin: 1rem 0;
     background-color: rgb(128, 128, 128);
+  }
+
+  .sapian-capital {
+    .sc-logo {
+      img {
+        width: 30%;
+      }
+    }
   }
 }

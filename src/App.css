@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-size: 15px;
   font-family: "Heebo", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 h1,
@@ -20,9 +22,66 @@ h6 {
   font-weight: 300;
 }
 
+.navbar {
+  background-color: black !important;
+}
+
+.navbar * {
+  color: white !important;
+}
+
 .intro {
+  position: relative;
   width: 100%;
   height: 100vh;
+}
+
+.intro .intro-video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro .fade-up {
+  -webkit-animation: fade-up 2s forwards;
+          animation: fade-up 2s forwards;
+}
+
+@-webkit-keyframes fade-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.intro .fade-intro {
+  -webkit-transition: 3s;
+  transition: 3s;
+  opacity: 0;
 }
 
 .intro .init {
@@ -42,6 +101,26 @@ h6 {
 .intro .init .logo {
   text-align: center;
   margin: auto;
+  -webkit-animation: fade-logo 40s forwards;
+          animation: fade-logo 40s forwards;
+}
+
+@-webkit-keyframes fade-logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .intro .init .logo img {
@@ -49,14 +128,13 @@ h6 {
 }
 
 .intro .init .logo .slogan {
+  opacity: 0;
+  color: white;
   margin-top: 1rem;
 }
 
 .definition {
   padding: 3rem 0;
-  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/bg-2_rlguse.png) no-repeat;
-  background-size: cover;
-  color: white;
 }
 
 .definition .ce-desc {
@@ -100,7 +178,7 @@ h6 {
 }
 
 .solutions .sc {
-  background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_Capital_01.svg) no-repeat;
+  background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg) no-repeat;
   background-size: 50%;
   background-position: center;
 }
@@ -119,5 +197,9 @@ h6 {
   height: 70vh;
   margin: 1rem 0;
   background-color: gray;
+}
+
+.sections .sapian-capital .sc-logo img {
+  width: 30%;
 }
 /*# sourceMappingURL=App.css.map */

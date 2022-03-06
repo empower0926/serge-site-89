@@ -20,7 +20,11 @@ export default class Home extends React.Component {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://sapiangroup.com">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="https://sapiangroup.com"
+                  >
                     Solutions
                   </a>
                 </li>
@@ -49,22 +53,22 @@ export default class Home extends React.Component {
         </nav>
 
         <div className="intro">
+          <video
+            className="intro-video"
+            id="intro-video"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646588915/CRYPTOMONIAL/Particles_-_10848_czpvl4.mp4"
+            autoPlay
+            muted
+          ></video>
           <div className="init">
             <div className="logo">
               <img
                 data-aos="fade-in"
                 data-aos-duration="900"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/v1641815257/sapian/Sapian_Cryptomonial_bsbhax.png"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
                 alt=""
               />
-              <h5
-                className="slogan"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="600"
-              >
-                A new paradigm for crypto-asset owners
-              </h5>
+              <h5 className="slogan">A new paradigm for crypto-asset owners</h5>
             </div>
           </div>
         </div>
@@ -93,7 +97,7 @@ export default class Home extends React.Component {
                 <div className="ce-desc-image">
                   <div className="text-center">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/buildings_iejiqg.png"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/w_1200,f_auto/v1646577694/CRYPTOMONIAL/globe_b16k3w.svg"
                       alt=""
                     />
                   </div>
@@ -109,13 +113,10 @@ export default class Home extends React.Component {
             {/* (or some itroduction that suites for the heading) */}
             <div className="row">
               <div className="col-sm-4">
-                <div className="solution sc">
-                  
-                </div>
+                <div className="solution sc"></div>
               </div>
               <div className="col-sm-4">
-                <div className="solution oztg">
-                </div>
+                <div className="solution oztg"></div>
               </div>
               <div className="col-sm-4">
                 <div className="solution cs">
@@ -133,9 +134,7 @@ export default class Home extends React.Component {
                 <h4>
                   Cryptomonial engineering-wealth creating through distruption
                 </h4>
-                <div className="section">
-                  <div className="sapian-capital"></div>
-                </div>
+
                 <div className="section">
                   <div className="oztg"></div>
                 </div>
@@ -148,5 +147,14 @@ export default class Home extends React.Component {
         </div>
       </div>
     );
+  }
+
+  componentDidMount() {
+    const slogan = document.querySelector(".slogan");
+    const intro = document.querySelector("#intro-video");
+    setTimeout(() => {
+      intro.classList.add("fade-intro");
+      slogan.classList.add("fade-up");
+    }, 21000);
   }
 }
