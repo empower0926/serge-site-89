@@ -20,24 +20,24 @@ export default class Home extends React.Component {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                  <a class="nav-link active" aria-current="page" href="https://sapiangroup.com">
                     Solutions
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="https://sapiangroup.com">
                     Sapian Capital
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="https://sapiangroup.com">
                     Ozeety
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    href="#"
+                    href="https://sapiangroup.com"
                     tabindex="-1"
                   >
                     Cryptostations
@@ -82,7 +82,7 @@ export default class Home extends React.Component {
                     desk.
                   </p>
                   <div>
-                    <a href="#" className="read-more">
+                    <a href="https://sapiangroup.com" className="read-more">
                       read more
                     </a>
                   </div>
