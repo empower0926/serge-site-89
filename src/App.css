@@ -8,16 +8,116 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
 }
 
 .intro {
   width: 100%;
+  height: 100vh;
+}
+
+.intro .init {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .init .logo {
+  text-align: center;
+  margin: auto;
+}
+
+.intro .init .logo img {
+  width: 340px;
+}
+
+.intro .init .logo .slogan {
+  margin-top: 1rem;
+}
+
+.definition {
+  padding: 3rem 0;
+  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/bg-2_rlguse.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.definition .ce-desc {
+  margin-top: 1rem;
+}
+
+.definition .read-more {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #6722e9;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.definition .read-more:hover {
+  background-color: #18054e;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+}
+
+.definition .ce-desc-image {
+  width: 100%;
+  height: 100%;
+}
+
+.definition .ce-desc-image img {
+  width: 75%;
+}
+
+.solutions {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.solutions .solution {
+  padding: 5rem;
+  background-color: #6d6d6d;
+}
+
+.solutions .sc {
+  background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_Capital_01.svg) no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.solutions .oztg {
+  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png) no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.sections {
+  margin-top: 5rem;
+}
+
+.sections .section {
   height: 70vh;
-  background-color: #4d4d4d;
+  margin: 1rem 0;
+  background-color: gray;
 }
 /*# sourceMappingURL=App.css.map */

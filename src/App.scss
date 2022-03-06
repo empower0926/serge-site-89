@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,15 +8,103 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-weight: 300;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
 }
 
-.intro{
+.intro {
+  width: 100%;
+  height: 100vh;
+  // background-color: rgb(77, 77, 77);
+  .init {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    .logo {
+      text-align: center;
+      margin: auto;
+      img {
+        width: 340px;
+      }
+
+      .slogan {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.definition {
+  padding: 3rem 0;
+  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/bg-2_rlguse.png)
+    no-repeat;
+  background-size: cover;
+  color: white;
+  .ce-desc {
+    margin-top: 1rem;
+  }
+
+  .read-more {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(103, 34, 233);
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgb(24, 5, 78);
+      padding: 0.25rem 1rem;
+      border-radius: 50px;
+    }
+  }
+
+  .ce-desc-image {
     width: 100%;
+    height: 100%;
+    img {
+      width: 75%;
+    }
+  }
+}
+
+.solutions {
+  text-align: center;
+  margin-top: 7rem;
+  .solution {
+    padding: 5rem;
+    background-color: rgb(109, 109, 109);
+  }
+
+  .sc {
+    background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_Capital_01.svg)
+      no-repeat;
+    background-size: 50%;
+    background-position: center;
+  }
+  .oztg {
+    background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png)
+      no-repeat;
+    background-size: 70%;
+    background-position: center;
+  }
+}
+
+.sections {
+  margin-top: 5rem;
+  .section {
     height: 70vh;
-    background-color: rgb(77, 77, 77);
+    margin: 1rem 0;
+    background-color: rgb(128, 128, 128);
+  }
 }
