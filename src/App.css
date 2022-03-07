@@ -47,6 +47,13 @@ h6 {
      object-fit: cover;
 }
 
+@media screen and (max-width: 576px) {
+  .intro .intro-video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .intro .fade-up {
   -webkit-animation: fade-up 2s forwards;
           animation: fade-up 2s forwards;
@@ -127,14 +134,33 @@ h6 {
   width: 340px;
 }
 
+@media screen and (max-width: 576px) {
+  .intro .init .logo img {
+    width: 220px;
+  }
+}
+
 .intro .init .logo .slogan {
   opacity: 0;
   color: white;
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 576px) {
+  .intro .init .logo .slogan {
+    font-size: 15px;
+  }
+}
+
 .definition {
   padding: 3rem 0;
+}
+
+@media screen and (max-width: 576px) {
+  .definition {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 .definition .ce-desc {
@@ -167,6 +193,13 @@ h6 {
   width: 75%;
 }
 
+@media screen and (max-width: 576px) {
+  .definition .ce-desc-image img {
+    margin-top: 2.5rem;
+    width: 70%;
+  }
+}
+
 .solutions {
   text-align: center;
   margin-top: 7rem;
@@ -196,10 +229,104 @@ h6 {
 .sections .section {
   height: 70vh;
   margin: 1rem 0;
-  background-color: gray;
 }
 
 .sections .sapian-capital .sc-logo img {
   width: 30%;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations {
+    text-align: center;
+  }
+}
+
+.sections .cryptostations .cs-slogans {
+  position: relative;
+  text-align: center;
+}
+
+.sections .cryptostations .cs-slogans .cs-slogan {
+  top: 0;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  opacity: 0;
+}
+
+.sections .cryptostations .cs-slogans .cs-slogan:nth-child(1) {
+  -webkit-animation: 10s opac 10s infinite;
+          animation: 10s opac 10s infinite;
+}
+
+.sections .cryptostations .cs-slogans .cs-slogan:nth-child(2) {
+  -webkit-animation: 10s opac 20s infinite;
+          animation: 10s opac 20s infinite;
+}
+
+.sections .cryptostations .cs-slogans .cs-slogan:nth-child(3) {
+  -webkit-animation: 10s opac 30s infinite;
+          animation: 10s opac 30s infinite;
+}
+
+@-webkit-keyframes opac {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opac {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sections .cryptostations .easy-access {
+  text-align: justify;
+  margin-top: 5rem;
+}
+
+.sections .cryptostations .easy-access .strong {
+  font-size: 24px;
+  color: #965ffc;
+}
+
+.sections .cryptostations .oztcard {
+  text-align: justify;
+  margin-top: 5rem;
+}
+
+.sections .cryptostations .oztcard .strong {
+  font-size: 24px;
+  color: #f1b100;
+}
+
+.sections .cryptostations .oztcard a {
+  display: inline-block;
+  text-decoration: none;
+  padding: .25rem .5rem;
+  border-radius: 50px;
+  background-color: #f1b100;
+  color: black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sections .cryptostations .oztcard a:hover {
+  background-color: #c79200;
+  color: white;
+  padding: .25rem 1rem;
 }
 /*# sourceMappingURL=App.css.map */

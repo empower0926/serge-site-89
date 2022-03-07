@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap");
+@import "mixin";
 
 * {
   box-sizing: border-box;
@@ -33,7 +34,7 @@ h6 {
   position: relative;
   width: 100%;
   height: 100vh;
-//   background-color: black;
+  //   background-color: black;
 
   .intro-video {
     position: absolute;
@@ -43,6 +44,11 @@ h6 {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+
+    @include small {
+      object-fit: cover;
+      // transform: scale(1.5) translateX(2.5px);
+    }
   }
 
   .fade-up {
@@ -77,21 +83,27 @@ h6 {
       margin: auto;
       animation: fade-logo 40s forwards;
       @keyframes fade-logo {
-          from{
-              opacity: 0;
-          }
-          to{
-              opacity: 1;
-          }
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
       img {
         width: 340px;
+        @include small {
+          width: 220px;
+        }
       }
 
       .slogan {
         opacity: 0;
         color: white;
         margin-top: 1rem;
+        @include small {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -99,10 +111,10 @@ h6 {
 
 .definition {
   padding: 3rem 0;
-  //   background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646570883/CRYPTOMONIAL/bg-2_rlguse.png)
-  //     no-repeat;
-  //   background-size: cover;
-  //   color: white;
+  @include small {
+    font-size: 12px;
+    text-align: center;
+  }
   .ce-desc {
     margin-top: 1rem;
   }
@@ -127,6 +139,10 @@ h6 {
     height: 100%;
     img {
       width: 75%;
+      @include small {
+        margin-top: 2.5rem;
+        width: 70%;
+      }
     }
   }
 }
@@ -158,7 +174,7 @@ h6 {
   .section {
     height: 70vh;
     margin: 1rem 0;
-    background-color: rgb(128, 128, 128);
+    // background-color: rgb(128, 128, 128);
   }
 
   .sapian-capital {
@@ -167,5 +183,80 @@ h6 {
         width: 30%;
       }
     }
+  }
+
+  .cryptostations {
+    @include small {
+      text-align: center;
+    }
+
+    .cs-slogans {
+      position: relative;
+      text-align: center;
+
+      .cs-slogan {
+        top: 0;
+        left: 25%;
+        right: 25%;
+        position: absolute;
+        opacity: 0;
+
+        &:nth-child(1) {
+          animation: 10s opac 10s infinite;
+        }
+        &:nth-child(2) {
+          animation: 10s opac 20s infinite;
+        }
+        &:nth-child(3) {
+          animation: 10s opac 30s infinite;
+        }
+
+        @keyframes opac {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .easy-access {
+      text-align: justify;
+      margin-top: 5rem;
+      .strong {
+        font-size: 24px;
+        color: #965ffc;
+      }
+    }
+
+    .oztcard {
+        text-align: justify;
+        margin-top: 5rem;
+        .strong {
+          font-size: 24px;
+          color: #f1b100;
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: .25rem .5rem;
+            border-radius: 50px;
+            background-color: #f1b100;
+            color: black;
+            transition: .3s;
+            &:hover{
+                background-color: #c79200;
+                color: white;
+                padding: .25rem 1rem;
+            }
+            
+        }
+      }
   }
 }
