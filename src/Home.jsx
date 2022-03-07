@@ -5,6 +5,16 @@ export default class Home extends React.Component {
     return (
       <div className="home">
         <div className="intro">
+          <div className="intro-video">
+            <video
+              className="intro-video"
+              src="https://res.cloudinary.com/sapiangroup/video/upload/v1646695015/CRYPTOMONIAL/Tunnel_-_27438_1_w28dvt.mp4"
+              autoPlay
+              muted
+              loop
+            ></video>
+            <div className="bg-filter"></div>
+          </div>
           <video
             className="intro-video"
             id="intro-video"
@@ -233,7 +243,7 @@ export default class Home extends React.Component {
     const scbg = document.querySelector("#sapian-capital-video");
     const ocbg = document.querySelector("#oztcard-video");
 
-    const logo = document.querySelector('.logo');
+    const logo = document.querySelector(".logo");
 
     // for sapian capital
     sclink.onmouseover = (e) => {

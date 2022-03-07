@@ -46,10 +46,10 @@ h6 {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translateX(5px) translateY(-30px);
-          transform: translateX(5px) translateY(-30px);
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 @media screen and (max-width: 576px) {
@@ -57,6 +57,13 @@ h6 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+
+.intro .bg-filter {
+  width: 100%;
+  height: 100vh;
+  background-color: #00020f;
+  opacity: .85;
 }
 
 .intro .sapina-capital-video {
