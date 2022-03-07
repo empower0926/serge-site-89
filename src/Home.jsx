@@ -65,8 +65,8 @@ export default class Home extends React.Component {
               OZTCARD
             </a>
             <span className="vl"></span>
-            <a href="/sapian-group" className="nav-ball nav-ball-sapiangroup">
-              SAPIAN GROUP
+            <a href="/sapian-capital" className="nav-ball nav-ball-sapiangroup">
+              SAPIAN CAPITAL
             </a>
           </div>
         </div>
