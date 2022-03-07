@@ -197,7 +197,7 @@ export default class Home extends React.Component {
                               and pick it up once the card is ready or collect
                               it up from another location.
                             </p>
-                            <a href="https://oztcard.com/" target="_blank">Know more about OZTCARD</a>
+                            <a href="https://oztcard.com/" target="_blank" rel="noreferrer">Know more about OZTCARD</a>
                           </div>
                         </div>
                       </div>
