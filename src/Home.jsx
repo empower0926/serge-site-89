@@ -4,54 +4,6 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="https://sapiangroup.com"
-                  >
-                    Solutions
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://sapiangroup.com">
-                    Sapian Capital
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://sapiangroup.com">
-                    Ozeety
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="https://sapiangroup.com"
-                    tabindex="-1"
-                  >
-                    Cryptostations
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
         <div className="intro">
           <video
             className="intro-video"
@@ -60,6 +12,30 @@ export default class Home extends React.Component {
             autoPlay
             muted
           ></video>
+          <video
+            className="intro-video sapina-capital-video"
+            id="sapian-capital-video"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646688539/CRYPTOMONIAL/sapian-capital-bg_zzeusz.mp4"
+            autoPlay
+            muted
+            loop
+          ></video>
+          <video
+            className="intro-video oztcard-video"
+            id="oztcard-video"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646692680/CRYPTOMONIAL/oztcard_s0g6uf.mov"
+            autoPlay
+            muted
+            loop
+          ></video>
+
+          <img
+            className="intro-video cryptostation-intro-image"
+            src="https://res.cloudinary.com/sapiangroup/image/upload/v1646691697/CRYPTOMONIAL/cryptostations/WhatsApp_Image_2022-03-06_at_18.14.52_1_jcqmkz.png"
+            id="cryptostation-intro"
+            alt="flash cryptostation"
+          />
+
           <div className="init">
             <div className="logo">
               <img
@@ -71,37 +47,48 @@ export default class Home extends React.Component {
               <h5 className="slogan">A new paradigm for crypto-asset owners</h5>
             </div>
           </div>
+
+          <div className="nav-balls">
+            <a
+              href="/cryptostation"
+              className="nav-ball nav-ball-cryptostation"
+            >
+              CRYPTOSTATION
+            </a>
+            <span className="vl"></span>
+            <a
+              href="https://www.oztcard.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="nav-ball nav-ball-oztcard"
+            >
+              OZTCARD
+            </a>
+            <span className="vl"></span>
+            <a href="/sapian-group" className="nav-ball nav-ball-sapiangroup">
+              SAPIAN GROUP
+            </a>
+          </div>
         </div>
 
         <div className="definition">
-          <div className="container">
+          <video
+            id="globe-video"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
+            autoPlay
+            muted
+            loop
+          ></video>
+          <div className="container what-is">
             <div className="row justify-content-center">
-              <div className="col-sm-5 my-auto">
-                <h2>What is Cryptomonial Engineering?</h2>
-                <div className="ce-desc">
-                  <p>
-                    Cryptomonial Engineering is new approach to catalyze the
-                    uncontrollable additional wealth created by crypto-asset
-                    owners with a 360’ crypto-finance solution through our OTC
-                    desk.
-                  </p>
-                  <div>
-                    <a href="https://sapiangroup.com" className="read-more">
-                      read more
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6">
-                <div className="ce-desc-image">
-                  <div className="text-center">
-                    <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/w_1200,f_auto/v1646577694/CRYPTOMONIAL/globe_b16k3w.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
+              <div className="col col-md-5 my-auto">
+                <h2>WHAT IS CRYPTOMONIAL ENINEERING?</h2>
+                <p className="ce-desc">
+                  Cryptomonial Engineering is new approach to catalyze the
+                  uncontrollable additional wealth created by crypto-asset
+                  owners with a 360’ crypto-finance solution through our OTC
+                  desk.
+                </p>
               </div>
             </div>
           </div>
@@ -192,12 +179,19 @@ export default class Home extends React.Component {
                           <div className="col-sm-4">
                             <p>
                               People who don't have a fixed address can order
-                              their <span className="strong">OZTCARD</span> in the nearest FLASHCRYPTOSTATION
-                              location point (mall, Airport, merchants, etc...)
-                              and pick it up once the card is ready or collect
-                              it up from another location.
+                              their <span className="strong">OZTCARD</span> in
+                              the nearest FLASHCRYPTOSTATION location point
+                              (mall, Airport, merchants, etc...) and pick it up
+                              once the card is ready or collect it up from
+                              another location.
                             </p>
-                            <a href="https://oztcard.com/" target="_blank" rel="noreferrer">Know more about OZTCARD</a>
+                            <a
+                              href="https://oztcard.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Know more about OZTCARD
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -218,10 +212,57 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     const slogan = document.querySelector(".slogan");
+
     const intro = document.querySelector("#intro-video");
+    intro.playbackRate = 1.5;
+
+    const navballs = document.querySelector(".nav-balls");
+
     setTimeout(() => {
       intro.classList.add("fade-intro");
       slogan.classList.add("fade-up");
-    }, 21000);
+
+      navballs.classList.add("lift-up");
+    }, 12000);
+
+    const sclink = document.querySelector(".nav-ball-sapiangroup");
+    const cslink = document.querySelector(".nav-ball-cryptostation");
+    const oclink = document.querySelector(".nav-ball-oztcard");
+
+    const csbg = document.querySelector("#cryptostation-intro");
+    const scbg = document.querySelector("#sapian-capital-video");
+    const ocbg = document.querySelector("#oztcard-video");
+
+    const logo = document.querySelector('.logo');
+
+    // for sapian capital
+    sclink.onmouseover = (e) => {
+      scbg.style.opacity = 1;
+      logo.style.opacity = 0;
+    };
+    sclink.onmouseleave = (e) => {
+      scbg.style.opacity = 0;
+      logo.style.opacity = 1;
+    };
+
+    // for cryptostation
+    cslink.onmouseover = (e) => {
+      csbg.style.opacity = 1;
+      logo.style.opacity = 0;
+    };
+    cslink.onmouseleave = (e) => {
+      csbg.style.opacity = 0;
+      logo.style.opacity = 1;
+    };
+
+    // for oztcard
+    oclink.onmouseover = (e) => {
+      ocbg.style.opacity = 1;
+      logo.style.opacity = 0;
+    };
+    oclink.onmouseleave = (e) => {
+      ocbg.style.opacity = 0;
+      logo.style.opacity = 1;
+    };
   }
 }

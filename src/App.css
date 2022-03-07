@@ -34,6 +34,7 @@ h6 {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .intro .intro-video {
@@ -45,6 +46,10 @@ h6 {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(5px) translateY(-30px);
+          transform: translateX(5px) translateY(-30px);
 }
 
 @media screen and (max-width: 576px) {
@@ -52,6 +57,82 @@ h6 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+
+.intro .sapina-capital-video {
+  opacity: 0;
+}
+
+.intro .cryptostation-intro-image {
+  opacity: 0;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.intro .oztcard-video {
+  opacity: 0;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+@media screen and (max-width: 576px) {
+  .intro .oztcard-video {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+}
+
+.intro .vl {
+  width: 1px;
+  height: 30px;
+  background-color: white;
+  opacity: .5;
+  border-radius: 50px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.intro .nav-balls {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.intro .nav-balls .nav-ball {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 576px) {
+  .intro .nav-balls .nav-ball {
+    font-size: 10px;
+  }
+}
+
+.intro .nav-balls .nav-ball:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.intro .lift-up {
+  bottom: 8rem !important;
+  opacity: 1 !important;
+  -webkit-transition: 3s !important;
+  transition: 3s !important;
 }
 
 .intro .fade-up {
@@ -108,8 +189,8 @@ h6 {
 .intro .init .logo {
   text-align: center;
   margin: auto;
-  -webkit-animation: fade-logo 40s forwards;
-          animation: fade-logo 40s forwards;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @-webkit-keyframes fade-logo {
@@ -153,18 +234,41 @@ h6 {
 }
 
 .definition {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 3rem 0;
+  width: 100%;
+  height: 60vh;
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
   .definition {
     font-size: 12px;
-    text-align: center;
+    padding: 1rem;
   }
 }
 
 .definition .ce-desc {
-  margin-top: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.definition .what-is {
+  margin: auto;
+}
+
+.definition video {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: .2;
 }
 
 .definition .read-more {
@@ -182,22 +286,6 @@ h6 {
   background-color: #18054e;
   padding: 0.25rem 1rem;
   border-radius: 50px;
-}
-
-.definition .ce-desc-image {
-  width: 100%;
-  height: 100%;
-}
-
-.definition .ce-desc-image img {
-  width: 75%;
-}
-
-@media screen and (max-width: 576px) {
-  .definition .ce-desc-image img {
-    margin-top: 2.5rem;
-    width: 70%;
-  }
 }
 
 .solutions {
@@ -316,17 +404,17 @@ h6 {
 .sections .cryptostations .oztcard a {
   display: inline-block;
   text-decoration: none;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 50px;
   background-color: #f1b100;
   color: black;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sections .cryptostations .oztcard a:hover {
   background-color: #c79200;
   color: white;
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
 }
 /*# sourceMappingURL=App.css.map */

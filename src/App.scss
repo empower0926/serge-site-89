@@ -35,7 +35,7 @@ h6 {
   width: 100%;
   height: 100vh;
   //   background-color: black;
-
+  overflow-x: hidden;
   .intro-video {
     position: absolute;
     z-index: -1;
@@ -44,12 +44,72 @@ h6 {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-
+    transition: 1s;
+    transform: translateX(5px) translateY(-30px);
     @include small {
       object-fit: cover;
-      // transform: scale(1.5) translateX(2.5px);
     }
   }
+
+  .sapina-capital-video{
+      opacity: 0;
+  }
+
+  .cryptostation-intro-image{
+      opacity: 0;
+      object-fit: cover !important;
+  }
+
+  .oztcard-video{
+      opacity: 0;
+      object-fit: cover !important;
+      @include small{
+          object-fit: contain !important;
+      }
+  }
+
+  .vl{
+      width: 1px;
+      height: 30px;
+      background-color: white;
+      opacity: .5;
+      border-radius: 50px;
+      transform: translateY(10px);
+  }
+
+  .nav-balls {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    opacity: 0;
+
+    .nav-ball {
+      padding: 1rem;
+      text-decoration: none;
+      color: white;
+    //   background-color: white;
+    //   border-radius: 50rem;
+      margin: 0 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      @include small{
+          font-size: 10px;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    
+  }
+
+  .lift-up{
+    bottom: 8rem !important;
+    opacity: 1 !important;
+    transition: 3s !important;
+}
 
   .fade-up {
     //   transition: 2s;
@@ -81,7 +141,8 @@ h6 {
     .logo {
       text-align: center;
       margin: auto;
-      animation: fade-logo 40s forwards;
+      transition: 1s;
+      //animation: fade-logo 40s forwards;
       @keyframes fade-logo {
         from {
           opacity: 0;
@@ -110,13 +171,34 @@ h6 {
 }
 
 .definition {
+  position: relative;
+  display: flex;
   padding: 3rem 0;
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+
   @include small {
     font-size: 12px;
-    text-align: center;
+    padding: 1rem;
   }
   .ce-desc {
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .what-is{
+    margin: auto;
+  }
+
+  video {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: .2;
   }
 
   .read-more {
@@ -131,18 +213,6 @@ h6 {
       background-color: rgb(24, 5, 78);
       padding: 0.25rem 1rem;
       border-radius: 50px;
-    }
-  }
-
-  .ce-desc-image {
-    width: 100%;
-    height: 100%;
-    img {
-      width: 75%;
-      @include small {
-        margin-top: 2.5rem;
-        width: 70%;
-      }
     }
   }
 }
@@ -235,28 +305,27 @@ h6 {
     }
 
     .oztcard {
-        text-align: justify;
-        margin-top: 5rem;
-        .strong {
-          font-size: 24px;
-          color: #f1b100;
-        }
+      text-align: justify;
+      margin-top: 5rem;
+      .strong {
+        font-size: 24px;
+        color: #f1b100;
+      }
 
-        a{
-            display: inline-block;
-            text-decoration: none;
-            padding: .25rem .5rem;
-            border-radius: 50px;
-            background-color: #f1b100;
-            color: black;
-            transition: .3s;
-            &:hover{
-                background-color: #c79200;
-                color: white;
-                padding: .25rem 1rem;
-            }
-            
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.25rem 0.5rem;
+        border-radius: 50px;
+        background-color: #f1b100;
+        color: black;
+        transition: 0.3s;
+        &:hover {
+          background-color: #c79200;
+          color: white;
+          padding: 0.25rem 1rem;
         }
       }
+    }
   }
 }
