@@ -165,22 +165,25 @@ export default class Home extends React.Component {
                                 src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735832/CRYPTOMONIAL/cryptostations/cryptostation-3_lfbo1l.png"
                                 alt=""
                               /> */}
-                              <div data-aos="fade-right"
-                                  data-aos-duration="1200">
+                              <div
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                              >
                                 <img
                                   src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735829/CRYPTOMONIAL/cryptostations/cryptostation-1_tch6ft.png"
                                   alt=""
                                 />
                               </div>
-                              <div data-aos="fade-up"
-                                  data-aos-duration="1200">
+                              <div data-aos="fade-up" data-aos-duration="1200">
                                 <img
                                   src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735824/CRYPTOMONIAL/cryptostations/cryptostation-2_nzmozw.png"
                                   alt=""
                                 />
                               </div>
-                              <div data-aos="fade-left"
-                                  data-aos-duration="1200">
+                              <div
+                                data-aos="fade-left"
+                                data-aos-duration="1200"
+                              >
                                 <img
                                   src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735836/CRYPTOMONIAL/cryptostations/cryptostation-4_nbgogh.png"
                                   alt=""
@@ -197,7 +200,7 @@ export default class Home extends React.Component {
                               system, so it appears to be paramount to ease the
                               access to our blockchain-power solution.
                             </p>
-                             
+
                             <p>
                               our mainstream audience has no credit or debit
                               card neither bank account. So by accepting payment
