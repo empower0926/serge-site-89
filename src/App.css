@@ -30,6 +30,12 @@ h6 {
   color: white !important;
 }
 
+@media screen and (max-width: 576px) {
+  .anchor-parent {
+    text-align: center;
+  }
+}
+
 .intro {
   position: relative;
   width: 100%;
@@ -280,7 +286,7 @@ h6 {
 
 .definition .read-more {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   color: white;
   border-radius: 5px;
   background-color: #6722e9;
@@ -328,7 +334,6 @@ h6 {
 }
 
 .sections .section {
-  height: 70vh;
   margin: 1rem 0;
 }
 
@@ -468,10 +473,20 @@ h6 {
   color: #f1b100;
 }
 
+.sections .cryptostations .oztcard h4 {
+  text-align: right;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .oztcard h4 {
+    text-align: center;
+  }
+}
+
 .sections .cryptostations .oztcard a {
   display: inline-block;
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   border-radius: 50px;
   background-color: #f1b100;
   color: black;
@@ -482,7 +497,7 @@ h6 {
 .sections .cryptostations .oztcard a:hover {
   background-color: #c79200;
   color: white;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 1.5rem;
 }
 
 .sections .cryptostations .oztcard .oztcard-images {
@@ -548,5 +563,85 @@ h6 {
     -webkit-transform: translateX(50px) translateY(-20px);
             transform: translateX(50px) translateY(-20px);
   }
+}
+
+.sections .cryptostations .remittance {
+  margin-top: 5rem;
+  text-align: justify;
+}
+
+.sections .cryptostations .remittance .strong {
+  font-size: 24px;
+  color: #965ffc;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .remittance h4 {
+    text-align: center;
+  }
+}
+
+.sections .cryptostations .remittance img {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .remittance img {
+    margin: 1rem;
+    width: 220px;
+  }
+}
+
+.sections .cryptostations .remittance .oztg-coin {
+  width: 24px;
+}
+
+.sections .cryptostations .remittance .asset-pegged-coin {
+  color: #f1b100;
+  margin-top: 0.8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .remittance .asset-pegged-coin {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.sections .cryptostations .remittance .particles-parent {
+  position: relative;
+}
+
+.sections .cryptostations .remittance .particles-parent .particles {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sections .cryptostations .remittance .particles-parent .particles .particle {
+  position: absolute;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #f1b100;
+}
+
+.sections .cryptostations .remittance a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0.25rem 1rem;
+  border-radius: 50rem;
+  background-color: #f1b100;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sections .cryptostations .remittance a:hover {
+  color: white;
+  background-color: #c79200;
+  padding: 0.25rem 1.5rem;
 }
 /*# sourceMappingURL=App.css.map */

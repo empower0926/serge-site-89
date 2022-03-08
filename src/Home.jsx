@@ -208,6 +208,7 @@ export default class Home extends React.Component {
                           </div>
 
                           <div className="col-sm-8 mt-5 text-center">
+                            <h4>ENABLE EASY ACCESS, NO ENTRY BARRIERS!</h4>
                             <p
                               data-aos="fade-up"
                               data-aos-duration="1200"
@@ -250,7 +251,6 @@ export default class Home extends React.Component {
                     </div>
 
                     {/* oztcards */}
-
                     <div className="oztcard">
                       <div className="container">
                         <div className="row">
@@ -287,6 +287,7 @@ export default class Home extends React.Component {
                             </div>
                           </div>
                           <div className="col-sm-5">
+                            <h4>OZTCARD COLLECTION POINT</h4>
                             <p data-aos="fade-left" data-aos-duration="1200">
                               People who don't have a fixed address can order
                               their <span className="strong">OZTCARD</span> in
@@ -295,7 +296,16 @@ export default class Home extends React.Component {
                               once the card is ready or collect it up from
                               another location.
                             </p>
+
+                            <p className="mt-3">
+                              People will not be able to remove cash from the
+                              Station, just fill it in with designated fiat
+                              currencies. Withdraw money using the OZTCARD, will
+                              be possible from a regular ATM device.
+                            </p>
+
                             <div
+                              className="anchor-parent"
                               data-aos="fade-up"
                               data-aos-duration="1200"
                               data-aos-delay="600"
@@ -312,11 +322,81 @@ export default class Home extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <div className="section">
-                  <div className="oztg"></div>
+                    <div className="remittance">
+                      <div className="container">
+                        <div className="row justify-content-center">
+                          <div className="col-sm-5 mt-5">
+                            <div>
+                              <h4>FAIR REMITTANCE SERVICE</h4>
+
+                              <div className="col-sm-12 d-block d-md-none">
+                                <div className="h-100 d-flex justify-content-center">
+                                  <div className="my-auto particles-parent">
+                                    <div className="particles"></div>
+                                    <img
+                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
+                                      alt=""
+                                    />
+                                    <h4 className="asset-pegged-coin">
+                                      The Asset Pegged Coin
+                                    </h4>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <p>
+                                Use the{" "}
+                                <span className="strong">CRYPTOSTATION</span> to
+                                send remittances using our unify transactional
+                                utility coin “OZTG”{" "}
+                                <span>
+                                  <img
+                                    className="oztg-coin"
+                                    src="https://res.cloudinary.com/dmeppscpx/image/upload/v1619874803/flashxchanger/OZTG_vwr5kt.svg"
+                                    alt=""
+                                  />
+                                </span>
+                                . It will be instant with no hidden fees, in
+                                simple words “Hassle-Free”!
+                              </p>
+                            </div>
+                            <div>
+                              <div
+                                className="anchor-parent"
+                                data-aos="fade-up"
+                                data-aos-duration="1200"
+                                data-aos-delay="600"
+                              >
+                                <a
+                                  href="https://ozeety.com/"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  know more about oztg
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="col-sm-6 d-none d-md-block">
+                            <div className="h-100 d-flex justify-content-center">
+                              <div className="my-auto particles-parent">
+                                <div className="particles"></div>
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
+                                  alt=""
+                                />
+                                <h4 className="asset-pegged-coin">
+                                  The Asset Pegged Coin
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -380,5 +460,21 @@ export default class Home extends React.Component {
       ocbg.style.opacity = 0;
       logo.style.opacity = 1;
     };
+
+    // const particleParent = document.querySelector(".particles-parent");
+    // const particleCount = 200;
+
+    // for (let i = 0; i < particleCount; i++) {
+    //   const particle = document.createElement("div");
+    //   particle.classList.add("particle");
+
+    //   const t = Math.floor(Math.random() * (98 - 1)) + 1;
+    //   const l = Math.floor(Math.random() * (98 - 1)) + 1;
+
+    //   particle.style.left = l + "%";
+    //   particle.style.right = t + "%";
+
+    //   particleParent.appendChild(particle);
+    // }
   }
 }
