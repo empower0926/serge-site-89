@@ -111,9 +111,7 @@ export default class Home extends React.Component {
             <div className="row">
               {/* cryptostations */}
               <div className="col-sm-4">
-                <div className="solution cs">
-                  <h1>Cryptostations</h1>
-                </div>
+                <div className="solution cs"></div>
               </div>
 
               <div className="col-sm-4">
@@ -137,7 +135,18 @@ export default class Home extends React.Component {
 
                 <div className="section">
                   <div className="cryptostations">
-                    <h2 className="text-center">THE CRYPTOSTATION BY FLASH</h2>
+                    <h2 className="text-center">
+                      THE{" "}
+                      <span className="the-cryptostation">CRYPTOSTATION</span>{" "}
+                      BY{" "}
+                      <span>
+                        <img
+                          className="by-flash"
+                          src="https://res.cloudinary.com/sapiangroup/image/upload/v1646733137/CRYPTOMONIAL/flash_lwxjmz.svg"
+                          alt="FLASH"
+                        />
+                      </span>
+                    </h2>
                     <div className="cs-slogans">
                       <h5 className="cs-slogan">
                         ENABLE EASY ACCESS, NO ENTRY BARRIERS!
@@ -149,8 +158,38 @@ export default class Home extends React.Component {
                     {/* easy access */}
                     <div className="easy-access">
                       <div className="container">
-                        <div className="row">
-                          <div className="col-sm-4">
+                        <div className="row justify-content-center">
+                          <div className="col-sm-10">
+                            <div className="cryptostation-images">
+                              {/* <img
+                                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735832/CRYPTOMONIAL/cryptostations/cryptostation-3_lfbo1l.png"
+                                alt=""
+                              /> */}
+                              <div data-aos="fade-right"
+                                  data-aos-duration="1200">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735829/CRYPTOMONIAL/cryptostations/cryptostation-1_tch6ft.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div data-aos="fade-up"
+                                  data-aos-duration="1200">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735824/CRYPTOMONIAL/cryptostations/cryptostation-2_nzmozw.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div data-aos="fade-left"
+                                  data-aos-duration="1200">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735836/CRYPTOMONIAL/cryptostations/cryptostation-4_nbgogh.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="col-sm-8 mt-5 text-center">
                             <p>
                               We have designed our solution to reach the{" "}
                               <span className="strong">2 Billion+ </span> people
@@ -158,7 +197,7 @@ export default class Home extends React.Component {
                               system, so it appears to be paramount to ease the
                               access to our blockchain-power solution.
                             </p>
-
+                             
                             <p>
                               our mainstream audience has no credit or debit
                               card neither bank account. So by accepting payment

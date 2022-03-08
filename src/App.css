@@ -46,8 +46,8 @@ h6 {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: .8s;
-  transition: .8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
@@ -63,7 +63,7 @@ h6 {
   width: 100%;
   height: 100vh;
   background-color: #00020f;
-  opacity: .85;
+  opacity: 0.85;
 }
 
 .intro .sapina-capital-video {
@@ -93,7 +93,7 @@ h6 {
   width: 1px;
   height: 30px;
   background-color: white;
-  opacity: .5;
+  opacity: 0.5;
   border-radius: 50px;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
@@ -275,7 +275,7 @@ h6 {
      object-fit: cover;
   top: 0;
   left: 0;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .definition .read-more {
@@ -303,6 +303,12 @@ h6 {
 .solutions .solution {
   padding: 5rem;
   background-color: #6d6d6d;
+}
+
+.solutions .cs {
+  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg) no-repeat;
+  background-size: 45%;
+  background-position: center;
 }
 
 .solutions .sc {
@@ -333,6 +339,25 @@ h6 {
 @media screen and (max-width: 576px) {
   .sections .cryptostations {
     text-align: center;
+  }
+}
+
+.sections .cryptostations .the-cryptostation {
+  color: #965ffc;
+}
+
+.sections .cryptostations .by-flash {
+  width: 115px;
+  margin: 0 0.2rem;
+  -webkit-transform: translateY(-3.5px);
+          transform: translateY(-3.5px);
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .by-flash {
+    margin: 1rem 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -389,13 +414,48 @@ h6 {
 }
 
 .sections .cryptostations .easy-access {
-  text-align: justify;
+  text-align: justify !important;
   margin-top: 5rem;
 }
 
 .sections .cryptostations .easy-access .strong {
   font-size: 24px;
   color: #965ffc;
+}
+
+.sections .cryptostations .cryptostation-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.sections .cryptostations .cryptostation-images img {
+  width: 50%;
+  margin: 0 1rem;
+  opacity: 1 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sections .cryptostations .cryptostation-images img:hover {
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+}
+
+.sections .cryptostations .cryptostation-images img:nth-child(2) {
+  opacity: 1 !important;
+  width: 50% !important;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .cryptostation-images img {
+    width: 50%;
+    margin: 0 1rem;
+  }
+  .sections .cryptostations .cryptostation-images img:nth-child(2) {
+    width: 30%;
+  }
 }
 
 .sections .cryptostations .oztcard {
