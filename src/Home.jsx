@@ -111,15 +111,30 @@ export default class Home extends React.Component {
             <div className="row">
               {/* cryptostations */}
               <div className="col-sm-4">
-                <div className="solution cs"></div>
+                <div
+                  className="solution cs"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="300"
+                ></div>
               </div>
 
               <div className="col-sm-4">
-                <div className="solution oztg"></div>
+                <div
+                  className="solution oztg"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="600"
+                ></div>
               </div>
 
               <div className="col-sm-4">
-                <div className="solution sc"></div>
+                <div
+                  className="solution sc"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="900"
+                ></div>
               </div>
             </div>
           </div>
@@ -193,7 +208,11 @@ export default class Home extends React.Component {
                           </div>
 
                           <div className="col-sm-8 mt-5 text-center">
-                            <p>
+                            <p
+                              data-aos="fade-up"
+                              data-aos-duration="1200"
+                              data-aos-delay="300"
+                            >
                               We have designed our solution to reach the{" "}
                               <span className="strong">2 Billion+ </span> people
                               who do not have access to the usual banking
@@ -201,7 +220,11 @@ export default class Home extends React.Component {
                               access to our blockchain-power solution.
                             </p>
 
-                            <p>
+                            <p
+                              data-aos="fade-up"
+                              data-aos-duration="1200"
+                              data-aos-delay="600"
+                            >
                               our mainstream audience has no credit or debit
                               card neither bank account. So by accepting payment
                               by mobile, cash, debit card or cryptocurrency, we
@@ -213,7 +236,11 @@ export default class Home extends React.Component {
                               .
                             </p>
 
-                            <p>
+                            <p
+                              data-aos="fade-up"
+                              data-aos-duration="1200"
+                              data-aos-delay="900"
+                            >
                               Users will be able to buy any cryptocurrency
                               against designated fiat and vice-versa.
                             </p>
@@ -227,9 +254,40 @@ export default class Home extends React.Component {
                     <div className="oztcard">
                       <div className="container">
                         <div className="row">
-                          <div className="col-sm-8"></div>
-                          <div className="col-sm-4">
-                            <p>
+                          <div className="col-sm-6">
+                            <div className="oztcard-images">
+                              <div className="oztcard-image">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/w_700/v1606812303/ozt-card/OZTCARD_Ambassador_FACE_1_jic4b9.png"
+                                  alt="gold oztcard"
+                                />
+                              </div>
+
+                              <div
+                                className="oztcard-image"
+                                data-aos="fade-left"
+                                data-aos-duration="1200"
+                              >
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/standard-bleu_ozt-card_ltxnjt.png"
+                                  alt="standard oztcard"
+                                />
+                              </div>
+
+                              <div
+                                className="oztcard-image"
+                                data-aos="fade-left"
+                                data-aos-duration="1200"
+                              >
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/premium-violette_ozt-card_mtj4do.png"
+                                  alt="premium oztcard"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-sm-5">
+                            <p data-aos="fade-left" data-aos-duration="1200">
                               People who don't have a fixed address can order
                               their <span className="strong">OZTCARD</span> in
                               the nearest FLASHCRYPTOSTATION location point
@@ -237,13 +295,19 @@ export default class Home extends React.Component {
                               once the card is ready or collect it up from
                               another location.
                             </p>
-                            <a
-                              href="https://oztcard.com/"
-                              target="_blank"
-                              rel="noreferrer"
+                            <div
+                              data-aos="fade-up"
+                              data-aos-duration="1200"
+                              data-aos-delay="600"
                             >
-                              Know more about OZTCARD
-                            </a>
+                              <a
+                                href="https://oztcard.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Know more about OZTCARD
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
