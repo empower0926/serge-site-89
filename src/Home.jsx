@@ -414,11 +414,14 @@ export default class Home extends React.Component {
 
     const navballs = document.querySelector(".nav-balls");
 
+    const logo = document.querySelector(".logo");
+
     setTimeout(() => {
       intro.classList.add("fade-intro");
       slogan.classList.add("fade-up");
 
       navballs.classList.add("lift-up");
+      logo.classList.add('logo-show');
     }, 12000);
 
     const sclink = document.querySelector(".nav-ball-sapiangroup");
@@ -428,8 +431,6 @@ export default class Home extends React.Component {
     const csbg = document.querySelector("#cryptostation-intro");
     const scbg = document.querySelector("#sapian-capital-video");
     const ocbg = document.querySelector("#oztcard-video");
-
-    const logo = document.querySelector(".logo");
 
     // for sapian capital
     sclink.onmouseover = (e) => {
