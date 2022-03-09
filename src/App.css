@@ -5,8 +5,19 @@
   background-color: white !important;
   color: black !important;
   background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646824625/CRYPTOMONIAL/hexagons_gb5nb1.svg);
-  background-size: contain;
+  background-size: 80%;
+  background-attachment: fixed;
   padding-bottom: 15rem;
+}
+
+@media screen and (max-width: 576px) {
+  .sapian-capital {
+    background-size: cover;
+  }
+}
+
+.sapian-capital .capital-accent {
+  color: #0b92e7;
 }
 
 .sapian-capital .capital-intro {
@@ -186,7 +197,6 @@
 }
 
 .sapian-capital .capital-four-parts {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,22 +205,168 @@
           justify-content: space-evenly;
 }
 
-.sapian-capital .capital-four-parts .capital-part {
+.sapian-capital .capital-four-parts .capital-parts {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: 10vh;
-  background-color: #111;
+}
+
+@media screen and (max-width: 576px) {
+  .sapian-capital .capital-four-parts .capital-parts {
+    display: block;
+  }
+}
+
+.sapian-capital .capital-four-parts .capital-parts .capital-part {
+  width: 340px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 15px rgba(5, 104, 165, 0.2);
+          box-shadow: 0 15px 15px rgba(5, 104, 165, 0.2);
+  font-weight: 300;
+  padding: 1.5rem;
+  margin: 1rem 1rem;
+  border-radius: 8px;
+}
+
+.sapian-capital .capital-four-parts .capital-parts .capital-part a {
+  text-decoration: none;
+  color: #0b92e7;
+  font-weight: 400;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sapian-capital .capital-four-parts .capital-parts .capital-part a:hover {
+  color: #0568a5;
+}
+
+.sapian-capital .capital-four-parts .capital-parts .capital-part h4 {
+  color: #0b92e7;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sapian-capital .capital-four-parts .capital-parts .discord a {
+  margin-right: 0.5rem;
+}
+
+.sapian-capital .capital-four-parts .capital-parts .discord a img {
+  width: 46px;
 }
 
 .sapian-capital .capital-how-does-it-work {
+  margin-top: 5rem;
   width: 100%;
-  height: 40vh;
-  background-color: red;
+}
+
+.sapian-capital .capital-how-does-it-work .capital-map {
+  text-align: center;
+}
+
+.sapian-capital .capital-how-does-it-work .capital-map img {
+  width: 45%;
+}
+
+@media screen and (max-width: 576px) {
+  .sapian-capital .capital-how-does-it-work .capital-map img {
+    width: 60%;
+  }
+}
+
+.sapian-capital .capital-escrow {
+  margin-top: 5rem;
+}
+
+.sapian-capital .capital-escrow h2 {
+  text-align: center;
+}
+
+.sapian-capital .capital-escrow .escrow-point {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.sapian-capital .capital-escrow p {
+  font-weight: 300;
+}
+
+.sapian-capital .capital-escrow .escrow-step {
+  padding: 0.5rem;
+  background-color: #0b92e7;
+  color: white;
+  border-radius: 4px;
 }
 
 .sapian-capital .capital-eligibility {
+  margin-top: 5rem;
   width: 100%;
   height: 40vh;
-  background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+  .sapian-capital .capital-eligibility {
+    text-align: center;
+  }
+}
+
+.sapian-capital .capital-eligibility h2 {
+  text-align: center;
+}
+
+.sapian-capital .capital-eligibility img {
+  width: 100%;
+}
+
+.sapian-capital .capital-eligibility p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.sapian-capital .capital-coins {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.sapian-capital .capital-coins .coins {
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sapian-capital .capital-coins .coins .coin {
+  margin: 0 0.5rem;
+}
+
+.sapian-capital .capital-coins .coins .coin img {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sapian-capital .capital-coins .coins .coin img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 576px) {
+  .sapian-capital .capital-coins .coins .coin img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 * {

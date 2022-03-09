@@ -4,9 +4,17 @@
   background-color: white !important;
   color: black !important;
   background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646824625/CRYPTOMONIAL/hexagons_gb5nb1.svg);
-  background-size: contain;
-
+  background-size: 80%;
+  background-attachment: fixed;
   padding-bottom: 15rem;
+
+  @include small {
+    background-size: cover;
+  }
+
+  .capital-accent {
+    color: #0b92e7;
+  }
 
   .capital-intro {
     width: 100%;
@@ -142,25 +150,143 @@
   }
 
   .capital-four-parts {
-    text-align: center;
+    // text-align: center;
     display: flex;
     justify-content: space-evenly;
-    .capital-part {
+    .capital-parts {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
       width: 100%;
-      height: 10vh;
-      background-color: #111;
+      //   height: 50vh;
+
+      @include small {
+        display: block;
+      }
+      .capital-part {
+        width: 340px;
+        flex-wrap: nowrap;
+        background-color: rgba($color: #fff, $alpha: 1);
+        // border: solid 2px #0b92e7;
+        box-shadow: 0 15px 15px rgba($color: #0568a5, $alpha: 0.2);
+        font-weight: 300;
+        padding: 1.5rem;
+        margin: 1rem 1rem;
+        border-radius: 8px;
+        a {
+          text-decoration: none;
+          color: #0b92e7;
+          font-weight: 400;
+          transition: 0.3s;
+          &:hover {
+            color: #0568a5;
+          }
+        }
+        h4 {
+          color: #0b92e7;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .discord {
+        a {
+          margin-right: 0.5rem;
+          img {
+            width: 46px;
+          }
+        }
+      }
     }
   }
 
   .capital-how-does-it-work {
+    margin-top: 5rem;
     width: 100%;
-    height: 40vh;
-    background-color: red;
+    // height: 40vh;
+    // background-color: white;
+
+    .capital-map {
+      text-align: center;
+      img {
+        width: 45%;
+        @include small {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .capital-escrow {
+    margin-top: 5rem;
+    h2 {
+      text-align: center;
+    }
+
+    .escrow-point {
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: 300;
+    }
+    p {
+      font-weight: 300;
+    }
+
+    .escrow-step {
+      padding: 0.5rem;
+      background-color: #0b92e7;
+      color: white;
+      border-radius: 4px;
+    }
   }
 
   .capital-eligibility {
+    margin-top: 5rem;
     width: 100%;
     height: 40vh;
-    background-color: black;
+    @include small {
+      text-align: center;
+    }
+    // background-color: black;
+
+    h2 {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+  }
+
+  .capital-coins {
+    margin-top: 5rem;
+    text-align: center;
+
+    .coins {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .coin {
+        // background-color: red;
+        margin: 0 0.5rem;
+        img {
+          width: 50px;
+          height: 50px;
+          transition: .3s;
+          &:hover {
+            transform: scale(1.2);
+          }
+          @include small {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
   }
 }
