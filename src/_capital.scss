@@ -1,0 +1,166 @@
+.sapian-capital {
+  margin: 0;
+  padding: 0;
+  background-color: white !important;
+  color: black !important;
+  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646824625/CRYPTOMONIAL/hexagons_gb5nb1.svg);
+  background-size: contain;
+
+  padding-bottom: 15rem;
+
+  .capital-intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white !important;
+
+    @include small {
+      height: 50vh;
+    }
+
+    .capital-intro-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      .capital-logo {
+        margin: auto;
+        img {
+          width: 340px;
+          @include small {
+            width: 240px;
+          }
+        }
+      }
+
+      .capital-slogan {
+        text-transform: uppercase;
+        transform: translateY(-90px);
+        @include small {
+          transform: translateY(-70px);
+          font-size: 15px;
+        }
+      }
+    }
+
+    video {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      //   opacity: 0.4;
+      @include small {
+        height: 50vh;
+      }
+    }
+  }
+
+  .capital-what-is-it {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 8rem 0;
+    background-position: top;
+
+    h4 {
+      @include small {
+        font-size: 15px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #0b92e7;
+      transition: 0.3s;
+      &:hover {
+        color: #0568a5;
+      }
+    }
+
+    .download {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: white;
+      background-color: #0b92e7;
+      border-radius: 4px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #0568a5;
+        color: white;
+        box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+
+    .capital-what-tiles {
+      margin: 4rem 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      .capital-what {
+        width: 150px;
+        height: 150px;
+        // background-color: #111;
+        margin: 0 1rem;
+        transition: 0.5s;
+        img {
+          width: 100%;
+        }
+        @include small {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    .capital-perks {
+      max-height: 80px;
+      min-height: 80px;
+      @include small {
+        max-height: 120px;
+        min-height: 120px;
+      }
+      .capital-perk {
+        opacity: 0.5;
+        font-size: 0.8rem;
+        transition: 0.5s;
+        @include small {
+          font-size: 12px;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .capital-four-parts {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    .capital-part {
+      width: 100%;
+      height: 10vh;
+      background-color: #111;
+    }
+  }
+
+  .capital-how-does-it-work {
+    width: 100%;
+    height: 40vh;
+    background-color: red;
+  }
+
+  .capital-eligibility {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+  }
+}
