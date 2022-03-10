@@ -94,7 +94,7 @@ export default class SapianCapital extends React.Component {
                     <div>
                       <a
                         className="download"
-                        href="https://drive.google.com/file/d/1e0oKUSimunmJEIsvZxmBpJZlzFQuIX31/view"
+                        href="https://res.cloudinary.com/sapiangroup/image/upload/v1646905099/CRYPTOMONIAL/SAPIAN_CAPITAL_OTC_DESK_-_V3_v9xzj8.pdf"
                         target="_blank"
                         rel="noreferrer"
                       >

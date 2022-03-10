@@ -355,8 +355,8 @@
 .sapian-capital .capital-coins .coins .coin img {
   width: 50px;
   height: 50px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sapian-capital .capital-coins .coins .coin img:hover {
@@ -456,12 +456,15 @@ h6 {
 
 .intro .oztcard-video {
   opacity: 0;
+}
+
+.intro .oztcard-video video {
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
 
 @media screen and (max-width: 576px) {
-  .intro .oztcard-video {
+  .intro .oztcard-video video {
     -o-object-fit: contain !important;
        object-fit: contain !important;
   }
@@ -576,8 +579,6 @@ h6 {
   margin: auto;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation: fade-logo 20s forwards;
-          animation: fade-logo 20s forwards;
 }
 
 @-webkit-keyframes fade-logo {
