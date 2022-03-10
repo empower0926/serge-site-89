@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-scroll';
 
 export default class Home extends React.Component {
   render() {
@@ -86,7 +87,7 @@ export default class Home extends React.Component {
               href="/cryptostation"
               className="nav-ball nav-ball-cryptostation"
             >
-              CRYPTOSTATION
+              <Link to="cryptostations">CRYPTOSTATION</Link>
             </a>
             <span className="vl"></span>
             <a
@@ -173,7 +174,7 @@ export default class Home extends React.Component {
                 </h4> */}
 
                 <div className="section">
-                  <div className="cryptostations">
+                  <div className="cryptostations" id="cryptostations">
                     <h2 className="text-center">
                       THE{" "}
                       <span className="the-cryptostation">CRYPTOSTATION</span>{" "}
