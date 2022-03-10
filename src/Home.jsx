@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-scroll';
+import { Link } from "react-scroll";
 
 export default class Home extends React.Component {
   render() {
@@ -427,6 +427,12 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
+        {/* footer */}
+        <div className="footer">
+          <div className="text-center mt-5">
+            <h2>need info for the footer</h2>
+          </div>
+        </div>
       </div>
     );
   }
@@ -449,7 +455,7 @@ export default class Home extends React.Component {
 
       navballs.classList.add("lift-up");
       logo.classList.add("logo-show");
-      skip.style.display = 'none';
+      skip.style.display = "none";
     }, 12000);
 
     const sclink = document.querySelector(".nav-ball-sapiangroup");
@@ -529,7 +535,7 @@ export default class Home extends React.Component {
 
       navballs.classList.add("lift-up");
       logo.classList.add("logo-show");
-      skip.style.display = 'none';
+      skip.style.display = "none";
     };
   }
 }
