@@ -24,7 +24,7 @@
     color: white !important;
 
     @include small {
-      height: 50vh;
+      height: 100vh;
     }
 
     .capital-intro-content {
@@ -64,7 +64,7 @@
       object-fit: cover;
       //   opacity: 0.4;
       @include small {
-        height: 50vh;
+        height: 100vh;
       }
     }
   }
