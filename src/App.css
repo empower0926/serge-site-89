@@ -25,12 +25,13 @@
   height: 100vh;
   position: relative;
   text-align: center;
+  background-color: #000000;
   color: white !important;
 }
 
 @media screen and (max-width: 576px) {
   .sapian-capital .capital-intro {
-    height: 100vh;
+    height: 50vh;
   }
 }
 
@@ -84,11 +85,12 @@
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 576px) {
   .sapian-capital .capital-intro video {
-    height: 100vh;
+    height: 50vh;
   }
 }
 

@@ -7,7 +7,7 @@ export default class SapianCapital extends React.Component {
         <div className="capital-intro">
           <video
             playsInline
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646688539/CRYPTOMONIAL/sapian-capital-bg_zzeusz.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
             autoPlay
             muted
             loop
