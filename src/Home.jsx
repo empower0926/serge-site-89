@@ -7,6 +7,7 @@ export default class Home extends React.Component {
         <div className="intro">
           <div className="intro-video">
             <video
+              playsinline
               className="intro-video"
               src="https://res.cloudinary.com/sapiangroup/video/upload/v1646695015/CRYPTOMONIAL/Tunnel_-_27438_1_w28dvt.mp4"
               autoPlay
@@ -16,6 +17,7 @@ export default class Home extends React.Component {
             <div className="bg-filter"></div>
           </div>
           <video
+            playsinline
             className="intro-video"
             id="intro-video"
             src="https://res.cloudinary.com/sapiangroup/video/upload/v1646588915/CRYPTOMONIAL/Particles_-_10848_czpvl4.mp4"
@@ -23,6 +25,7 @@ export default class Home extends React.Component {
             muted
           ></video>
           <video
+            playsinline
             className="intro-video sapina-capital-video"
             id="sapian-capital-video"
             src="https://res.cloudinary.com/sapiangroup/video/upload/v1646688539/CRYPTOMONIAL/sapian-capital-bg_zzeusz.mp4"
@@ -31,6 +34,7 @@ export default class Home extends React.Component {
             loop
           ></video>
           <video
+            playsinline
             className="intro-video oztcard-video"
             id="oztcard-video"
             src="https://res.cloudinary.com/sapiangroup/video/upload/v1646692680/CRYPTOMONIAL/oztcard_s0g6uf.mov"
@@ -83,6 +87,7 @@ export default class Home extends React.Component {
 
         <div className="definition">
           <video
+            playsinline
             id="globe-video"
             src="https://res.cloudinary.com/sapiangroup/video/upload/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
             autoPlay
@@ -421,7 +426,7 @@ export default class Home extends React.Component {
       slogan.classList.add("fade-up");
 
       navballs.classList.add("lift-up");
-      logo.classList.add('logo-show');
+      logo.classList.add("logo-show");
     }, 12000);
 
     const sclink = document.querySelector(".nav-ball-sapiangroup");
