@@ -202,7 +202,6 @@ export default class SapianCapital extends React.Component {
                   unlocked via a fingerprint sensor.
                 </p>
                 <p>the OZT CARD GOLD allow serenity during the transactions.</p>
-                <p>It also has many advantages such as:</p>
               </div>
             </div>
           </div>

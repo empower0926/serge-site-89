@@ -5,6 +5,9 @@ export default class Home extends React.Component {
     return (
       <div className="home">
         <div className="intro">
+          <div className="skip">
+            <button id="skip">skip intro</button>
+          </div>
           <div className="intro-video">
             <video
               playsInline
@@ -51,14 +54,30 @@ export default class Home extends React.Component {
           />
 
           <div className="init">
-            <div className="logo">
+            <div className="logo logo-main">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1600"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                alt="sapian cryptomonial"
+              />
+              <h5 className="slogan">A new paradigm for crypto-asset owners</h5>
+            </div>
+            <div className="logo logo-sc">
               <img
                 data-aos="fade-in"
                 data-aos-duration="900"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
+                alt="sapian capital"
+              />
+            </div>
+            <div className="logo logo-fc">
+              <img
+                data-aos="fade-in"
+                data-aos-duration="900"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg"
                 alt=""
               />
-              <h5 className="slogan">A new paradigm for crypto-asset owners</h5>
             </div>
           </div>
 
@@ -419,7 +438,9 @@ export default class Home extends React.Component {
 
     const navballs = document.querySelector(".nav-balls");
 
-    const logo = document.querySelector(".logo");
+    const logo = document.querySelector(".logo-main");
+
+    const skip = document.querySelector("#skip");
 
     setTimeout(() => {
       intro.classList.add("fade-intro");
@@ -427,6 +448,7 @@ export default class Home extends React.Component {
 
       navballs.classList.add("lift-up");
       logo.classList.add("logo-show");
+      skip.style.display = 'none';
     }, 12000);
 
     const sclink = document.querySelector(".nav-ball-sapiangroup");
@@ -437,50 +459,76 @@ export default class Home extends React.Component {
     const scbg = document.querySelector("#sapian-capital-video");
     const ocbg = document.querySelector("#oztcard-video");
 
+    const logosc = document.querySelector(".logo-sc");
+    const logofc = document.querySelector(".logo-fc");
+
     // for sapian capital
     sclink.onmouseover = (e) => {
       scbg.style.opacity = 1;
+
       logo.style.opacity = 0;
+      logofc.style.opacity = 0;
+      logosc.style.opacity = 1;
     };
     sclink.onmouseleave = (e) => {
       scbg.style.opacity = 0;
+
       logo.style.opacity = 1;
+      logofc.style.opacity = 0;
+      logosc.style.opacity = 0;
     };
 
     // for cryptostation
     cslink.onmouseover = (e) => {
       csbg.style.opacity = 1;
+
       logo.style.opacity = 0;
+      logosc.style.opacity = 0;
+      logofc.style.opacity = 1;
     };
     cslink.onmouseleave = (e) => {
       csbg.style.opacity = 0;
+
       logo.style.opacity = 1;
+      logosc.style.opacity = 0;
+      logofc.style.opacity = 0;
     };
 
     // for oztcard
     oclink.onmouseover = (e) => {
       ocbg.style.opacity = 1;
+
       logo.style.opacity = 0;
+      logofc.style.opacity = 0;
+      logosc.style.opacity = 0;
     };
     oclink.onmouseleave = (e) => {
       ocbg.style.opacity = 0;
+
       logo.style.opacity = 1;
+      logofc.style.opacity = 0;
+      logosc.style.opacity = 0;
     };
 
-    // const particleParent = document.querySelector(".particles-parent");
-    // const particleCount = 200;
+    const slogans = Array.from(document.querySelectorAll(".cs-slogan"));
 
-    // for (let i = 0; i < particleCount; i++) {
-    //   const particle = document.createElement("div");
-    //   particle.classList.add("particle");
+    setInterval(() => {
+      const slogan = slogans.shift();
+      slogan.style.opacity = 1;
 
-    //   const t = Math.floor(Math.random() * (98 - 1)) + 1;
-    //   const l = Math.floor(Math.random() * (98 - 1)) + 1;
+      slogans.forEach((element) => {
+        element.style.opacity = 0;
+      });
+      slogans.push(slogan);
+    }, 4000);
 
-    //   particle.style.left = l + "%";
-    //   particle.style.right = t + "%";
+    skip.onclick = (e) => {
+      intro.classList.add("fade-intro");
+      slogan.classList.add("fade-up");
 
-    //   particleParent.appendChild(particle);
-    // }
+      navballs.classList.add("lift-up");
+      logo.classList.add("logo-show");
+      skip.style.display = 'none';
+    };
   }
 }
