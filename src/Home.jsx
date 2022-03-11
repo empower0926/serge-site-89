@@ -168,7 +168,7 @@ export default class Home extends React.Component {
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="600"
-                ></a>
+                ><span className="d-none">oztcard</span></a>
               </div>
 
               <div className="col-sm-4">
@@ -180,7 +180,7 @@ export default class Home extends React.Component {
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="900"
-                ></a>
+                ><span className="d-none">sapian capital</span></a>
               </div>
             </div>
           </div>
