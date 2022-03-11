@@ -746,24 +746,35 @@ p {
 
 .solutions .solution {
   padding: 4rem 5rem;
-  background-color: #6d6d6d;
+  display: block;
+  -webkit-transition: .3s !important;
+  transition: .3s !important;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.solutions .solution:hover {
+  background-color: rgba(150, 95, 252, 0.3);
 }
 
 .solutions .cs {
-  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg) no-repeat;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg);
+  background-repeat: no-repeat;
   background-size: 45%;
   background-position: center;
 }
 
 .solutions .sc {
-  background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg) no-repeat;
+  background-image: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg);
   background-size: 50%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .solutions .oztg {
-  background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png) no-repeat;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png);
   background-size: 70%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 

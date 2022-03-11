@@ -284,25 +284,31 @@ p {
   margin-top: 7rem;
   .solution {
     padding: 4rem 5rem;
-    background-color: rgb(109, 109, 109);
+    display: block;
+    transition: .3s !important;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover{
+      background-color: rgba($color: #965ffc, $alpha: .3);
+    }
   }
 
   .cs {
-    background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg)
-      no-repeat;
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg);
+    background-repeat: no-repeat;
     background-size: 45%;
     background-position: center;
   }
   .sc {
-    background: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg)
-      no-repeat;
+    background-image: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg);
     background-size: 50%;
+    background-repeat: no-repeat;
     background-position: center;
   }
   .oztg {
-    background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png)
-      no-repeat;
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png);
     background-size: 70%;
+    background-repeat: no-repeat;
     background-position: center;
   }
 }

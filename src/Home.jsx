@@ -149,30 +149,38 @@ export default class Home extends React.Component {
             <div className="row">
               {/* cryptostations */}
               <div className="col-sm-4">
-                <div
+                <Link to="cryptostations">
+                <a
                   className="solution cs"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="300"
-                ></div>
+                ></a>
+                </Link>
               </div>
 
               <div className="col-sm-4">
-                <div
+                <a
+                  href="https://oztcard.com/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="solution oztg"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="600"
-                ></div>
+                ></a>
               </div>
 
               <div className="col-sm-4">
-                <div
+                <a
+                  href="/sapian-capital"
+                  target="_blank"
+                  rel="noreferrer"
                   className="solution sc"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="900"
-                ></div>
+                ></a>
               </div>
             </div>
           </div>
