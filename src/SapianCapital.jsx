@@ -534,6 +534,7 @@ export default class SapianCapital extends React.Component {
                     <a
                       class="mx-1"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.facebook.com/flashmoni.official"
                     >
                       <img
@@ -544,6 +545,7 @@ export default class SapianCapital extends React.Component {
                     <a
                       class="mx-1"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://twitter.com/Flashmoniltd"
                     >
                       <img
@@ -554,6 +556,7 @@ export default class SapianCapital extends React.Component {
                     <a
                       class="mx-1"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://instagram.com/sapian_group?utm_medium=copy_link"
                     >
                       <img
@@ -564,6 +567,7 @@ export default class SapianCapital extends React.Component {
                     <a
                       class="mx-1"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.linkedin.com/company/sapian-group/"
                     >
                       <img
