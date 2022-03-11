@@ -791,11 +791,13 @@ export default class Home extends React.Component {
 
     if (/Mobi|Android/i.test(navigator.userAgent)) {
       intro.classList.add("fade-intro");
-      slogan.classList.add("fade-up");
-
       navballs.classList.add("lift-up");
       logo.classList.add("logo-show");
       skip.style.display = "none";
+
+      setTimeout(() => {
+        slogan.classList.add("fade-up");
+      }, 2000);
     }
 
     const sclink = document.querySelector(".nav-ball-sapiangroup");
