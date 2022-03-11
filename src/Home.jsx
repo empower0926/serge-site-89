@@ -165,228 +165,185 @@ export default class Home extends React.Component {
           </div>
         </div>
 
-        <div className="container mt-5">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="sections">
-                {/* <h4>
+        {/* cryptostations */}
+        <div className="sections-parent">
+          <div className="container mt-5">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="sections">
+                  {/* <h4>
                   Cryptomonial engineering-wealth creating through distruption
                 </h4> */}
 
-                <div className="section">
-                  <div className="cryptostations" id="cryptostations">
-                    <h2 className="text-center">
-                      THE{" "}
-                      <span className="the-cryptostation">CRYPTOSTATION</span>{" "}
-                      BY{" "}
-                      <span>
-                        <img
-                          className="by-flash"
-                          src="https://res.cloudinary.com/sapiangroup/image/upload/v1646733137/CRYPTOMONIAL/flash_lwxjmz.svg"
-                          alt="FLASH"
-                        />
-                      </span>
-                    </h2>
-                    <div className="cs-slogans">
-                      <h5 className="cs-slogan">
-                        ENABLE EASY ACCESS, NO ENTRY BARRIERS!
-                      </h5>
-                      <h5 className="cs-slogan">OZTCARD COLLECTION POINT</h5>
-                      <h5 className="cs-slogan">FAIR REMITTANCE SERVICE</h5>
-                    </div>
+                  <div className="section">
+                    <div className="cryptostations" id="cryptostations">
+                      <h2 className="text-center">
+                        THE{" "}
+                        <span className="the-cryptostation">CRYPTOSTATION</span>{" "}
+                        BY{" "}
+                        <span>
+                          <img
+                            className="by-flash"
+                            src="https://res.cloudinary.com/sapiangroup/image/upload/v1646733137/CRYPTOMONIAL/flash_lwxjmz.svg"
+                            alt="FLASH"
+                          />
+                        </span>
+                      </h2>
+                      <div className="cs-slogans">
+                        <h5 className="cs-slogan">
+                          ENABLE EASY ACCESS, NO ENTRY BARRIERS!
+                        </h5>
+                        <h5 className="cs-slogan">OZTCARD COLLECTION POINT</h5>
+                        <h5 className="cs-slogan">FAIR REMITTANCE SERVICE</h5>
+                      </div>
 
-                    {/* easy access */}
-                    <div className="easy-access">
-                      <div className="container">
-                        <div className="row justify-content-center">
-                          <div className="col-sm-10">
-                            <div className="cryptostation-images">
-                              {/* <img
+                      {/* easy access */}
+                      <div className="easy-access">
+                        <div className="container">
+                          <div className="row justify-content-center">
+                            <div className="col-sm-10">
+                              <div className="cryptostation-images">
+                                {/* <img
                                 src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735832/CRYPTOMONIAL/cryptostations/cryptostation-3_lfbo1l.png"
                                 alt=""
                               /> */}
-                              <div
-                                data-aos="fade-right"
-                                data-aos-duration="1200"
-                              >
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735829/CRYPTOMONIAL/cryptostations/cryptostation-1_tch6ft.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div data-aos="fade-up" data-aos-duration="1200">
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735824/CRYPTOMONIAL/cryptostations/cryptostation-2_nzmozw.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                data-aos="fade-left"
-                                data-aos-duration="1200"
-                              >
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735836/CRYPTOMONIAL/cryptostations/cryptostation-4_nbgogh.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-sm-8 mt-5 text-center">
-                            <h4>ENABLE EASY ACCESS, NO ENTRY BARRIERS!</h4>
-                            <p
-                              data-aos="fade-up"
-                              data-aos-duration="1200"
-                              data-aos-delay="300"
-                            >
-                              We have designed our solution to reach the{" "}
-                              <span className="strong">2 Billion+ </span> people
-                              who do not have access to the usual banking
-                              system, so it appears to be paramount to ease the
-                              access to our blockchain-power solution.
-                            </p>
-
-                            <p
-                              data-aos="fade-up"
-                              data-aos-duration="1200"
-                              data-aos-delay="600"
-                            >
-                              our mainstream audience has no credit or debit
-                              card neither bank account. So by accepting payment
-                              by mobile, cash, debit card or cryptocurrency, we
-                              are enabling widely the access to our solution
-                              throughout our hardware device
-                              <span className="strong">
-                                “FLASHCRYPTOSTATION”
-                              </span>
-                              .
-                            </p>
-
-                            <p
-                              data-aos="fade-up"
-                              data-aos-duration="1200"
-                              data-aos-delay="900"
-                            >
-                              Users will be able to buy any cryptocurrency
-                              against designated fiat and vice-versa.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* oztcards */}
-                    <div className="oztcard">
-                      <div className="container">
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <div className="oztcard-images">
-                              <div className="oztcard-image">
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/w_700/v1606812303/ozt-card/OZTCARD_Ambassador_FACE_1_jic4b9.png"
-                                  alt="gold oztcard"
-                                />
-                              </div>
-
-                              <div
-                                className="oztcard-image"
-                                data-aos="fade-left"
-                                data-aos-duration="1200"
-                              >
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/standard-bleu_ozt-card_ltxnjt.png"
-                                  alt="standard oztcard"
-                                />
-                              </div>
-
-                              <div
-                                className="oztcard-image"
-                                data-aos="fade-left"
-                                data-aos-duration="1200"
-                              >
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/premium-violette_ozt-card_mtj4do.png"
-                                  alt="premium oztcard"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-sm-5">
-                            <h4>OZTCARD COLLECTION POINT</h4>
-                            <p data-aos="fade-left" data-aos-duration="1200">
-                              People who don't have a fixed address can order
-                              their <span className="strong">OZTCARD</span> in
-                              the nearest FLASHCRYPTOSTATION location point
-                              (mall, Airport, merchants, etc...) and pick it up
-                              once the card is ready or collect it up from
-                              another location.
-                            </p>
-
-                            <p className="mt-3">
-                              People will not be able to remove cash from the
-                              Station, just fill it in with designated fiat
-                              currencies. Withdraw money using the OZTCARD, will
-                              be possible from a regular ATM device.
-                            </p>
-
-                            <div
-                              className="anchor-parent"
-                              data-aos="fade-up"
-                              data-aos-duration="1200"
-                              data-aos-delay="600"
-                            >
-                              <a
-                                href="https://oztcard.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                Know more about OZTCARD
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="remittance">
-                      <div className="container">
-                        <div className="row justify-content-center">
-                          <div className="col-sm-5 mt-5">
-                            <div>
-                              <h4>FAIR REMITTANCE SERVICE</h4>
-
-                              <div className="col-sm-12 d-block d-md-none">
-                                <div className="h-100 d-flex justify-content-center">
-                                  <div className="my-auto particles-parent">
-                                    <div className="particles"></div>
-                                    <img
-                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
-                                      alt=""
-                                    />
-                                    <h4 className="asset-pegged-coin">
-                                      The Asset Pegged Coin
-                                    </h4>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <p>
-                                Use the{" "}
-                                <span className="strong">CRYPTOSTATION</span> to
-                                send remittances using our unify transactional
-                                utility coin “OZTG”{" "}
-                                <span>
+                                <div
+                                  data-aos="fade-right"
+                                  data-aos-duration="1200"
+                                >
                                   <img
-                                    className="oztg-coin"
-                                    src="https://res.cloudinary.com/dmeppscpx/image/upload/v1619874803/flashxchanger/OZTG_vwr5kt.svg"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735829/CRYPTOMONIAL/cryptostations/cryptostation-1_tch6ft.png"
                                     alt=""
                                   />
+                                </div>
+                                <div
+                                  data-aos="fade-up"
+                                  data-aos-duration="1200"
+                                >
+                                  <img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735824/CRYPTOMONIAL/cryptostations/cryptostation-2_nzmozw.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  data-aos="fade-left"
+                                  data-aos-duration="1200"
+                                >
+                                  <img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735836/CRYPTOMONIAL/cryptostations/cryptostation-4_nbgogh.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="row">
+                              <div className="col text-center">
+                                <div className="for-users">
+                                  <h1>FOR THE USERS</h1>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="col-sm-6 mt-5 text-center">
+                              <h4>ENABLE EASY ACCESS, NO ENTRY BARRIERS!</h4>
+                              <p
+                                data-aos="fade-up"
+                                data-aos-duration="1200"
+                                data-aos-delay="300"
+                              >
+                                We have designed our solution to reach the{" "}
+                                <span className="strong">2 Billion+ </span>{" "}
+                                people who do not have access to the usual
+                                banking system, so it appears to be paramount to
+                                ease the access to our blockchain-power
+                                solution.
+                              </p>
+
+                              <p
+                                data-aos="fade-up"
+                                data-aos-duration="1200"
+                                data-aos-delay="600"
+                              >
+                                our mainstream audience has no credit or debit
+                                card neither bank account. So by accepting
+                                payment by mobile, cash, debit card or
+                                cryptocurrency, we are enabling widely the
+                                access to our solution throughout our hardware
+                                device
+                                <span className="strong">
+                                  “FLASHCRYPTOSTATION”
                                 </span>
-                                . It will be instant with no hidden fees, in
-                                simple words “Hassle-Free”!
+                                .
+                              </p>
+
+                              <p
+                                data-aos="fade-up"
+                                data-aos-duration="1200"
+                                data-aos-delay="900"
+                              >
+                                Users will be able to buy any cryptocurrency
+                                against designated fiat and vice-versa.
                               </p>
                             </div>
-                            <div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* oztcards */}
+                      <div className="oztcard">
+                        <div className="container">
+                          <div className="row">
+                            <div className="col-sm-6">
+                              <div className="oztcard-images">
+                                <div className="oztcard-image">
+                                  <img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/w_700/v1606812303/ozt-card/OZTCARD_Ambassador_FACE_1_jic4b9.png"
+                                    alt="gold oztcard"
+                                  />
+                                </div>
+
+                                <div
+                                  className="oztcard-image"
+                                  data-aos="fade-left"
+                                  data-aos-duration="1200"
+                                >
+                                  <img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/standard-bleu_ozt-card_ltxnjt.png"
+                                    alt="standard oztcard"
+                                  />
+                                </div>
+
+                                <div
+                                  className="oztcard-image"
+                                  data-aos="fade-left"
+                                  data-aos-duration="1200"
+                                >
+                                  <img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/premium-violette_ozt-card_mtj4do.png"
+                                    alt="premium oztcard"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-sm-5">
+                              <h4>OZTCARD COLLECTION POINT</h4>
+                              <p data-aos="fade-left" data-aos-duration="1200">
+                                People who don't have a fixed address can order
+                                their <span className="strong">OZTCARD</span> in
+                                the nearest FLASHCRYPTOSTATION location point
+                                (mall, Airport, merchants, etc...) and pick it
+                                up once the card is ready or collect it up from
+                                another location.
+                              </p>
+
+                              <p className="mt-3">
+                                People will not be able to remove cash from the
+                                Station, just fill it in with designated fiat
+                                currencies. Withdraw money using the OZTCARD,
+                                will be possible from a regular ATM device.
+                              </p>
+
                               <div
                                 className="anchor-parent"
                                 data-aos="fade-up"
@@ -394,27 +351,120 @@ export default class Home extends React.Component {
                                 data-aos-delay="600"
                               >
                                 <a
-                                  href="https://ozeety.com/"
+                                  href="https://oztcard.com/"
                                   target="_blank"
                                   rel="noreferrer"
                                 >
-                                  know more about oztg
+                                  Know more about OZTCARD
                                 </a>
                               </div>
                             </div>
                           </div>
+                        </div>
+                      </div>
 
-                          <div className="col-sm-6 d-none d-md-block">
-                            <div className="h-100 d-flex justify-content-center">
-                              <div className="my-auto particles-parent">
-                                <div className="particles"></div>
-                                <img
-                                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
-                                  alt=""
-                                />
-                                <h4 className="asset-pegged-coin">
-                                  The Asset Pegged Coin
-                                </h4>
+                      <div className="remittance">
+                        <div className="container">
+                          <div className="row justify-content-center">
+                            <div className="col-sm-5 mt-5">
+                              <div>
+                                <h4>FAIR REMITTANCE SERVICE</h4>
+
+                                <div className="col-sm-12 d-block d-md-none">
+                                  <div className="h-100 d-flex justify-content-center">
+                                    <div className="my-auto particles-parent">
+                                      <div className="particles"></div>
+                                      <img
+                                        src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
+                                        alt=""
+                                      />
+                                      <h4 className="asset-pegged-coin">
+                                        The Asset Pegged Coin
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <p>
+                                  Use the{" "}
+                                  <span className="strong">CRYPTOSTATION</span>{" "}
+                                  to send remittances using our unify
+                                  transactional utility coin “OZTG”{" "}
+                                  <span>
+                                    <img
+                                      className="oztg-coin"
+                                      src="https://res.cloudinary.com/dmeppscpx/image/upload/v1619874803/flashxchanger/OZTG_vwr5kt.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  . It will be instant with no hidden fees, in
+                                  simple words “Hassle-Free”!
+                                </p>
+                              </div>
+                              <div>
+                                <div
+                                  className="anchor-parent"
+                                  data-aos="fade-up"
+                                  data-aos-duration="1200"
+                                  data-aos-delay="600"
+                                >
+                                  <a
+                                    href="https://ozeety.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    know more about oztg
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="col-sm-6 d-none d-md-block">
+                              <div className="h-100 d-flex justify-content-center">
+                                <div className="my-auto particles-parent">
+                                  <div className="particles"></div>
+                                  <img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
+                                    alt=""
+                                  />
+                                  <h4 className="asset-pegged-coin">
+                                    The Asset Pegged Coin
+                                  </h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* for the merchents */}
+                      <div className="for-merchents">
+                        <div className="container">
+                          <div className="row justify-content-center">
+                            <div className="col-sm-5">
+                              <h1>FOR THE MERCHANTS</h1>
+                            </div>
+                            <div className="col-sm-6"></div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-sm-11">
+                              <div className="row">
+                                <div className="col">
+                                  <div className="merchant-perk"></div>
+                                </div>
+                                <div className="col">
+                                  <div className="merchant-perk"></div>
+                                </div>
+                                <div className="col">
+                                  <div className="merchant-perk"></div>
+                                </div>
+                                <div className="col">
+                                  <div className="merchant-perk"></div>
+                                </div>
+                                <div className="col">
+                                  <div className="merchant-perk"></div>
+                                </div>
                               </div>
                             </div>
                           </div>

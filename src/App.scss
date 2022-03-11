@@ -24,6 +24,10 @@ h6 {
   font-weight: 300;
 }
 
+p {
+  text-transform: capitalize;
+}
+
 .navbar {
   background-color: black !important;
   * {
@@ -290,11 +294,35 @@ h6 {
   }
 }
 
+.sections-parent {
+  background: linear-gradient(
+    0deg,
+    rgba(21, 1, 41, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  .for-merchents {
+    margin-top: 5rem;
+
+    .merchant-perk {
+      width: 100%;
+      height: 80px;
+      background-color: #965ffc;
+    }
+  }
+}
+
 .sections {
   margin-top: 5rem;
   .section {
     margin: 1rem 0;
     // background-color: rgb(128, 128, 128);
+  }
+
+  .for-users {
+    width: 100%;
+    color: #965ffc;
+    margin-top: 5rem;
   }
 
   .sapian-capital {
@@ -526,10 +554,8 @@ h6 {
   }
 }
 
-
-.footer{
-    width: 100%;
-    height: 40vh;
-    background-color: rgb(39, 39, 39);
-
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(39, 39, 39);
 }
