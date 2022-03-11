@@ -26,6 +26,9 @@ h6 {
 
 p {
   text-transform: capitalize;
+  @include small{
+      font-size: 12px;
+  }
 }
 
 .navbar {
