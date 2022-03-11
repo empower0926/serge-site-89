@@ -613,6 +613,20 @@ p {
   opacity: 0;
 }
 
+.intro .init .cryptomonial {
+  margin-top: 1rem;
+}
+
+.intro .init .cryptomonial img {
+  width: 15% !important;
+}
+
+@media screen and (max-width: 576px) {
+  .intro .init .cryptomonial img {
+    width: 30% !important;
+  }
+}
+
 .intro .init .logo {
   position: absolute;
   text-align: center;

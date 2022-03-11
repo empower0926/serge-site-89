@@ -187,6 +187,16 @@ p {
       opacity: 0;
     }
 
+    .cryptomonial{
+        margin-top: 1rem;
+        img{
+            width: 15% !important;
+            @include small{
+                width: 30% !important;
+            }
+        }
+    }
+
     .logo {
       position: absolute;
       text-align: center;

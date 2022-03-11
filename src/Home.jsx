@@ -56,12 +56,25 @@ export default class Home extends React.Component {
 
           <div className="init">
             <div className="logo logo-main">
-              <img
-                data-aos="fade-up"
-                data-aos-duration="1600"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
-                alt="sapian cryptomonial"
-              />
+              <div>
+                <div>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="1600"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647005903/CRYPTOMONIAL/merchants/sapian_cmxiod.svg"
+                    alt="sapian cryptomonial"
+                  />
+                </div>
+                <div className="cryptomonial">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="1600"
+                    data-aos-delay="600"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647005903/CRYPTOMONIAL/merchants/cryptomonial_zl6nyq.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
               <h5 className="slogan">A new paradigm for crypto-asset owners</h5>
             </div>
             <div className="logo logo-sc">
