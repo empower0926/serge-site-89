@@ -150,12 +150,12 @@ export default class Home extends React.Component {
               {/* cryptostations */}
               <div className="col-sm-4">
                 <Link to="cryptostations">
-                <a
+                <div
                   className="solution cs"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="300"
-                ></a>
+                ></div>
                 </Link>
               </div>
 
