@@ -821,6 +821,12 @@ p {
   font-size: 12px;
 }
 
+@media screen and (max-width: 576px) {
+  .sections-parent .for-merchents .merchant-perk {
+    margin: 0;
+  }
+}
+
 .sections {
   margin-top: 5rem;
 }

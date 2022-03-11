@@ -380,6 +380,9 @@ p {
       margin: .5rem 1rem;
       width: 100%;
       font-size: 12px;
+      @include small{
+          margin: 0;
+      }
       //   height: 80px;
       //   background-color: #965ffc;
     }
