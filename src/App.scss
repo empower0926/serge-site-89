@@ -302,18 +302,97 @@ p {
   );
 
   .for-merchents {
-    margin-top: 5rem;
+    margin: 5rem 0;
+
+    position: relative;
+    width: 100%;
+    // height: 200px;
+
+    .mp-parent{
+        display: flex;
+        text-align: justify !important;
+        @include small{
+            display: block;
+            text-align: center !important;
+        }
+        h4{
+            text-align: center !important;
+            font-size: 18px;
+        }
+    }
+
+    h4 {
+        color:#53fffc;
+    }
+
+    span{
+        display: inline-block;
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 80px;
+        }
+
+        // .location-img{
+        //     width: 120px;
+        // }
+        // .loyalty-img{
+        //     transform: translateY(30px) translateX(-50px);
+        //     width: 140px;
+        //     @include small{
+        //         transform: translateY(30px);
+        //     }
+        // }
+        // .maintain-img{
+        //     width: 60px;
+        // }
+
+        // .coins-img{
+        //     width: 100px;
+        // }
+    }
+
+    .store-img{
+        margin-top: 5rem;
+        img{
+            width: 80%;
+        }
+    }
+
+    .tr{
+        // text-align: right;
+        @include small{
+            text-align: center !important;
+        }
+    }
+
+    p{
+        width: 500px;
+        margin: 0 !important;
+    }
+
+    .merchant-heading{
+        margin: 5rem 0;
+    }
 
     .merchant-perk {
+      margin: .5rem 1rem;
       width: 100%;
-      height: 80px;
-      background-color: #965ffc;
+      font-size: 12px;
+      //   height: 80px;
+      //   background-color: #965ffc;
     }
   }
 }
 
 .sections {
   margin-top: 5rem;
+
+  h4{
+      color:#53fffc;
+  }
+
   .section {
     margin: 1rem 0;
     // background-color: rgb(128, 128, 128);
@@ -321,7 +400,7 @@ p {
 
   .for-users {
     width: 100%;
-    color: #965ffc;
+    // color: #965ffc;
     margin-top: 5rem;
   }
 
