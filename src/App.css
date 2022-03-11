@@ -1141,6 +1141,12 @@ p {
   color: white;
 }
 
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 0;
+  }
+}
+
 .footer a {
   text-decoration: none;
   color: #53fffc;

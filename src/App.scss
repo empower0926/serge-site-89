@@ -641,6 +641,9 @@ p {
 
 .footer {
   padding-top: 5rem;
+  @include small{
+      padding: 0;
+  }
   position: relative;
   z-index: 999;
   background-color: #00020f;
