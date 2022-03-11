@@ -756,13 +756,6 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-
-
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-        alert('this is a mobile')
-    }
-
-
     const slogan = document.querySelector(".slogan");
 
     const intro = document.querySelector("#intro-video");
@@ -782,6 +775,15 @@ export default class Home extends React.Component {
       logo.classList.add("logo-show");
       skip.style.display = "none";
     }, 12000);
+
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      intro.classList.add("fade-intro");
+      slogan.classList.add("fade-up");
+
+      navballs.classList.add("lift-up");
+      logo.classList.add("logo-show");
+      skip.style.display = "none";
+    }
 
     const sclink = document.querySelector(".nav-ball-sapiangroup");
     const cslink = document.querySelector(".nav-ball-cryptostation");
