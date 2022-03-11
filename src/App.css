@@ -822,7 +822,7 @@ p {
 }
 
 .sections-parent .for-merchents .merchant-perk {
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
   width: 100%;
   font-size: 12px;
 }
@@ -1133,8 +1133,33 @@ p {
 }
 
 .footer {
+  padding-top: 5rem;
+  position: relative;
+  z-index: 999;
+  background-color: #00020f;
   width: 100%;
-  height: 40vh;
-  background-color: #272727;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #53fffc;
+}
+
+.footer .logo img {
+  width: 260px;
+}
+
+.footer .socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
 }
 /*# sourceMappingURL=App.css.map */

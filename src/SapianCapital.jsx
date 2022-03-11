@@ -451,6 +451,140 @@ export default class SapianCapital extends React.Component {
               </div>
             </div>
           </div>
+
+          {/* <!-- footer --> */}
+          <section class="footer d-flex justify-content-center">
+            <div class="container">
+              <div class="row p-5">
+                <div class="col-sm-12 col-md-4 text-center text-md-left">
+                  <div class="logo">
+                    <img
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                      style={{ width: "40%" }}
+                      alt="sapian group logo"
+                    ></img>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0 text-center text-md-left">
+                  <div>
+                    <ul>
+                      <li class="mt-2">
+                        <a
+                          class="a-btn"
+                          target="_blank"
+                          href="https://sapiangroup.com/termsconditions.html"
+                          rel="noreferrer"
+                        >
+                          Terms & Conditions
+                        </a>
+                      </li>
+                      <li class="mt-2">
+                        <a
+                          class="a-btn"
+                          target="_blank"
+                          href="https://sapiangroup.com/privacy.html"
+                          rel="noreferrer"
+                        >
+                          Privacy policy
+                        </a>
+                      </li>
+                      <li class="mt-2">
+                        <a
+                          class="a-btn"
+                          target="_blank"
+                          href="https://sapiangroup.com/cookies.html"
+                          rel="noreferrer"
+                        >
+                          Use of Cookies
+                        </a>
+                      </li>
+                      <li class="mt-2">
+                        <a
+                          class="a-btn"
+                          href="mailto:support@sapiangroup.com"
+                          rel="noreferrer"
+                        >
+                          Send Email: support@sapiangroup.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0 text-center text-md-right p-0">
+                  <div>
+                    <span>
+                      {" "}
+                      Offices in: Dubaï (UAE) ,Singapour, London/Liverpool
+                      (United Kingdom) , Tallin (Estonia) and Luxembourg.
+                    </span>
+                    <br></br>
+                  </div>
+                  <div class="mt-4 socials">
+                    <a
+                      class="mx-1"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://blog.flashmoni.io/"
+                    >
+                      <img
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
+                        alt="medium"
+                      ></img>
+                    </a>
+                    <a
+                      class="mx-1"
+                      target="_blank"
+                      href="https://www.facebook.com/flashmoni.official"
+                    >
+                      <img
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
+                        alt="facebook"
+                      ></img>
+                    </a>
+                    <a
+                      class="mx-1"
+                      target="_blank"
+                      href="https://twitter.com/Flashmoniltd"
+                    >
+                      <img
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
+                        alt="twitter"
+                      ></img>
+                    </a>
+                    <a
+                      class="mx-1"
+                      target="_blank"
+                      href="https://instagram.com/sapian_group?utm_medium=copy_link"
+                    >
+                      <img
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
+                        alt="instagram"
+                      ></img>
+                    </a>
+                    <a
+                      class="mx-1"
+                      target="_blank"
+                      href="https://www.linkedin.com/company/sapian-group/"
+                    >
+                      <img
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
+                        alt="linkedin"
+                      ></img>
+                    </a>
+                    {/* <a class="mx-1" target="_blank" href="http://flashmoni.dribbble.com/"><img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
+                                    alt="dribbble"></img></a> */}
+                  </div>
+                </div>
+              </div>
+
+              <div class="row text-center pb-5">
+                <div class="col-sm-12">
+                  <small>Copyright © 2022 Sapian Group</small>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     );

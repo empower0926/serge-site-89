@@ -26,8 +26,8 @@ h6 {
 
 p {
   text-transform: capitalize;
-  @include small{
-      font-size: 12px;
+  @include small {
+    font-size: 12px;
   }
 }
 
@@ -311,80 +311,80 @@ p {
     width: 100%;
     // height: 200px;
 
-    .mp-parent{
-        display: flex;
-        text-align: justify !important;
-        @include small{
-            display: block;
-            text-align: center !important;
-        }
-        h4{
-            text-align: center !important;
-            font-size: 18px;
-        }
+    .mp-parent {
+      display: flex;
+      text-align: justify !important;
+      @include small {
+        display: block;
+        text-align: center !important;
+      }
+      h4 {
+        text-align: center !important;
+        font-size: 18px;
+      }
     }
 
     h4 {
-        color:#53fffc;
+      color: #53fffc;
     }
 
-    span{
-        display: inline-block;
-        margin: 1rem 0;
-        width: 100%;
-        text-align: center;
-        img{
-            width: 80px;
-        }
+    span {
+      display: inline-block;
+      margin: 1rem 0;
+      width: 100%;
+      text-align: center;
+      img {
+        width: 80px;
+      }
 
-        // .location-img{
-        //     width: 120px;
-        // }
-        // .loyalty-img{
-        //     transform: translateY(30px) translateX(-50px);
-        //     width: 140px;
-        //     @include small{
-        //         transform: translateY(30px);
-        //     }
-        // }
-        // .maintain-img{
-        //     width: 60px;
-        // }
+      // .location-img{
+      //     width: 120px;
+      // }
+      // .loyalty-img{
+      //     transform: translateY(30px) translateX(-50px);
+      //     width: 140px;
+      //     @include small{
+      //         transform: translateY(30px);
+      //     }
+      // }
+      // .maintain-img{
+      //     width: 60px;
+      // }
 
-        // .coins-img{
-        //     width: 100px;
-        // }
+      // .coins-img{
+      //     width: 100px;
+      // }
     }
 
-    .store-img{
-        margin-top: 5rem;
-        img{
-            width: 80%;
-        }
+    .store-img {
+      margin-top: 5rem;
+      img {
+        width: 80%;
+      }
     }
 
-    .tr{
-        // text-align: right;
-        @include small{
-            text-align: center !important;
-        }
+    .tr {
+      // text-align: right;
+      @include small {
+        text-align: center !important;
+      }
     }
 
-    p{
-        width: 500px;
-        margin: 0 !important;
+    p {
+      width: 500px;
+      margin: 0 !important;
     }
 
-    .merchant-heading{
-        margin: 5rem 0;
+    .merchant-heading {
+      margin: 5rem 0;
     }
 
     .merchant-perk {
-      margin: .5rem 1rem;
+      margin: 0.5rem 1rem;
       width: 100%;
       font-size: 12px;
-      @include small{
-          margin: 0;
+      @include small {
+        margin: 0;
       }
       //   height: 80px;
       //   background-color: #965ffc;
@@ -395,8 +395,8 @@ p {
 .sections {
   margin-top: 5rem;
 
-  h4{
-      color:#53fffc;
+  h4 {
+    color: #53fffc;
   }
 
   .section {
@@ -640,7 +640,34 @@ p {
 }
 
 .footer {
+  padding-top: 5rem;
+  position: relative;
+  z-index: 999;
+  background-color: #00020f;
   width: 100%;
-  height: 40vh;
-  background-color: rgb(39, 39, 39);
+  color: white;
+  a {
+    text-decoration: none;
+    color: #53fffc;
+  }
+  .logo {
+    img {
+      width: 260px;
+    }
+  }
+
+  .socials {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
 }

@@ -450,159 +450,158 @@ export default class Home extends React.Component {
                           </div>
 
                           <div className="row mt-2 justify-content-center">
-                           
                             <div className="col-sm-11">
                               <div className="mp-parent">
-                              <div className="merchant-perk">
-                                <span>
-                                  <img
-                                    className="location-img"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/Location_towixr.png"
-                                    alt=""
-                                  />
-                                </span>
-                                <h4
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="200"
-                                  className="merchant-header"
-                                >
-                                  Become a cryptocurrency local hub
-                                </h4>
-                                <div
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="300"
-                                >
-                                  Users will search through the FlashApp the
-                                  nearest FLASHCRYPTOSTATION and bring more
-                                  traffic to the merchant location.
-                                </div>
-                              </div>
-
-                              <div className="merchant-perk tr">
-                                <span>
-                                  <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000339/CRYPTOMONIAL/merchants/vallet_vokaqc.png"
-                                    alt=""
-                                  />
-                                </span>
-                                <h4
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="400"
-                                  className="merchant-header"
-                                >
-                                  Receive a lifetime % benefit
-                                </h4>
-                                <div
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="600"
-                                >
-                                  On all transactions made on the “Station”
-                                  located in his business but also on every
-                                  order of OZTCARD.
-                                </div>
-                              </div>
-
-                              <div className="merchant-perk">
-                                <span>
-                                  <img
-                                    className="loyalty-img"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000339/CRYPTOMONIAL/merchants/The_Coin_aszqlv.png"
-                                    alt=""
-                                  />
-                                </span>
-                                <h4
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="600"
-                                  className="merchant-header"
-                                >
-                                  Benefit from our loyalty program
-                                </h4>
-                                <div>
+                                <div className="merchant-perk">
+                                  <span>
+                                    <img
+                                      className="location-img"
+                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/Location_towixr.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <h4
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="200"
+                                    className="merchant-header"
+                                  >
+                                    Become a cryptocurrency local hub
+                                  </h4>
                                   <div
                                     data-aos="fade-up"
                                     data-aos-duration="900"
-                                    data-aos-delay="900"
+                                    data-aos-delay="300"
                                   >
-                                    customers will be able to spend their
-                                    loyalty points on your shop and you will
-                                    also be able to give loyalty coin to your
-                                    user if you subscribe to our services.
+                                    Users will search through the FlashApp the
+                                    nearest FLASHCRYPTOSTATION and bring more
+                                    traffic to the merchant location.
                                   </div>
+                                </div>
 
+                                <div className="merchant-perk tr">
+                                  <span>
+                                    <img
+                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000339/CRYPTOMONIAL/merchants/vallet_vokaqc.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <h4
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="400"
+                                    className="merchant-header"
+                                  >
+                                    Receive a lifetime % benefit
+                                  </h4>
+                                  <div
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="600"
+                                  >
+                                    On all transactions made on the “Station”
+                                    located in his business but also on every
+                                    order of OZTCARD.
+                                  </div>
+                                </div>
+
+                                <div className="merchant-perk">
+                                  <span>
+                                    <img
+                                      className="loyalty-img"
+                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000339/CRYPTOMONIAL/merchants/The_Coin_aszqlv.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <h4
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="600"
+                                    className="merchant-header"
+                                  >
+                                    Benefit from our loyalty program
+                                  </h4>
+                                  <div>
+                                    <div
+                                      data-aos="fade-up"
+                                      data-aos-duration="900"
+                                      data-aos-delay="900"
+                                    >
+                                      customers will be able to spend their
+                                      loyalty points on your shop and you will
+                                      also be able to give loyalty coin to your
+                                      user if you subscribe to our services.
+                                    </div>
+
+                                    <div
+                                      data-aos="fade-up"
+                                      data-aos-duration="900"
+                                      data-aos-delay="1200"
+                                      className="mt-3"
+                                    >
+                                      Your users will be able to use those
+                                      points to buy real live products and
+                                      services because those points are tradable
+                                      on the FLASHXCHANGER.
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="merchant-perk tr">
+                                  <span>
+                                    <img
+                                      className="maintain-img"
+                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/Construction_F_oh7gyf.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <h4
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="800"
+                                    className="merchant-header"
+                                  >
+                                    FLASHGROUP Maintenance
+                                  </h4>
                                   <div
                                     data-aos="fade-up"
                                     data-aos-duration="900"
                                     data-aos-delay="1200"
-                                    className="mt-3"
                                   >
-                                    Your users will be able to use those points
-                                    to buy real live products and services
-                                    because those points are tradable on the
-                                    FLASHXCHANGER.
+                                    All the maintenance will be handled by the
+                                    FLASHGROUP.
                                   </div>
                                 </div>
-                              </div>
 
-                              <div className="merchant-perk tr">
-                                <span>
-                                  <img
-                                    className="maintain-img"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/Construction_F_oh7gyf.png"
-                                    alt=""
-                                  />
-                                </span>
-                                <h4
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="800"
-                                  className="merchant-header"
-                                >
-                                  FLASHGROUP Maintenance
-                                </h4>
-                                <div
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="1200"
-                                >
-                                  All the maintenance will be handled by the
-                                  FLASHGROUP.
+                                <div className="merchant-perk">
+                                  <span>
+                                    <img
+                                      className="coins-img"
+                                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/coins_wnv7bd.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <h4
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="500"
+                                    className="merchant-header"
+                                  >
+                                    Enabling the acceptance of cryptocurrencies
+                                  </h4>
+                                  <div
+                                    data-aos="fade-up"
+                                    data-aos-duration="900"
+                                    data-aos-delay="400"
+                                  >
+                                    he merchant will be able to accept
+                                    designated cryptos as means of payment on
+                                    his shop and he will also be able to
+                                    exchange it using FLASHGROUP ecosystem into
+                                    Fiat currency and transfer it in his bank
+                                    account instantly for free!
+                                  </div>
                                 </div>
-                              </div>
-
-                              <div className="merchant-perk">
-                                <span>
-                                  <img
-                                    className="coins-img"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/coins_wnv7bd.png"
-                                    alt=""
-                                  />
-                                </span>
-                                <h4
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="500"
-                                  className="merchant-header"
-                                >
-                                  Enabling the acceptance of cryptocurrencies
-                                </h4>
-                                <div
-                                  data-aos="fade-up"
-                                  data-aos-duration="900"
-                                  data-aos-delay="400"
-                                >
-                                  he merchant will be able to accept designated
-                                  cryptos as means of payment on his shop and he
-                                  will also be able to exchange it using
-                                  FLASHGROUP ecosystem into Fiat currency and
-                                  transfer it in his bank account instantly for
-                                  free!
-                                </div>
-                              </div>
                               </div>
                             </div>
                           </div>
@@ -615,17 +614,151 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
-        {/* footer */}
-        <div className="footer">
-          <div className="text-center mt-5">
-            <h2>need info for the footer</h2>
+        {/* <!-- footer --> */}
+        <section class="footer d-flex justify-content-center">
+          <div class="container">
+            <div class="row p-5">
+              <div class="col-sm-12 col-md-4 text-center text-md-left">
+                <div class="logo">
+                  <img
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                    style={{ width: "40%" }}
+                    alt="sapian group logo"
+                  ></img>
+                </div>
+              </div>
+              <div class="col-md-4 mt-5 mt-md-0 text-center text-md-left">
+                <div>
+                  <ul>
+                    <li class="mt-2">
+                      <a
+                        class="a-btn"
+                        target="_blank"
+                        href="https://sapiangroup.com/termsconditions.html"
+                        rel="noreferrer"
+                      >
+                        Terms & Conditions
+                      </a>
+                    </li>
+                    <li class="mt-2">
+                      <a
+                        class="a-btn"
+                        target="_blank"
+                        href="https://sapiangroup.com/privacy.html"
+                        rel="noreferrer"
+                      >
+                        Privacy policy
+                      </a>
+                    </li>
+                    <li class="mt-2">
+                      <a
+                        class="a-btn"
+                        target="_blank"
+                        href="https://sapiangroup.com/cookies.html"
+                        rel="noreferrer"
+                      >
+                        Use of Cookies
+                      </a>
+                    </li>
+                    <li class="mt-2">
+                      <a
+                        class="a-btn"
+                        href="mailto:support@sapiangroup.com"
+                        rel="noreferrer"
+                      >
+                        Send Email: support@sapiangroup.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 mt-5 mt-md-0 text-center text-md-right p-0">
+                <div>
+                  <span>
+                    {" "}
+                    Offices in: Dubaï (UAE) ,Singapour, London/Liverpool (United
+                    Kingdom) , Tallin (Estonia) and Luxembourg.
+                  </span>
+                  <br></br>
+                </div>
+                <div class="mt-4 socials">
+                  <a
+                    class="mx-1"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://blog.flashmoni.io/"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
+                      alt="medium"
+                    ></img>
+                  </a>
+                  <a
+                    class="mx-1"
+                    target="_blank"
+                    href="https://www.facebook.com/flashmoni.official"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
+                      alt="facebook"
+                    ></img>
+                  </a>
+                  <a
+                    class="mx-1"
+                    target="_blank"
+                    href="https://twitter.com/Flashmoniltd"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
+                      alt="twitter"
+                    ></img>
+                  </a>
+                  <a
+                    class="mx-1"
+                    target="_blank"
+                    href="https://instagram.com/sapian_group?utm_medium=copy_link"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
+                      alt="instagram"
+                    ></img>
+                  </a>
+                  <a
+                    class="mx-1"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/sapian-group/"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
+                      alt="linkedin"
+                    ></img>
+                  </a>
+                  {/* <a class="mx-1" target="_blank" href="http://flashmoni.dribbble.com/"><img
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
+                                    alt="dribbble"></img></a> */}
+                </div>
+              </div>
+            </div>
+
+            <div class="row text-center pb-5">
+              <div class="col-sm-12">
+                <small>Copyright © 2022 Sapian Group</small>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     );
   }
 
   componentDidMount() {
+
+
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        alert('this is a mobile')
+    }
+
+
     const slogan = document.querySelector(".slogan");
 
     const intro = document.querySelector("#intro-video");
