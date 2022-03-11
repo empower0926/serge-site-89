@@ -607,7 +607,7 @@ export default class Home extends React.Component {
                                     data-aos-duration="900"
                                     data-aos-delay="400"
                                   >
-                                    he merchant will be able to accept
+                                    The merchant will be able to accept
                                     designated cryptos as means of payment on
                                     his shop and he will also be able to
                                     exchange it using FLASHGROUP ecosystem into
