@@ -4,6 +4,19 @@ export default class SapianCapital extends React.Component {
   render() {
     return (
       <div className="sapian-capital">
+        {/* cookie concent */}
+        <div className="cookies-parent">
+          <div className="cookies">
+            <div>
+              By using our site you agree to our use of cookies to deliver a
+              better site experience.
+            </div>
+            <div className="mt-2">
+              <button id="accept">Got it</button>
+            </div>
+          </div>
+        </div>
+
         <div className="capital-intro">
           <video
             playsInline
@@ -623,5 +636,26 @@ export default class SapianCapital extends React.Component {
       perk.style.opacity = "1";
       icon.style.transform = "scale(1.5)";
     }, time);
+
+    const popup = document.querySelector(".cookies-parent");
+
+    const key = "SapianCryptomonial";
+    let cookie = {};
+
+    document.cookie.split(";").forEach(function (el) {
+      let [key, value] = el.split("=");
+      cookie[key.trim()] = value;
+    });
+
+    if (cookie[key]) {
+      popup.style.display = "none";
+    }
+
+    const accept = document.querySelector("#accept");
+    accept.onclick = (e) => {
+      const cookie = `${key}=cookie accepted;max-age=${60 * 60 * 24 * 365}`;
+      document.cookie = cookie;
+      popup.style.display = "none";
+    };
   }
 }

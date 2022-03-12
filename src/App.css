@@ -747,8 +747,8 @@ p {
 .solutions .solution {
   padding: 4rem 5rem;
   display: block;
-  -webkit-transition: .3s !important;
-  transition: .3s !important;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -1192,5 +1192,77 @@ p {
 
 .footer ul li {
   list-style: none;
+}
+
+.cookies-parent {
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media screen and (max-width: 576px) {
+  .cookies-parent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.cookies-parent .cookies {
+  padding: 2rem;
+  max-width: 360px;
+  background-color: #fff;
+  color: black;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: 0.3s cookies 5s forwards;
+          animation: 0.3s cookies 5s forwards;
+}
+
+@-webkit-keyframes cookies {
+  from {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes cookies {
+  from {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+.cookies-parent .cookies button {
+  margin-top: 1rem;
+  background-color: #965ffc;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=App.css.map */

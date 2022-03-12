@@ -187,14 +187,14 @@ p {
       opacity: 0;
     }
 
-    .cryptomonial{
-        margin-top: 1rem;
-        img{
-            width: 15% !important;
-            @include small{
-                width: 30% !important;
-            }
+    .cryptomonial {
+      margin-top: 1rem;
+      img {
+        width: 15% !important;
+        @include small {
+          width: 30% !important;
         }
+      }
     }
 
     .logo {
@@ -285,11 +285,11 @@ p {
   .solution {
     padding: 4rem 5rem;
     display: block;
-    transition: .3s !important;
+    transition: 0.3s !important;
     cursor: pointer;
     border-radius: 4px;
-    &:hover{
-      background-color: rgba($color: #965ffc, $alpha: .3);
+    &:hover {
+      background-color: rgba($color: #965ffc, $alpha: 0.3);
     }
   }
 
@@ -657,8 +657,8 @@ p {
 
 .footer {
   padding-top: 5rem;
-  @include small{
-      padding: 0;
+  @include small {
+    padding: 0;
   }
   position: relative;
   z-index: 999;
@@ -687,6 +687,50 @@ p {
 
     li {
       list-style: none;
+    }
+  }
+}
+
+.cookies-parent {
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: end;
+  @include small {
+    justify-content: center;
+  }
+  .cookies {
+    padding: 2rem;
+    max-width: 360px;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    animation: 0.3s cookies 5s forwards;
+
+    @keyframes cookies {
+      from {
+        transform: scaleY(0);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+    button {
+      margin-top: 1rem;
+      background-color: #965ffc;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      padding: 0.25rem 1.5rem;
+      text-transform: uppercase;
     }
   }
 }

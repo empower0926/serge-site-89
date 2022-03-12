@@ -5,6 +5,19 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
+        {/* cookie concent */}
+        <div className="cookies-parent">
+          <div className="cookies">
+            <div>
+              By using our site you agree to our use of cookies to deliver a
+              better site experience.
+            </div>
+            <div className="mt-2">
+              <button id="accept">Got it</button>
+            </div>
+          </div>
+        </div>
+
         <div className="intro">
           <div className="skip">
             <button id="skip">skip intro</button>
@@ -150,12 +163,12 @@ export default class Home extends React.Component {
               {/* cryptostations */}
               <div className="col-sm-4">
                 <Link to="cryptostations">
-                <div
-                  className="solution cs"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="300"
-                ></div>
+                  <div
+                    className="solution cs"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="300"
+                  ></div>
                 </Link>
               </div>
 
@@ -168,7 +181,9 @@ export default class Home extends React.Component {
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="600"
-                ><span className="d-none">oztcard</span></a>
+                >
+                  <span className="d-none">oztcard</span>
+                </a>
               </div>
 
               <div className="col-sm-4">
@@ -180,7 +195,9 @@ export default class Home extends React.Component {
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="900"
-                ><span className="d-none">sapian capital</span></a>
+                >
+                  <span className="d-none">sapian capital</span>
+                </a>
               </div>
             </div>
           </div>
@@ -319,7 +336,7 @@ export default class Home extends React.Component {
                               <div className="oztcard-images">
                                 <div className="oztcard-image">
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/w_700/v1606812303/ozt-card/OZTCARD_Ambassador_FACE_1_jic4b9.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647091111/ozt-card/new-gold-oztcard_4x_rot7zm.png"
                                     alt="gold oztcard"
                                   />
                                 </div>
@@ -330,7 +347,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/standard-bleu_ozt-card_ltxnjt.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647091111/ozt-card/new-standard-oztcard_4x_flij9l.png"
                                     alt="standard oztcard"
                                   />
                                 </div>
@@ -341,7 +358,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/premium-violette_ozt-card_mtj4do.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647091111/ozt-card/new-silver-oztcard_4x_vnca98.png"
                                     alt="premium oztcard"
                                   />
                                 </div>
@@ -886,6 +903,27 @@ export default class Home extends React.Component {
       navballs.classList.add("lift-up");
       logo.classList.add("logo-show");
       skip.style.display = "none";
+    };
+
+    const popup = document.querySelector(".cookies-parent");
+
+    const key = "SapianCryptomonial";
+    let cookie = {};
+
+    document.cookie.split(";").forEach(function (el) {
+      let [key, value] = el.split("=");
+      cookie[key.trim()] = value;
+    });
+
+    if (cookie[key]) {
+      popup.style.display = "none";
+    }
+
+    const accept = document.querySelector("#accept");
+    accept.onclick = (e) => {
+      const cookie = `${key}=cookie accepted;max-age=${60 * 60 * 24 * 365}`;
+      document.cookie = cookie;
+      popup.style.display = "none";
     };
   }
 }
