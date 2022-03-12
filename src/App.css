@@ -1206,7 +1206,7 @@ p {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 576px) {

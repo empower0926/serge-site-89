@@ -699,7 +699,7 @@ p {
   width: 100%;
   padding: 2rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   @include small {
     justify-content: center;
   }
