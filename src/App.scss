@@ -43,7 +43,7 @@ p {
   font-size: 1.2rem !important;
   font-weight: 300;
   @include small {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 }
 
@@ -501,9 +501,9 @@ p {
       }
 
       svg {
-        width: 70%;
+        width: 80%;
         @include small {
-          width: 50%;
+          width: 90%;
         }
         filter: grayscale(0.4);
         #b1 {
