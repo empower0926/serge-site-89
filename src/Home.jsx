@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Blocks from "./blocks";
 
 export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
-
-        
-
         {/* cookie concent */}
         <div className="cookies-parent">
           <div className="cookies">
@@ -197,7 +195,12 @@ export default class Home extends React.Component {
           </div>
         </div>
 
-        <div className="solutions">
+        <div
+          className="solutions"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+          data-aos-delay="300"
+        >
           <div className="container">
             <h4 className="mb-5">Our Solutions</h4>
             {/* (or some itroduction that suites for the heading) */}
@@ -325,8 +328,14 @@ export default class Home extends React.Component {
                               </div>
                             </div>
 
-                            <div className="col-sm-6 mt-5 text-center">
-                              <h4>ENABLE EASY ACCESS, NO ENTRY BARRIERS!</h4>
+                            <div className="col-sm-6 mt-5">
+                              <h4
+                                data-aos="fade-down"
+                                data-aos-duration="1200"
+                                data-aos-delay="300"
+                              >
+                                ENABLE EASY ACCESS, NO ENTRY BARRIERS!
+                              </h4>
                               <p
                                 data-aos="fade-up"
                                 data-aos-duration="1200"
@@ -340,31 +349,39 @@ export default class Home extends React.Component {
                                 solution.
                               </p>
 
+                              <div className="blockchains d-block d-md-none">
+                                <Blocks></Blocks>
+                              </div>
+
                               <p
                                 data-aos="fade-up"
                                 data-aos-duration="1200"
                                 data-aos-delay="600"
                               >
-                                our mainstream audience has no credit or debit
-                                card neither bank account. So by accepting
-                                payment by mobile, cash, debit card or
-                                cryptocurrency, we are enabling widely the
-                                access to our solution throughout our hardware
-                                device
-                                <span className="strong">
-                                  “FLASHCRYPTOSTATION”
-                                </span>
-                                .
+                                Our Mainstream Audience Has No Credit Or Debit
+                                Card Neither Bank Account. So By Accepting
+                                Payment By Mobile, Cash, Debit Card Or
+                                Cryptocurrency, We Are Enabling Widely The
+                                Access To Our Solution Throughout Our Hardware
+                                Device“FLASHCRYPTOSTATION”.
                               </p>
-
                               <p
                                 data-aos="fade-up"
                                 data-aos-duration="1200"
                                 data-aos-delay="900"
                               >
-                                Users will be able to buy any cryptocurrency
-                                against designated fiat and vice-versa.
+                                Users Will Be Able To Buy Any Cryptocurrency
+                                Against Designated Fiat And Vice-Versa.
                               </p>
+                            </div>
+
+                            <div className="col-md-5">
+                              <div className="blockchains d-none d-md-block">
+                                {/* <img src="https://res.cloudinary.com/sapiangroup/image/upload/v1648372155/CRYPTOMONIAL/block_1_2x_ydwbpe.png" alt="" />
+                                <img src="https://res.cloudinary.com/sapiangroup/image/upload/v1648371911/CRYPTOMONIAL/block_2x_sc45y2.png" alt="" /> */}
+
+                                <Blocks></Blocks>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -407,7 +424,13 @@ export default class Home extends React.Component {
                               </div>
                             </div>
                             <div className="col-sm-5">
-                              <h4>OZTCARD COLLECTION POINT</h4>
+                              <h4
+                                data-aos="fade-down"
+                                data-aos-duration="1200"
+                                data-aos-delay="300"
+                              >
+                                OZTCARD COLLECTION POINT
+                              </h4>
                               <p data-aos="fade-left" data-aos-duration="1200">
                                 People who don't have a fixed address can order
                                 their <span className="strong">OZTCARD</span> in
@@ -417,7 +440,12 @@ export default class Home extends React.Component {
                                 another location.
                               </p>
 
-                              <p className="mt-3">
+                              <p
+                                className="mt-3"
+                                data-aos="fade-up"
+                                data-aos-duration="1200"
+                                data-aos-delay="300"
+                              >
                                 People will not be able to remove cash from the
                                 Station, just fill it in with designated fiat
                                 currencies. Withdraw money using the OZTCARD,
@@ -448,12 +476,17 @@ export default class Home extends React.Component {
                           <div className="row justify-content-center">
                             <div className="col-sm-5 mt-5">
                               <div>
-                                <h4>FAIR REMITTANCE SERVICE</h4>
+                                <h4
+                                  data-aos="fade-down"
+                                  data-aos-duration="1200"
+                                  data-aos-delay="300"
+                                >
+                                  FAIR REMITTANCE SERVICE
+                                </h4>
 
                                 <div className="col-sm-12 d-block d-md-none">
                                   <div className="h-100 d-flex justify-content-center">
                                     <div className="my-auto particles-parent">
-                                      <div className="particles"></div>
                                       <img
                                         src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
                                         alt=""
@@ -465,7 +498,11 @@ export default class Home extends React.Component {
                                   </div>
                                 </div>
 
-                                <p>
+                                <p
+                                  data-aos="fade-up"
+                                  data-aos-duration="1200"
+                                  data-aos-delay="300"
+                                >
                                   Use the{" "}
                                   <span className="strong">CRYPTOSTATION</span>{" "}
                                   to send remittances using our unify
