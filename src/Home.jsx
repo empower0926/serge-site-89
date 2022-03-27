@@ -260,7 +260,7 @@ export default class Home extends React.Component {
 
                   <div className="section">
                     <div className="cryptostations" id="cryptostations">
-                      <h2 className="text-center">
+                      <h1 className="text-center">
                         THE{" "}
                         <span className="the-cryptostation">CRYPTOSTATION</span>{" "}
                         BY{" "}
@@ -271,7 +271,7 @@ export default class Home extends React.Component {
                             alt="FLASH"
                           />
                         </span>
-                      </h2>
+                      </h1>
                       <div className="cs-slogans">
                         <h5 className="cs-slogan">
                           ENABLE EASY ACCESS, NO ENTRY BARRIERS!
@@ -442,8 +442,7 @@ export default class Home extends React.Component {
                                 data-aos-duration="1200"
                                 data-aos-delay="300"
                               >
-                                People will not be able to remove cash from the
-                                Station, just fill it in with designated fiat
+                                People will be able to just fill it in with designated fiat
                                 currencies. Withdraw money using the OZTCARD,
                                 will be possible from a regular ATM device.
                               </p>

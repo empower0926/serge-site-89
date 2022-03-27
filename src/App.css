@@ -882,6 +882,15 @@ p {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
 }
 
 .sections-parent {
@@ -914,10 +923,6 @@ p {
 .sections-parent .for-merchents .mp-parent h4 {
   text-align: center !important;
   font-size: 18px;
-}
-
-.sections-parent .for-merchents h4 {
-  color: #53fffc;
 }
 
 .sections-parent .for-merchents span {
@@ -971,7 +976,8 @@ p {
 }
 
 .sections h4 {
-  color: #53fffc;
+  color: #fff;
+  font-weight: 500;
 }
 
 .sections .section {
@@ -1080,16 +1086,22 @@ p {
     opacity: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-filter: grayscale(0.4);
+            filter: grayscale(0.4);
   }
   50% {
     opacity: 1;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
   100% {
     opacity: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-filter: grayscale(0.4);
+            filter: grayscale(0.4);
   }
 }
 
@@ -1098,16 +1110,22 @@ p {
     opacity: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-filter: grayscale(0.4);
+            filter: grayscale(0.4);
   }
   50% {
     opacity: 1;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
   100% {
     opacity: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-filter: grayscale(0.4);
+            filter: grayscale(0.4);
   }
 }
 
@@ -1116,7 +1134,16 @@ p {
 }
 
 .sections .cryptostations .by-flash {
-  width: 115px;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+  width: 155px;
   margin: 0 0.2rem;
   -webkit-transform: translateY(-3.5px);
           transform: translateY(-3.5px);
@@ -1178,9 +1205,18 @@ p {
 .sections .cryptostations .cryptostation-images img {
   width: 100%;
   max-height: 440px;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
   -o-object-fit: contain;
      object-fit: contain;
-  opacity: 1 !important;
+  opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
