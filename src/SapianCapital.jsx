@@ -20,7 +20,7 @@ export default class SapianCapital extends React.Component {
         <div className="capital-intro">
           <video
             playsInline
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/f_auto/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
             autoPlay
             muted
             loop
@@ -34,7 +34,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="300"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
                   alt=""
                 />
               </div>
@@ -70,19 +70,19 @@ export default class SapianCapital extends React.Component {
                 <div className="capital-what-tiles">
                   <div className="capital-what">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646837784/CRYPTOMONIAL/1_zsztxq.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646837784/CRYPTOMONIAL/1_zsztxq.svg"
                       alt=""
                     />
                   </div>
                   <div className="capital-what">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646837783/CRYPTOMONIAL/2_iwehft.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646837783/CRYPTOMONIAL/2_iwehft.svg"
                       alt=""
                     />
                   </div>
                   <div className="capital-what">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646837783/CRYPTOMONIAL/3_qstbcb.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646837783/CRYPTOMONIAL/3_qstbcb.svg"
                       alt=""
                     />
                   </div>
@@ -107,7 +107,7 @@ export default class SapianCapital extends React.Component {
                     <div>
                       <a
                         className="download"
-                        href="https://res.cloudinary.com/sapiangroup/image/upload/v1646905099/CRYPTOMONIAL/SAPIAN_CAPITAL_OTC_DESK_-_V3_v9xzj8.pdf"
+                        href="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646905099/CRYPTOMONIAL/SAPIAN_CAPITAL_OTC_DESK_-_V3_v9xzj8.pdf"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -229,7 +229,7 @@ export default class SapianCapital extends React.Component {
                   <div>
                     {" "}
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646857321/CRYPTOMONIAL/how-does-it-work_ditqq6.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646857321/CRYPTOMONIAL/how-does-it-work_ditqq6.svg"
                       alt=""
                     />
                   </div>
@@ -354,7 +354,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="200"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/oztg_q7buj2.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/oztg_q7buj2.svg"
                   alt=""
                 />
               </div>
@@ -365,7 +365,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="400"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/BTC_uujllp.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/BTC_uujllp.svg"
                   alt=""
                 />
               </div>
@@ -376,7 +376,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="600"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/eth_fpvjkw.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/eth_fpvjkw.svg"
                   alt=""
                 />
               </div>
@@ -387,7 +387,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="800"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865513/CRYPTOMONIAL/xmr_th3r0p.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865513/CRYPTOMONIAL/xmr_th3r0p.svg"
                   alt=""
                 />
               </div>
@@ -398,7 +398,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="1000"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/eur_vm2ho8.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/eur_vm2ho8.svg"
                   alt=""
                 />
               </div>
@@ -409,7 +409,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="1200"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/usd_a0vpk4.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/usd_a0vpk4.svg"
                   alt=""
                 />
               </div>
@@ -420,7 +420,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="1400"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/gbp_tihika.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/gbp_tihika.svg"
                   alt=""
                 />
               </div>
@@ -444,7 +444,7 @@ export default class SapianCapital extends React.Component {
               <div className="col-sm-4">
                 <div className="text-center">
                   <img
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646857769/CRYPTOMONIAL/eligibility_dex3xq.svg"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646857769/CRYPTOMONIAL/eligibility_dex3xq.svg"
                     alt=""
                   />
                 </div>
@@ -472,7 +472,7 @@ export default class SapianCapital extends React.Component {
                 <div class="col-sm-12 col-md-4 text-center text-md-left">
                   <div class="logo">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
                       style={{ width: "40%" }}
                       alt="sapian group logo"
                     ></img>
@@ -540,7 +540,7 @@ export default class SapianCapital extends React.Component {
                       href="https://blog.flashmoni.io/"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
                         alt="medium"
                       ></img>
                     </a>
@@ -551,7 +551,7 @@ export default class SapianCapital extends React.Component {
                       href="https://www.facebook.com/flashmoni.official"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
                         alt="facebook"
                       ></img>
                     </a>
@@ -562,7 +562,7 @@ export default class SapianCapital extends React.Component {
                       href="https://twitter.com/Flashmoniltd"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
                         alt="twitter"
                       ></img>
                     </a>
@@ -573,7 +573,7 @@ export default class SapianCapital extends React.Component {
                       href="https://instagram.com/sapian_group?utm_medium=copy_link"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
                         alt="instagram"
                       ></img>
                     </a>
@@ -584,12 +584,12 @@ export default class SapianCapital extends React.Component {
                       href="https://www.linkedin.com/company/sapian-group/"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
                         alt="linkedin"
                       ></img>
                     </a>
                     {/* <a class="mx-1" target="_blank" href="http://flashmoni.dribbble.com/"><img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
                                     alt="dribbble"></img></a> */}
                   </div>
                 </div>
