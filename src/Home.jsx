@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Bub from "./bubs";
 
 export default class Home extends React.Component {
   render() {
@@ -25,7 +26,7 @@ export default class Home extends React.Component {
           <div className="intro-video">
             <video
               playsInline
-              className="intro-video"
+              className="intro-video tunnel"
               src="https://res.cloudinary.com/sapiangroup/video/upload/v1646695015/CRYPTOMONIAL/Tunnel_-_27438_1_w28dvt.mp4"
               autoPlay
               muted
@@ -132,24 +133,34 @@ export default class Home extends React.Component {
         </div>
 
         <div className="definition">
-          <video
+          {/* <video
             playsInline
             id="globe-video"
             src="https://res.cloudinary.com/sapiangroup/video/upload/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
             autoPlay
             muted
             loop
-          ></video>
+          ></video> */}
           <div className="container what-is">
             <div className="row justify-content-center">
-              <div className="col col-md-5 my-auto">
-                <h2>WHAT IS CRYPTOMONIAL ENINEERING?</h2>
-                <p className="ce-desc">
+              <div className="col col-md-6 my-auto">
+                <h4 data-aos="fade-up" data-aos-duration="800">WHAT IS</h4>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">CRYPTOMONIAL ENINEERING?</h1>
+                {/* <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="600"></h1> */}
+                <div className="d-block d-md-none" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200">
+                  <img src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png" alt="" />
+                </div>
+                <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="1200" className="ce-desc">
                   Cryptomonial Engineering is new approach to catalyze the
                   uncontrollable additional wealth created by crypto-asset
-                  owners with a 360’ crypto-finance solution through our OTC
-                  desk.
+                  owners with a 360’ crypto-finance solution.
                 </p>
+              </div>
+
+              <div className="col-md-6">
+                <div className="d-none d-md-block" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200">
+                  <img src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
