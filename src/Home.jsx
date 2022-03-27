@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Bub from "./bubs";
 
 export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
+
+        
+
         {/* cookie concent */}
         <div className="cookies-parent">
           <div className="cookies">
@@ -144,13 +146,34 @@ export default class Home extends React.Component {
           <div className="container what-is">
             <div className="row justify-content-center">
               <div className="col col-md-6 my-auto">
-                <h4 data-aos="fade-up" data-aos-duration="800">WHAT IS</h4>
-                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">CRYPTOMONIAL ENINEERING?</h1>
+                <h4 data-aos="fade-up" data-aos-duration="800">
+                  WHAT IS
+                </h4>
+                <h1
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="600"
+                >
+                  CRYPTOMONIAL ENINEERING?
+                </h1>
                 {/* <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="600"></h1> */}
-                <div className="d-block d-md-none" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200">
-                  <img src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png" alt="" />
+                <div
+                  className="d-block d-md-none"
+                  data-aos="zoom-in"
+                  data-aos-duration="1200"
+                  data-aos-delay="1200"
+                >
+                  <img
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
+                    alt=""
+                  />
                 </div>
-                <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="1200" className="ce-desc">
+                <p
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="1200"
+                  className="ce-desc"
+                >
                   Cryptomonial Engineering is new approach to catalyze the
                   uncontrollable additional wealth created by crypto-asset
                   owners with a 360’ crypto-finance solution.
@@ -158,8 +181,16 @@ export default class Home extends React.Component {
               </div>
 
               <div className="col-md-6">
-                <div className="d-none d-md-block" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200">
-                  <img src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png" alt="" />
+                <div
+                  className="d-none d-md-block"
+                  data-aos="zoom-in"
+                  data-aos-duration="1200"
+                  data-aos-delay="1200"
+                >
+                  <img
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
