@@ -900,75 +900,116 @@ p {
   background-size: cover;
 }
 
-.sections-parent .for-merchents {
-  margin: 5rem 0;
-  position: relative;
-  width: 100%;
-}
-
-.sections-parent .for-merchents .mp-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: justify !important;
-}
-
-@media screen and (max-width: 576px) {
-  .sections-parent .for-merchents .mp-parent {
-    display: block;
-    text-align: center !important;
-  }
-}
-
-.sections-parent .for-merchents .mp-parent h4 {
-  text-align: center !important;
-  font-size: 18px;
-}
-
-.sections-parent .for-merchents span {
-  display: inline-block;
-  margin: 1rem 0;
-  width: 100%;
+.sections-parent .for-merchents-h {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.sections-parent .for-merchents span img {
-  width: 80px;
-}
-
-.sections-parent .for-merchents .store-img {
-  margin-top: 5rem;
-}
-
-.sections-parent .for-merchents .store-img img {
-  width: 80%;
-}
-
-@media screen and (max-width: 576px) {
-  .sections-parent .for-merchents .tr {
-    text-align: center !important;
-  }
-}
-
-.sections-parent .for-merchents p {
-  width: 500px;
-  margin: 0 !important;
-}
-
-.sections-parent .for-merchents .merchant-heading {
-  margin: 5rem 0;
-}
-
-.sections-parent .for-merchents .merchant-perk {
-  margin: 0.5rem 1rem;
+.sections-parent .for-merchents {
+  margin-bottom: 5rem;
   width: 100%;
-  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sections-parent .for-merchents .slider-parent {
+  position: relative;
+}
+
+.sections-parent .for-merchents .next {
+  position: absolute;
+  right: -3rem;
+  top: -1rem;
+  z-index: 999;
 }
 
 @media screen and (max-width: 576px) {
-  .sections-parent .for-merchents .merchant-perk {
-    margin: 0;
+  .sections-parent .for-merchents .next {
+    right: 1rem;
+    top: -4rem;
   }
+}
+
+.sections-parent .for-merchents .next button {
+  margin-top: 1rem;
+  border: none;
+  background-color: rgba(23, 10, 34, 0.1);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px !important;
+}
+
+.sections-parent .for-merchents .next button svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 576px) {
+  .sections-parent .for-merchents .next button {
+    margin-top: 5rem;
+  }
+}
+
+.sections-parent .for-merchents .slides {
+  position: relative;
+  padding: 5rem;
+  width: 720px;
+  height: 420px;
+}
+
+@media screen and (max-width: 576px) {
+  .sections-parent .for-merchents .slides {
+    width: 320px;
+  }
+}
+
+.sections-parent .for-merchents .slides .slide {
+  text-align: center;
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5b02ff;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 2rem;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media screen and (max-width: 576px) {
+  .sections-parent .for-merchents .slides .slide {
+    height: 470px;
+  }
+}
+
+.sections-parent .for-merchents .slides .slide-left {
+  left: 100% !important;
+  opacity: 0 !important;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.sections-parent .for-merchents .slides .merc-img img {
+  width: 164px;
+}
+
+.sections-parent .for-merchents .slides .merc-header h2 {
+  font-weight: 400;
 }
 
 .sections {
