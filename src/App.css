@@ -400,6 +400,7 @@ p {
 
 @media screen and (max-width: 576px) {
   p {
+    text-align-last: center;
     font-size: 12px;
   }
 }
@@ -779,83 +780,88 @@ p {
 }
 
 .sections-parent {
-  background: -webkit-gradient(linear, left bottom, left top, from(#150129), to(black));
-  background: linear-gradient(0deg, #150129 0%, black 100%);
+  color: white;
 }
 
-.sections-parent .for-merchents {
+.sections-parent .for-merchants {
   margin: 5rem 0;
   position: relative;
   width: 100%;
 }
 
-.sections-parent .for-merchents .mp-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: justify !important;
-}
-
-@media screen and (max-width: 576px) {
-  .sections-parent .for-merchents .mp-parent {
-    display: block;
-    text-align: center !important;
-  }
-}
-
-.sections-parent .for-merchents .mp-parent h4 {
-  text-align: center !important;
-  font-size: 18px;
-}
-
-.sections-parent .for-merchents h4 {
+.sections-parent .for-merchants h4 {
   color: #53fffc;
 }
 
-.sections-parent .for-merchents span {
+.sections-parent .for-merchants span {
   display: inline-block;
   margin: 1rem 0;
   width: 100%;
   text-align: center;
 }
 
-.sections-parent .for-merchents span img {
+.sections-parent .for-merchants span img {
   width: 80px;
 }
 
-.sections-parent .for-merchents .store-img {
+.sections-parent .for-merchants .store-img {
   margin-top: 5rem;
 }
 
-.sections-parent .for-merchents .store-img img {
+.sections-parent .for-merchants .store-img img {
   width: 80%;
 }
 
 @media screen and (max-width: 576px) {
-  .sections-parent .for-merchents .tr {
+  .sections-parent .for-merchants .tr {
     text-align: center !important;
   }
 }
 
-.sections-parent .for-merchents p {
+.sections-parent .for-merchants p {
   width: 500px;
   margin: 0 !important;
 }
 
-.sections-parent .for-merchents .merchant-heading {
+.sections-parent .for-merchants .merchant-heading {
   margin: 5rem 0;
 }
 
-.sections-parent .for-merchents .merchant-perk {
+.sections-parent .for-merchants .merchant-perk {
   margin: 0.5rem 1rem;
   width: 100%;
   font-size: 12px;
+  text-align: center;
+}
+
+.sections-parent .for-merchants .merchant-perk img {
+  width: 124px;
+  height: 124px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sections-parent .for-merchants .merchant-perk img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (max-width: 576px) {
-  .sections-parent .for-merchents .merchant-perk {
+  .sections-parent .for-merchants .merchant-perk {
     margin: 0;
   }
+}
+
+.sections-parent .for-merchants .merchant-perk button {
+  background: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.sections-parent .for-merchants .merchant-perk button:hover {
+  background-color: rgba(150, 95, 252, 0.5);
 }
 
 .sections {
@@ -945,12 +951,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  padding: 5rem 0;
+  background-color: #d9d9d9;
 }
 
 .sections .cryptostations .cryptostation-images img {
   width: 50%;
   margin: 0 1rem;
-  opacity: 1 !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -960,9 +967,21 @@ p {
           transform: scale(1.1) !important;
 }
 
-.sections .cryptostations .cryptostation-images img:nth-child(2) {
-  opacity: 1 !important;
+.sections .cryptostations .cryptostation-images .station-1 {
+  -webkit-transform: translateY(10px) translateX(250px);
+          transform: translateY(10px) translateX(250px);
+}
+
+.sections .cryptostations .cryptostation-images .station-2 {
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
+  width: 90%;
+}
+
+.sections .cryptostations .cryptostation-images .station-3 {
   width: 50% !important;
+  -webkit-transform: translateY(50px) translateX(-250px);
+          transform: translateY(50px) translateX(-250px);
 }
 
 @media screen and (max-width: 576px) {
@@ -973,6 +992,30 @@ p {
   .sections .cryptostations .cryptostation-images img:nth-child(2) {
     width: 30%;
   }
+}
+
+.sections .cryptostations .red-stations {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d9d9d9;
+}
+
+.sections .cryptostations .red-stations .red-station:nth-child(1) {
+  width: 50%;
+  -webkit-transform: translateY(-100px) translateX(100px);
+          transform: translateY(-100px) translateX(100px);
+}
+
+.sections .cryptostations .red-stations .red-station:nth-child(2) {
+  width: 50%;
+  -webkit-transform: translateY(155px) translateX(230px);
+          transform: translateY(155px) translateX(230px);
+}
+
+.sections .cryptostations .red-stations img {
+  width: 50%;
 }
 
 .sections .cryptostations .oztcard {
@@ -1026,6 +1069,12 @@ p {
 
 .sections .cryptostations .oztcard .oztcard-images .oztcard-image {
   position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sections .cryptostations .oztcard .oztcard-images .oztcard-image:hover {
+  z-index: 999999 !important;
 }
 
 .sections .cryptostations .oztcard .oztcard-images .oztcard-image img {
