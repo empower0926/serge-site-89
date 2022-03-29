@@ -4,6 +4,7 @@ export default class SapianCapital extends React.Component {
   render() {
     return (
       <div className="sapian-capital">
+       
         {/* cookie concent */}
         <div className="cookies-parent">
           <div className="cookies">
@@ -107,7 +108,7 @@ export default class SapianCapital extends React.Component {
                     <div>
                       <a
                         className="download"
-                        href="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646905099/CRYPTOMONIAL/SAPIAN_CAPITAL_OTC_DESK_-_V3_v9xzj8.pdf"
+                        href="https://res.cloudinary.com/sapiangroup/image/upload/v1648494434/sapian/SAPIAN_CAPITAL_OTC_DESK_-_V3_hvadlq.pdf"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -122,99 +123,123 @@ export default class SapianCapital extends React.Component {
         </div>
 
         <div className="capital-four-parts">
-          <div className="container">
+          <div className="container four-parts-container">
             <div className="row">
               <div className="col text-center">
                 <h2>SERENITY CAN BE SUMMED UP IN 4 POINTS</h2>
               </div>
             </div>
-
-            <div className="capital-parts">
-              <div
-                className="capital-part discord"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="300"
-              >
-                <h4>24/7 SUPPORT</h4>
-                <div>
-                  <p>
-                    For any request for contact and interview, an email is at
-                    your disposal in addition to a phone number for urgent
-                    requests.
-                  </p>
-                  <p>We ensure appointments from Monday to Friday.</p>
-                </div>
-                <div>
-                  <span>Reach us: </span>
-                  <a href="mailto:mailto:support@sapiancapital.com">
-                    support@sapiancapital.com
-                  </a>
-                </div>
-              </div>
-
-              <div
-                className="capital-part capital-cryptomonial text-right"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="600"
-              >
-                <h4>CRYPTOMONIAL ENGINEERING</h4>
-                <div>
-                  <p>
-                    Every situation being different, customization is the key to
-                    your success.
-                  </p>
-                  <p>
-                    Therefore, we have developed, in addition to the traditional
-                    OTC, a service of follow-up, asset engineering and tax
-                    optimization.
-                  </p>
-                  <p>It is called Cryptomonial Engineering.</p>
-
-                  <div>
-                    <a href="/">Learn more about CRYPTOMONIAL</a>
+            <div className="row justify-content-center mt-0 mt-md-5">
+              <div className="col-md-3">
+                <div className="capital-part-nav d-none d-md-block">
+                  <div className="cap-nav">
+                    <span>Support 24/7</span>
+                  </div>
+                  <div className="cap-nav">
+                    <span>Cryptomonial Engineering</span>
+                  </div>
+                  <div className="cap-nav">
+                    <span>Fair fees</span>
+                  </div>
+                  <div className="cap-nav">
+                    <span>OZT CARD</span>
                   </div>
                 </div>
               </div>
 
-              <div
-                className="capital-part fair-fees"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="900"
-              >
-                <h4>FAIR FEES</h4>
-                <div>
-                  <p>
-                    Depending on your situation, we will work out the best
-                    market price for you in a clear and transparent manner.
-                  </p>
-                  <p>
-                    In order to be 100% in tune with your situation, it depends
-                    on the whole of it taking into account for example:{" "}
-                    <span className="capital-accent">
-                      Your country, The period, The amount, Liquidity and
-                      volatility of the desired asset base, Orientation of the
-                      fiat
-                    </span>
-                    ...
-                  </p>
-                </div>
-              </div>
+              <div className="col-md-6">
+                <div className="four-parts">
+                  <div className="part">
+                    <h2 className="d-block d-md-none">Support 24/7</h2>
+                    <p>
+                      For any request for contact and interview, an email is at
+                      your disposal in addition to a phone number for urgent
+                      requests.
+                    </p>
+                    <p>We ensure appointments from Monday to Friday.</p>
+                  </div>
+                  <div className="part">
+                    <h2 className="d-block d-md-none">
+                      Cryptomonial Engineering
+                    </h2>
+                    <p>
+                      Every situation being different, customization is the key
+                      to your success.
+                    </p>
+                    <p>
+                      Therefore, we have developed, in addition to the
+                      traditional OTC, a service of follow-up, asset engineering
+                      and tax optimization.
+                    </p>
+                    <p>It is called Cryptomonial Engineering.</p>
+                    <div>
+                      <a href="/">LEARN MORE</a>
+                    </div>
+                  </div>
+                  <div className="part">
+                    <h2 className="d-block d-md-none">Fair fees</h2>
+                    <p>
+                      Depending on your situation, we will work out the best
+                      market price for you in a clear and transparent manner.
+                    </p>
+                    <p>
+                      In order to be 100% in tune with your situation, it
+                      depends on the whole of it taking into account for
+                      example:
+                    </p>
 
-              <div
-                className="capital-part capital-oztcard"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="1200"
-              >
-                <h4>OZTCARD</h4>
-                <p>
-                  Benefiting from the highest level of security by being
-                  unlocked via a fingerprint sensor.
-                </p>
-                <p>the OZT CARD GOLD allow serenity during the transactions.</p>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-6">
+                          <ul>
+                            <li>
+                              <span>Your country</span>
+                            </li>
+                            <li>
+                              <span>The period</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="col-6">
+                          <ul>
+                            <li>
+                              <span>The amount</span>
+                            </li>
+                            {/* <li>
+                              <span>
+                                Liquidity and volatility of the desired asset
+                                base
+                              </span>
+                            </li> */}
+                            <li>
+                              <span>Orientation of the fiat</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="part">
+                    <h2 className="d-block d-md-none">OZT CARD</h2>
+                    <p>
+                      Benefiting from the highest level of security by being
+                      unlocked via a fingerprint sensor.
+                    </p>
+                    <p>
+                      the OZT CARD GOLD allow serenity during the transactions.
+                    </p>
+                    <div>
+                      <a
+                        href="https://oztcard.com/"
+                        rel="norefferer"
+                        target="_blank"
+                      >
+                        OZTCARD.COM
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -229,7 +254,7 @@ export default class SapianCapital extends React.Component {
                   <div>
                     {" "}
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646857321/CRYPTOMONIAL/how-does-it-work_ditqq6.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1648551741/CRYPTOMONIAL/Asset_2_4x_tt8yyo.png"
                       alt=""
                     />
                   </div>
@@ -246,9 +271,7 @@ export default class SapianCapital extends React.Component {
               <div className="col-sm-3">
                 <div
                   className="escrow-point"
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  data-aos-delay="300"
+                  
                 >
                   Escrow involves placing the funds from the transaction in an
                   escrow account.
@@ -257,9 +280,7 @@ export default class SapianCapital extends React.Component {
               <div className="col-sm-3">
                 <div
                   className="escrow-point"
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  data-aos-delay="600"
+                  
                 >
                   The latter will then act as guarantor of the proper execution
                   of the contract by delivering the funds only if the terms of
@@ -269,9 +290,7 @@ export default class SapianCapital extends React.Component {
               <div className="col-sm-3">
                 <div
                   className="escrow-point"
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  data-aos-delay="900"
+                 
                 >
                   TAs a true justice of the peace, the escrow account ensures
                   that all of the terms and conditions of each of the parties
@@ -657,5 +676,32 @@ export default class SapianCapital extends React.Component {
       document.cookie = cookie;
       popup.style.display = "none";
     };
+
+    const partHeaders = Array.from(document.querySelectorAll(".cap-nav"));
+    const parts = Array.from(document.querySelectorAll(".part"));
+
+    const part = parts.shift();
+    part.classList.toggle("expand");
+    parts.push(part);
+
+    const partHeader = partHeaders.shift();
+    partHeader.classList.toggle("fill");
+    partHeaders.push(partHeader);
+
+    setInterval(() => {
+      const part = parts.shift();
+      part.classList.toggle("expand");
+      parts.forEach((element) => {
+        element.classList.remove("expand");
+      });
+      parts.push(part);
+
+      const partHeader = partHeaders.shift();
+      partHeader.classList.toggle("fill");
+      partHeaders.forEach((element) => {
+        element.classList.remove("fill");
+      });
+      partHeaders.push(partHeader);
+    }, 5000);
   }
 }

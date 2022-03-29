@@ -104,7 +104,7 @@ export default class Home extends React.Component {
               <img
                 data-aos="fade-in"
                 data-aos-duration="900"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1648538457/CRYPTOMONIAL/cryptostations/flash-cryptostaion_ivnsoe.svg"
                 alt=""
               />
             </div>
@@ -151,7 +151,7 @@ export default class Home extends React.Component {
                 <h1
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  data-aos-delay="600"
+                  data-aos-delay="300"
                 >
                   CRYPTOMONIAL ENINEERING?
                 </h1>
@@ -160,7 +160,7 @@ export default class Home extends React.Component {
                   className="d-block d-md-none"
                   data-aos="zoom-in"
                   data-aos-duration="1200"
-                  data-aos-delay="1200"
+                  data-aos-delay="600"
                 >
                   <img
                     src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
@@ -170,7 +170,7 @@ export default class Home extends React.Component {
                 <p
                   data-aos="fade-right"
                   data-aos-duration="800"
-                  data-aos-delay="1200"
+                  data-aos-delay="600"
                   className="ce-desc"
                 >
                   Cryptomonial Engineering is new approach to catalyze the
@@ -184,7 +184,7 @@ export default class Home extends React.Component {
                   className="d-none d-md-block"
                   data-aos="zoom-in"
                   data-aos-duration="1200"
-                  data-aos-delay="1200"
+                  data-aos-delay="600"
                 >
                   <img
                     src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
@@ -198,7 +198,7 @@ export default class Home extends React.Component {
 
         <div
           className="solutions"
-          data-aos="zoom-in"
+          data-aos="fade-down"
           data-aos-duration="1200"
           data-aos-delay="300"
         >
@@ -553,9 +553,15 @@ export default class Home extends React.Component {
 
                       {/* for the merchents */}
                       <div className="for-merchents-h">
-                          <h1>FOR THE MERCHANTS</h1>
-                        </div>
-                      <div className="for-merchents">
+                        <h1 data-aos="fade-up" data-aos-duration="1200">
+                          FOR THE MERCHANTS
+                        </h1>
+                      </div>
+                      <div
+                        className="for-merchents"
+                        data-aos="fade-down"
+                        data-aos-duration="1200"
+                      >
                         <div className="slider-parent">
                           <div className="slides">
                             {/* 5 */}
@@ -669,8 +675,10 @@ export default class Home extends React.Component {
                           </div>
 
                           <div className="next">
-                              <button><Next></Next></button>
-                            </div>
+                            <button>
+                              <Next></Next>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -960,12 +968,11 @@ export default class Home extends React.Component {
     const next = document.querySelector(".next");
     let i = slides.length - 1;
     next.onclick = (e) => {
-
       slides[i--].classList.toggle("slide-left");
       if (i < 0) {
         i = slides.length - 1;
         slides.forEach((slide) => {
-          slide.classList.remove('slide-left');
+          slide.classList.remove("slide-left");
         });
       }
     };

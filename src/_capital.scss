@@ -1,12 +1,12 @@
 .sapian-capital {
   margin: 0;
   padding: 0;
-  background-color: white !important;
   color: black !important;
-  background: url(https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646824625/CRYPTOMONIAL/hexagons_gb5nb1.svg);
-  background-size: 80%;
-  background-attachment: fixed;
-  padding-bottom: 15rem;
+  background-color: #fff !important;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648553637/CRYPTOMONIAL/hex-1_1_dqahh2.svg);
+  background-size: 100%;
+  // background-attachment: fixed;
+  // padding-bottom: 15rem;
 
   @include small {
     background-size: cover;
@@ -63,7 +63,7 @@
       width: 100%;
       height: 100vh;
       object-fit: cover;
-      opacity: 0.4;
+      filter: blur(30px);
       @include small {
         height: 50vh;
       }
@@ -75,8 +75,6 @@
     width: 100%;
     height: fit-content;
     padding: 8rem 0;
-    background-position: top;
-
     h4 {
       @include small {
         font-size: 15px;
@@ -96,7 +94,7 @@
       display: inline-block;
       padding: 0.5rem 1rem;
       color: white;
-      background-color: #0b92e7;
+      background-color: #0f38c7;
       border-radius: 4px;
       transition: 0.3s;
       &:hover {
@@ -151,66 +149,131 @@
   }
 
   .capital-four-parts {
-    // text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    .capital-parts {
-      margin-top: 2rem;
+    h2 {
+      color: white;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      color: #0b92e7;
+      background-color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s;
+      &:hover {
+        color: #fff;
+        background-color: #0568a5;
+      }
+    }
+    .four-parts-container {
+      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 2rem;
+      border-radius: 1rem;
+      @include small {
+        border-radius: 0;
+      }
+    }
+
+    .capital-part-nav {
+      .cap-nav {
+        width: fit-content;
+        padding: 0.5rem 2rem;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        transition: 0.3s ease-in-out;
+        span {
+          font-size: 1rem;
+          font-weight: 400;
+          display: inline-block;
+          margin: auto;
+        }
+      }
+
+      .fill {
+        background-color: #fff !important;
+        border: 2px #0b92e7 solid;
+        color: #0b92e7 !important;
+      }
+    }
+
+    .four-parts {
+      position: relative;
       display: flex;
       justify-content: center;
       width: 100%;
-      //   height: 50vh;
-
-      @include small {
-        display: block;
-      }
-      .capital-part {
-        width: 340px;
-        flex-wrap: nowrap;
-        background-color: rgba($color: #fff, $alpha: 1);
-        // border: solid 2px #0b92e7;
-        box-shadow: 0 15px 15px rgba($color: #0568a5, $alpha: 0.2);
-        font-weight: 300;
+      height: 270px;
+      .part {
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: #fff;
+        border-radius: 1rem;
+        color: #fff;
         padding: 1.5rem;
-        margin: 1rem 1rem;
-        border-radius: 8px;
-        a {
-          text-decoration: none;
-          color: #0b92e7;
-          font-weight: 400;
-          transition: 0.3s;
-          &:hover {
-            color: #0568a5;
-          }
+        transition: 1s;
+        transform: scale(0);
+        opacity: 0;
+        &:nth-child(1) {
+          z-index: 999;
         }
-        h4 {
-          color: #0b92e7;
-          font-size: 16px;
-          font-weight: 400;
+        &:nth-child(2) {
+          z-index: 998;
+        }
+        &:nth-child(3) {
+          z-index: 9997;
+        }
+        &:nth-child(4) {
+          z-index: 9996;
         }
       }
 
-      .discord {
-        a {
-          margin-right: 0.5rem;
-          img {
-            width: 46px;
-          }
-        }
+      .fold {
+        opacity: 0 !important;
+        transform: scale(0) !important;
+      }
+      .expand {
+        opacity: 1 !important;
+        transform: scale(1) !important;
       }
     }
   }
 
   .capital-how-does-it-work {
-    margin-top: 5rem;
+    margin-top: 12rem;
     width: 100%;
-    // height: 40vh;
-    // background-color: white;
+    h2{
+      margin-bottom: 5rem;
+    }
+    @include small {
+      h2{
+        margin-bottom: 2rem;
+      }
+      margin-top: 5rem;
+    }
 
     .capital-map {
       text-align: center;
       img {
-        width: 45%;
+        image-rendering: -moz-crisp-edges; /* Firefox */
+      image-rendering: -o-crisp-edges; /* Opera */
+      image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+        width: 60%;
         @include small {
           width: 90%;
         }
@@ -226,18 +289,36 @@
 
     .escrow-point {
       text-align: center;
-      margin-top: 1rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba($color: #0f38c7, $alpha: .2);
+      height: 100%;
       font-weight: 300;
+      padding: 1rem;
+      color: white;
+      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png) no-repeat;
+      background-size: 90% !important;
+      background-position: center !important;
+      background-attachment: fixed !important;
+      background-color: #0f38c7;
+
     }
     p {
-      font-weight: 300;
+      font-size: 1.2rem !important;
+      font-weight: 500;
+      color:#0f38c7;
     }
 
     .escrow-step {
       padding: 0.5rem;
-      background-color: #0b92e7;
+      background-color: #0f38c7;
       color: white;
       border-radius: 4px;
+      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png) no-repeat;
+      background-size: 90% !important;
+      background-position: center !important;
+      background-attachment: fixed !important;
     }
   }
 
@@ -245,6 +326,9 @@
     margin-top: 5rem;
     width: 100%;
     height: 40vh;
+    background: url(https://www.sapiancapital.com/assets/images/new/Infographic-03.svg) no-repeat;
+    background-size: cover;
+    // background-position: center;
     @include small {
       text-align: center;
     }

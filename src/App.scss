@@ -96,7 +96,7 @@ p {
     height: 100vh;
     object-fit: cover;
     transition: 0.8s;
-    transform: translateX(5px);
+    // transform: translateX(5px);
     @include small {
       object-fit: cover;
     }
@@ -120,6 +120,7 @@ p {
   .cryptostation-intro-image {
     opacity: 0;
     object-fit: cover !important;
+    object-position: -210px;
   }
 
   .oztcard-video {
@@ -347,14 +348,35 @@ p {
 
 .solutions {
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648538554/CRYPTOMONIAL/bg_4x_kpxgb7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  animation: bg 60s ease-in-out infinite;
+  @include small{
+    animation: none;
+    background-size: cover;
+  }
+  @keyframes bg {
+    0%{
+      background-size: 100%;
+    }
+
+    50%{
+      background-size: 120%;
+    }
+    100%{
+      background-size: 100%;
+    }
+  }
   .sol-pannel {
     padding: 2rem;
   }
 
   h1 {
     font-weight: 400 !important;
-    color: rgb(24, 5, 78);
+    color: #fff;
     text-transform: uppercase;
   }
   .solution {
@@ -369,13 +391,13 @@ p {
   }
 
   .cs {
-    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648402970/CRYPTOMONIAL/cryptostations/FLASH-CRYPTOSTATION_jpwhg2.svg);
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648538457/CRYPTOMONIAL/cryptostations/flash-cryptostaion_ivnsoe.svg);
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: center;
   }
   .sc {
-    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648402970/CRYPTOMONIAL/cryptostations/SAPIAN-CAPITAL_lnubyi.svg);
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -385,11 +407,6 @@ p {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-    image-rendering: -moz-crisp-edges; /* Firefox */
-    image-rendering: -o-crisp-edges; /* Opera */
-    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   }
 }
 
@@ -425,6 +442,11 @@ p {
       }
       z-index: 999;
       button {
+        transition: .3s;
+        &:hover{
+          opacity: .5;
+          transform: scale(1.1);
+        }
         svg {
           width: 32px;
           height: 32px;
@@ -472,16 +494,7 @@ p {
         background-size: cover;
         padding: 2rem;
         transition: 1s ease-in-out;
-        // box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.1);
         transform: scale(1);
-        // &:nth-child(4) {
-        //   left: 150px;
-        //   transform: scale(.8);
-        // }
-        // &:nth-child(3) {
-        //   left: -150px;
-        //   transform: scale(.8);
-        // }
       }
 
       .slide-left {
@@ -492,7 +505,10 @@ p {
 
       .merc-img {
         img {
-          width: 164px;
+          width: 132px;
+          height: 132px;
+          object-fit: cover;
+          margin-bottom: 1rem;
         }
       }
 
