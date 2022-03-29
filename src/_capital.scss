@@ -1,13 +1,15 @@
 .sapian-capital {
   margin: 0;
   padding: 0;
-  color: black !important;
+  color: white !important;
   background-color: #fff !important;
-  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648553637/CRYPTOMONIAL/hex-1_1_dqahh2.svg);
-  background-size: 100%;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1648560634/CRYPTOMONIAL/bg_1_4x_nuyw1w.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   // background-attachment: fixed;
   // padding-bottom: 15rem;
-
+  
   @include small {
     background-size: cover;
   }
@@ -18,11 +20,37 @@
 
   .capital-intro {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     text-align: center;
-    background-color: #000000;
+    // background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648561519/CRYPTOMONIAL/bg_4x_nccsuy.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white !important;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    .scroll{
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      // background-color: white;
+      bottom: 5rem;
+      animation: float 2s ease-in-out infinite;
+      cursor: pointer;
+      z-index: 9999;
+      @keyframes float {
+        0%{
+          transform: translateY(0);
+        }
+        50%{
+          transform: translateY(15px);
+        }
+        100%{
+          transform: translateY(0);
+        }
+      }
+    }
 
     @include small {
       height: 50vh;
@@ -63,7 +91,6 @@
       width: 100%;
       height: 100vh;
       object-fit: cover;
-      // filter: blur(30px);
       @include small {
         height: 50vh;
       }
@@ -135,6 +162,7 @@
       }
       .capital-perk {
         opacity: 0.5;
+        color: white !important;
         font-size: 0.8rem;
         transition: 0.5s;
         @include small {
@@ -167,7 +195,8 @@
       }
     }
     .four-parts-container {
-      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png) no-repeat;
+      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png)
+        no-repeat;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -255,11 +284,11 @@
   .capital-how-does-it-work {
     margin-top: 12rem;
     width: 100%;
-    h2{
+    h2 {
       margin-bottom: 5rem;
     }
     @include small {
-      h2{
+      h2 {
         margin-bottom: 2rem;
       }
       margin-top: 5rem;
@@ -269,10 +298,10 @@
       text-align: center;
       img {
         image-rendering: -moz-crisp-edges; /* Firefox */
-      image-rendering: -o-crisp-edges; /* Opera */
-      image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-      image-rendering: crisp-edges;
-      -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+        image-rendering: -o-crisp-edges; /* Opera */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
         width: 60%;
         @include small {
           width: 90%;
@@ -290,27 +319,27 @@
     .escrow-point {
       text-align: center;
       margin-top: 2rem;
-      @include small{
+      @include small {
         margin: 1rem;
       }
       font-size: 1.2rem;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba($color: #0f38c7, $alpha: .2);
+      box-shadow: 0 5px 15px rgba($color: #0f38c7, $alpha: 0.2);
       height: 100%;
       font-weight: 300;
       padding: 1rem;
       color: white;
-      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png) no-repeat;
+      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png)
+        no-repeat;
       background-size: cover !important;
       background-position: center !important;
       background-attachment: fixed !important;
       background-color: #0f38c7;
-
     }
     p {
       font-size: 1rem !important;
       font-weight: 400;
-      color:#000000;
+      color: #fff;
       text-align: justify;
       text-align-last: center;
     }
@@ -320,7 +349,8 @@
       background-color: #0f38c7;
       color: white;
       border-radius: 4px;
-      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png) no-repeat;
+      background: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648550502/CRYPTOMONIAL/bg_4x_kj7bxf.png)
+        no-repeat;
       background-size: 90% !important;
       background-position: center !important;
       background-attachment: fixed !important;
@@ -332,7 +362,7 @@
     margin-top: 5rem;
     width: 100%;
     // height: 40vh;
-    background: url(https://www.sapiancapital.com/assets/images/new/Infographic-03.svg) no-repeat;
+    // background: url(https://www.sapiancapital.com/assets/images/new/Infographic-03.svg) no-repeat;
     background-size: cover;
     background-position: center;
     @include small {

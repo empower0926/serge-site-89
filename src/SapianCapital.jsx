@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default class SapianCapital extends React.Component {
   render() {
@@ -19,13 +20,14 @@ export default class SapianCapital extends React.Component {
         </div>
 
         <div className="capital-intro">
-          <video
+          <div className="scroll"><Link to="what-is"><img src="https://res.cloudinary.com/sapiangroup/image/upload/v1648562101/CRYPTOMONIAL/scroll_fraxvm.svg" alt="" /></Link></div>
+          {/* <video
             playsInline
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646688539/CRYPTOMONIAL/sapian-capital-bg_zzeusz.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
             autoPlay
             muted
             loop
-          ></video>
+          ></video> */}
 
           <div className="capital-intro-content">
             <div className="capital-logo">
@@ -53,7 +55,7 @@ export default class SapianCapital extends React.Component {
           </div>
         </div>
 
-        <div className="capital-what-is-it">
+        <div className="capital-what-is-it mt-5" id="what-is">
           <div className="container">
             <div className="row">
               <div className="col-sm-12">

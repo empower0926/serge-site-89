@@ -2,10 +2,12 @@
 .sapian-capital {
   margin: 0;
   padding: 0;
-  color: black !important;
+  color: white !important;
   background-color: #fff !important;
-  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648553637/CRYPTOMONIAL/hex-1_1_dqahh2.svg);
-  background-size: 100%;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1648560634/CRYPTOMONIAL/bg_1_4x_nuyw1w.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 576px) {
@@ -20,11 +22,60 @@
 
 .sapian-capital .capital-intro {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   position: relative;
   text-align: center;
-  background-color: #000000;
+  background-size: cover;
+  background-position: center;
   color: white !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sapian-capital .capital-intro .scroll {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 5rem;
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -179,6 +230,7 @@
 
 .sapian-capital .capital-what-is-it .capital-perks .capital-perk {
   opacity: 0.5;
+  color: white !important;
   font-size: 0.8rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -398,7 +450,7 @@
 .sapian-capital .capital-escrow p {
   font-size: 1rem !important;
   font-weight: 400;
-  color: #000000;
+  color: #fff;
   text-align: justify;
   text-align-last: center;
 }
@@ -418,7 +470,6 @@
 .sapian-capital .capital-eligibility {
   margin-top: 5rem;
   width: 100%;
-  background: url(https://www.sapiancapital.com/assets/images/new/Infographic-03.svg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -616,6 +667,8 @@ p {
      object-fit: cover !important;
   -o-object-position: -210px;
      object-position: -210px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .intro .oztcard-video {
@@ -851,21 +904,6 @@ p {
 @media screen and (max-width: 576px) {
   .definition img {
     width: 80%;
-  }
-}
-
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 
