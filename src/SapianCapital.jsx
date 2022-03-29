@@ -21,7 +21,7 @@ export default class SapianCapital extends React.Component {
         <div className="capital-intro">
           <video
             playsInline
-            src="https://res.cloudinary.com/sapiangroup/video/upload/f_auto/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646688539/CRYPTOMONIAL/sapian-capital-bg_zzeusz.mp4"
             autoPlay
             muted
             loop
@@ -268,7 +268,7 @@ export default class SapianCapital extends React.Component {
           <h2>WHAT IS AN ESCROW?</h2>
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-sm-3">
+              <div className="col-sm-3 mt-2">
                 <div
                   className="escrow-point"
                   
@@ -277,7 +277,7 @@ export default class SapianCapital extends React.Component {
                   escrow account.
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-3 mt-2">
                 <div
                   className="escrow-point"
                   
@@ -287,7 +287,7 @@ export default class SapianCapital extends React.Component {
                   the contract have been respected.
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-3 mt-2">
                 <div
                   className="escrow-point"
                  
@@ -300,7 +300,7 @@ export default class SapianCapital extends React.Component {
             </div>
 
             <div className="row justify-content-center mt-5">
-              <h4 className="text-center">ESCROW PROCESS</h4>
+              <h4 className="text-center mt-5">ESCROW PROCESS</h4>
               <div className="col-sm-6 text-center">
                 <div>
                   <p>
