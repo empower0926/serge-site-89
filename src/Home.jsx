@@ -64,7 +64,7 @@ export default class Home extends React.Component {
 
           <img
             className="intro-video cryptostation-intro-image"
-            src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646691697/CRYPTOMONIAL/cryptostations/WhatsApp_Image_2022-03-06_at_18.14.52_1_jcqmkz.png"
+            src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1648564910/CRYPTOMONIAL/cryptostations/cs_4x_evfv5d.png"
             id="cryptostation-intro"
             alt="flash cryptostation"
           />
@@ -104,7 +104,7 @@ export default class Home extends React.Component {
               <img
                 data-aos="fade-in"
                 data-aos-duration="900"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/v1648538457/CRYPTOMONIAL/cryptostations/flash-cryptostaion_ivnsoe.svg"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1648402970/CRYPTOMONIAL/cryptostations/FLASH-CRYPTOSTATION_jpwhg2.svg"
                 alt=""
               />
             </div>
