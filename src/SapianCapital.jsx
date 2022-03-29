@@ -232,7 +232,7 @@ export default class SapianCapital extends React.Component {
                     <div>
                       <a
                         href="https://oztcard.com/"
-                        rel="norefferer"
+                        rel="noreferrer"
                         target="_blank"
                       >
                         OZTCARD.COM
