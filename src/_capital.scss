@@ -36,6 +36,9 @@
       height: 32px;
       // background-color: white;
       bottom: 5rem;
+      @include small{
+        bottom: -2rem;
+      }
       animation: float 2s ease-in-out infinite;
       cursor: pointer;
       z-index: 9999;
