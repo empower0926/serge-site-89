@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Blocks from "./blocks";
+import Next from "./next";
 
 export default class Home extends React.Component {
   render() {
@@ -27,7 +28,7 @@ export default class Home extends React.Component {
             <video
               playsInline
               className="intro-video tunnel"
-              src="https://res.cloudinary.com/sapiangroup/video/upload/v1646695015/CRYPTOMONIAL/Tunnel_-_27438_1_w28dvt.mp4"
+              src="https://res.cloudinary.com/sapiangroup/video/upload/v1648403448/CRYPTOMONIAL/sapian-cryptomonial-bg_xsq2eu.mp4"
               autoPlay
               muted
               loop
@@ -38,7 +39,7 @@ export default class Home extends React.Component {
             playsInline
             className="intro-video"
             id="intro-video"
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646588915/CRYPTOMONIAL/Particles_-_10848_czpvl4.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/f_auto/v1646588915/CRYPTOMONIAL/Particles_-_10848_czpvl4.mp4"
             autoPlay
             muted
           ></video>
@@ -46,7 +47,7 @@ export default class Home extends React.Component {
             playsInline
             className="intro-video sapina-capital-video"
             id="sapian-capital-video"
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/f_auto/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
             autoPlay
             muted
             loop
@@ -55,7 +56,7 @@ export default class Home extends React.Component {
             playsInline
             className="intro-video oztcard-video"
             id="oztcard-video"
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646692680/CRYPTOMONIAL/oztcard_s0g6uf.mov"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/f_auto/v1646692680/CRYPTOMONIAL/oztcard_s0g6uf.mov"
             autoPlay
             muted
             loop
@@ -63,7 +64,7 @@ export default class Home extends React.Component {
 
           <img
             className="intro-video cryptostation-intro-image"
-            src="https://res.cloudinary.com/sapiangroup/image/upload/v1646691697/CRYPTOMONIAL/cryptostations/WhatsApp_Image_2022-03-06_at_18.14.52_1_jcqmkz.png"
+            src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1648564910/CRYPTOMONIAL/cryptostations/cs_4x_evfv5d.png"
             id="cryptostation-intro"
             alt="flash cryptostation"
           />
@@ -75,7 +76,7 @@ export default class Home extends React.Component {
                   <img
                     data-aos="fade-up"
                     data-aos-duration="1600"
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647005903/CRYPTOMONIAL/merchants/sapian_cmxiod.svg"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647005903/CRYPTOMONIAL/merchants/sapian_cmxiod.svg"
                     alt="sapian cryptomonial"
                   />
                 </div>
@@ -84,7 +85,7 @@ export default class Home extends React.Component {
                     data-aos="fade-up"
                     data-aos-duration="1600"
                     data-aos-delay="600"
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647005903/CRYPTOMONIAL/merchants/cryptomonial_zl6nyq.svg"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647005903/CRYPTOMONIAL/merchants/cryptomonial_zl6nyq.svg"
                     alt=""
                   />
                 </div>
@@ -95,7 +96,7 @@ export default class Home extends React.Component {
               <img
                 data-aos="fade-in"
                 data-aos-duration="900"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
                 alt="sapian capital"
               />
             </div>
@@ -103,7 +104,7 @@ export default class Home extends React.Component {
               <img
                 data-aos="fade-in"
                 data-aos-duration="900"
-                src="https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg"
+                src="https://res.cloudinary.com/sapiangroup/image/upload/v1648402970/CRYPTOMONIAL/cryptostations/FLASH-CRYPTOSTATION_jpwhg2.svg"
                 alt=""
               />
             </div>
@@ -136,7 +137,7 @@ export default class Home extends React.Component {
           {/* <video
             playsInline
             id="globe-video"
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/f_auto/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
             autoPlay
             muted
             loop
@@ -150,7 +151,7 @@ export default class Home extends React.Component {
                 <h1
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  data-aos-delay="600"
+                  data-aos-delay="300"
                 >
                   CRYPTOMONIAL ENINEERING?
                 </h1>
@@ -159,17 +160,17 @@ export default class Home extends React.Component {
                   className="d-block d-md-none"
                   data-aos="zoom-in"
                   data-aos-duration="1200"
-                  data-aos-delay="1200"
+                  data-aos-delay="600"
                 >
                   <img
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
                     alt=""
                   />
                 </div>
                 <p
                   data-aos="fade-right"
                   data-aos-duration="800"
-                  data-aos-delay="1200"
+                  data-aos-delay="600"
                   className="ce-desc"
                 >
                   Cryptomonial Engineering is new approach to catalyze the
@@ -183,10 +184,10 @@ export default class Home extends React.Component {
                   className="d-none d-md-block"
                   data-aos="zoom-in"
                   data-aos-duration="1200"
-                  data-aos-delay="1200"
+                  data-aos-delay="600"
                 >
                   <img
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/w_auto,q_auto,f_auto/v1648368930/CRYPTOMONIAL/bub_xdebbc.png"
                     alt=""
                   />
                 </div>
@@ -197,12 +198,12 @@ export default class Home extends React.Component {
 
         <div
           className="solutions"
-          data-aos="zoom-in"
+          data-aos="fade-down"
           data-aos-duration="1200"
           data-aos-delay="300"
         >
-          <div className="container">
-            <h4 className="mb-5">Our Solutions</h4>
+          <div className="container sol-pannel">
+            <h1 className="mb-5">Our Solutions</h1>
             {/* (or some itroduction that suites for the heading) */}
             <div className="row">
               {/* cryptostations */}
@@ -250,7 +251,7 @@ export default class Home extends React.Component {
 
         {/* cryptostations */}
         <div className="sections-parent">
-          <div className="container-fluid mt-5">
+          <div className="container">
             <div className="row">
               <div className="col-sm-12">
                 <div className="sections">
@@ -260,18 +261,18 @@ export default class Home extends React.Component {
 
                   <div className="section">
                     <div className="cryptostations" id="cryptostations">
-                      <h2 className="text-center">
+                      <h1 className="text-center">
                         THE{" "}
                         <span className="the-cryptostation">CRYPTOSTATION</span>{" "}
                         BY{" "}
                         <span>
                           <img
                             className="by-flash"
-                            src="https://res.cloudinary.com/sapiangroup/image/upload/v1646733137/CRYPTOMONIAL/flash_lwxjmz.svg"
+                            src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646733137/CRYPTOMONIAL/flash_lwxjmz.svg"
                             alt="FLASH"
                           />
                         </span>
-                      </h2>
+                      </h1>
                       <div className="cs-slogans">
                         <h5 className="cs-slogan">
                           ENABLE EASY ACCESS, NO ENTRY BARRIERS!
@@ -291,8 +292,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    className="station-1"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647103085/CRYPTOMONIAL/cryptostations/poster3_ompxnp.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647102333/CRYPTOMONIAL/cryptostations/poster3_wgv67i.jpg"
                                     alt=""
                                   />
                                 </div>
@@ -301,8 +301,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    className="station-2"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646735824/CRYPTOMONIAL/cryptostations/cryptostation-2_nzmozw.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646735824/CRYPTOMONIAL/cryptostations/cryptostation-2_nzmozw.png"
                                     alt=""
                                   />
                                 </div>
@@ -311,8 +310,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    className="station-3"
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647102333/CRYPTOMONIAL/cryptostations/poster4_jpta4l.jpg"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647102333/CRYPTOMONIAL/cryptostations/poster4_jpta4l.jpg"
                                     alt=""
                                   />
                                 </div>
@@ -390,8 +388,8 @@ export default class Home extends React.Component {
 
                             <div className="col-md-5">
                               <div className="blockchains d-none d-md-block">
-                                {/* <img src="https://res.cloudinary.com/sapiangroup/image/upload/v1648372155/CRYPTOMONIAL/block_1_2x_ydwbpe.png" alt="" />
-                                <img src="https://res.cloudinary.com/sapiangroup/image/upload/v1648371911/CRYPTOMONIAL/block_2x_sc45y2.png" alt="" /> */}
+                                {/* <img src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1648372155/CRYPTOMONIAL/block_1_2x_ydwbpe.png" alt="" />
+                                <img src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1648371911/CRYPTOMONIAL/block_2x_sc45y2.png" alt="" /> */}
 
                                 <Blocks></Blocks>
                               </div>
@@ -416,7 +414,7 @@ export default class Home extends React.Component {
                               <div className="oztcard-images">
                                 <div className="oztcard-image">
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647091111/ozt-card/new-gold-oztcard_4x_rot7zm.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647091111/ozt-card/new-gold-oztcard_4x_rot7zm.png"
                                     alt="gold oztcard"
                                   />
                                 </div>
@@ -427,7 +425,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/standard-bleu_ozt-card_ltxnjt.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647091111/ozt-card/new-standard-oztcard_4x_flij9l.png"
                                     alt="standard oztcard"
                                   />
                                 </div>
@@ -438,7 +436,7 @@ export default class Home extends React.Component {
                                   data-aos-duration="1200"
                                 >
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1605463815/ozt-card/premium-violette_ozt-card_mtj4do.png"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647091111/ozt-card/new-silver-oztcard_4x_vnca98.png"
                                     alt="premium oztcard"
                                   />
                                 </div>
@@ -466,10 +464,10 @@ export default class Home extends React.Component {
                                 data-aos-duration="1200"
                                 data-aos-delay="300"
                               >
-                                People will not be able to remove cash from the
-                                Station, just fill it in with designated fiat
-                                currencies. Withdraw money using the OZTCARD,
-                                will be possible from a regular ATM device.
+                                People will be able to just fill it in with
+                                designated fiat currencies. Withdraw money using
+                                the OZTCARD, will be possible from a regular ATM
+                                device.
                               </p>
 
                               <div
@@ -508,7 +506,7 @@ export default class Home extends React.Component {
                                   <div className="h-100 d-flex justify-content-center">
                                     <div className="my-auto particles-parent">
                                       <img
-                                        src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
+                                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
                                         alt=""
                                       />
                                       <h4 className="asset-pegged-coin">
@@ -530,7 +528,7 @@ export default class Home extends React.Component {
                                   <span>
                                     <img
                                       className="oztg-coin"
-                                      src="https://res.cloudinary.com/dmeppscpx/image/upload/v1619874803/flashxchanger/OZTG_vwr5kt.svg"
+                                      src="https://res.cloudinary.com/dmeppscpx/image/upload/f_auto/v1619874803/flashxchanger/OZTG_vwr5kt.svg"
                                       alt=""
                                     />
                                   </span>
@@ -561,7 +559,7 @@ export default class Home extends React.Component {
                                 <div className="my-auto particles-parent">
                                   <div className="particles"></div>
                                   <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1601741549/OZEETY_IMAGES/assets/img/OZTG-gold-flashgroup-cryptostations.svg"
                                     alt=""
                                   />
                                   <h4 className="asset-pegged-coin">
@@ -575,67 +573,132 @@ export default class Home extends React.Component {
                       </div>
 
                       {/* for the merchents */}
+                      <div className="for-merchents-h">
+                        <h1 data-aos="fade-up" data-aos-duration="1200">
+                          FOR THE MERCHANTS
+                        </h1>
+                      </div>
+                      <div
+                        className="for-merchents"
+                        data-aos="fade-down"
+                        data-aos-duration="1200"
+                      >
+                        <div className="slider-parent">
+                          <div className="slides">
+                            {/* 5 */}
+                            <div className="slide">
+                              <div className="merc-img">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647000338/CRYPTOMONIAL/merchants/coins_wnv7bd.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="merc-header">
+                                <h2>
+                                  Enabling the acceptance of cryptocurrencies
+                                </h2>
+                              </div>
 
-                      <div className="for-merchants">
-                        <div>
-                          <h1 className="text-center my-5">
-                            FOR THE MERCHANTS
-                          </h1>
-                        </div>
-                        <div className="container">
-                          <div className="row justify-content-center">
-                            <div className="col-4 text-center">
-                              <div className="merchant-perk">
-                                <button>
-                                  <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/Location_towixr.png"
-                                    alt=""
-                                  />
-                                </button>
-                                <div>Become a cryptocurrency local hub</div>
+                              <div className="merc-p">
+                                <p>
+                                  The merchant will be able to accept designated
+                                  cryptos as means of payment on his shop and he
+                                  will also be able to exchange it using
+                                  FLASHGROUP ecosystem into Fiat currency and
+                                  transfer it in his bank account instantly for
+                                  free!
+                                </p>
                               </div>
                             </div>
-                            <div className="col-4">
-                              <div className="merchant-perk">
-                                <button>
-                                  <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000339/CRYPTOMONIAL/merchants/vallet_vokaqc.png"
-                                    alt=""
-                                  />
-                                </button>
+                            {/* 4 */}
+                            <div className="slide">
+                              <div className="merc-img">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647000338/CRYPTOMONIAL/merchants/Construction_F_oh7gyf.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="merc-header">
+                                <h2>FLASHGROUP Maintenance</h2>
+                              </div>
+
+                              <div className="merc-p">
+                                <p>
+                                  All the maintenance will be handled by the
+                                  FLASHGROUP.
+                                </p>
                               </div>
                             </div>
-                            <div className="col-4">
-                              <div className="merchant-perk">
-                                <button>
-                                  <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000339/CRYPTOMONIAL/merchants/The_Coin_aszqlv.png"
-                                    alt=""
-                                  />
-                                </button>
-                                <div>Receive a lifetime % benefit</div>
+                            {/* 3 */}
+                            <div className="slide">
+                              <div className="merc-img">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647000339/CRYPTOMONIAL/merchants/The_Coin_aszqlv.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="merc-header">
+                                <h2>Benefit from our loyalty program</h2>
+                              </div>
+
+                              <div className="merc-p">
+                                <p>
+                                  customers will be able to spend their loyalty
+                                  points on your shop and you will also be able
+                                  to give loyalty coin to your user if you
+                                  subscribe to our services. Your users will be
+                                  able to use those points to buy real live
+                                  products and services because those points are
+                                  tradable on the FLASHXCHANGER.
+                                </p>
                               </div>
                             </div>
-                            <div className="col-4">
-                              <div className="merchant-perk">
-                                <button>
-                                  <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/Construction_F_oh7gyf.png"
-                                    alt=""
-                                  />
-                                </button>
+                            {/* 2 */}
+                            <div className="slide">
+                              <div className="merc-img">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647000339/CRYPTOMONIAL/merchants/vallet_vokaqc.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="merc-header">
+                                <h2>Receive a lifetime % benefit</h2>
+                              </div>
+
+                              <div className="merc-p">
+                                <p>
+                                  On all transactions made on the “Station”
+                                  located in his business but also on every
+                                  order of OZTCARD.
+                                </p>
                               </div>
                             </div>
-                            <div className="col-4">
-                              <div className="merchant-perk">
-                                <button>
-                                  <img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1647000338/CRYPTOMONIAL/merchants/coins_wnv7bd.png"
-                                    alt=""
-                                  />
-                                </button>
+                            {/* 1 */}
+                            <div className="slide">
+                              <div className="merc-img">
+                                <img
+                                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1647000338/CRYPTOMONIAL/merchants/Location_towixr.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="merc-header">
+                                <h2>Become a cryptocurrency local hub</h2>
+                              </div>
+
+                              <div className="merc-p">
+                                <p>
+                                  Users will search through the FlashApp the
+                                  nearest FLASHCRYPTOSTATION and bring more
+                                  traffic to the merchant location.
+                                </p>
                               </div>
                             </div>
+                          </div>
+
+                          <div className="next">
+                            <button>
+                              <Next></Next>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -653,7 +716,7 @@ export default class Home extends React.Component {
               <div class="col-sm-12 col-md-4 text-center text-md-left">
                 <div class="logo">
                   <img
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
                     style={{ width: "40%" }}
                     alt="sapian group logo"
                   ></img>
@@ -721,7 +784,7 @@ export default class Home extends React.Component {
                     href="https://blog.flashmoni.io/"
                   >
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
                       alt="medium"
                     ></img>
                   </a>
@@ -732,7 +795,7 @@ export default class Home extends React.Component {
                     href="https://www.facebook.com/flashmoni.official"
                   >
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
                       alt="facebook"
                     ></img>
                   </a>
@@ -743,7 +806,7 @@ export default class Home extends React.Component {
                     href="https://twitter.com/Flashmoniltd"
                   >
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
                       alt="twitter"
                     ></img>
                   </a>
@@ -754,7 +817,7 @@ export default class Home extends React.Component {
                     href="https://instagram.com/sapian_group?utm_medium=copy_link"
                   >
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
                       alt="instagram"
                     ></img>
                   </a>
@@ -765,12 +828,12 @@ export default class Home extends React.Component {
                     href="https://www.linkedin.com/company/sapian-group/"
                   >
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
                       alt="linkedin"
                     ></img>
                   </a>
                   {/* <a class="mx-1" target="_blank" href="http://flashmoni.dribbble.com/"><img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
                                     alt="dribbble"></img></a> */}
                 </div>
               </div>
@@ -918,6 +981,21 @@ export default class Home extends React.Component {
       const cookie = `${key}=cookie accepted;max-age=${60 * 60 * 24 * 365}`;
       document.cookie = cookie;
       popup.style.display = "none";
+    };
+
+    // for merc
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    console.log(slides[1]);
+    const next = document.querySelector(".next");
+    let i = slides.length - 1;
+    next.onclick = (e) => {
+      slides[i--].classList.toggle("slide-left");
+      if (i < 0) {
+        i = slides.length - 1;
+        slides.forEach((slide) => {
+          slide.classList.remove("slide-left");
+        });
+      }
     };
   }
 }

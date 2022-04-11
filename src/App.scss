@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
 @import "mixin";
 @import "capital";
 
@@ -24,8 +24,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-family: "Heebo", sans-serif;
-  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -43,7 +43,7 @@ p {
   font-size: 1.2rem !important;
   font-weight: 300;
   @include small {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 }
 
@@ -64,6 +64,7 @@ p {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   //   background-color: black;
   overflow-x: hidden;
 
@@ -96,7 +97,7 @@ p {
     height: 100vh;
     object-fit: cover;
     transition: 0.8s;
-    transform: translateX(5px);
+    // transform: translateX(5px);
     @include small {
       object-fit: cover;
     }
@@ -114,12 +115,15 @@ p {
   }
 
   .sapina-capital-video {
+    filter: blur(10px);
     opacity: 0;
   }
 
   .cryptostation-intro-image {
     opacity: 0;
     object-fit: cover !important;
+    // object-position: 210px;
+    // transform: scale(1.3);
   }
 
   .oztcard-video {
@@ -347,7 +351,37 @@ p {
 
 .solutions {
   text-align: center;
-  margin-top: 7rem;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648538554/CRYPTOMONIAL/bg_4x_kpxgb7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  animation: bg 60s ease-in-out infinite;
+  @include small{
+    animation: none;
+    background-size: cover;
+  }
+  @keyframes bg {
+    0%{
+      background-size: 100%;
+    }
+
+    50%{
+      background-size: 120%;
+    }
+    100%{
+      background-size: 100%;
+    }
+  }
+  .sol-pannel {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-weight: 400 !important;
+    color: #fff;
+    text-transform: uppercase;
+  }
   .solution {
     padding: 4rem 5rem;
     display: block;
@@ -360,20 +394,20 @@ p {
   }
 
   .cs {
-    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1646732973/CRYPTOMONIAL/cryptostation-logo_gjot1p.svg);
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648538457/CRYPTOMONIAL/cryptostations/flash-cryptostaion_ivnsoe.svg);
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: center;
   }
   .sc {
-    background-image: url(https://www.sapiancapital.com/assets/images/logo/Sapian_group_logo.svg);
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
   }
   .oztg {
-    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png);
-    background-size: 70%;
+    background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1601820525/OZEETY_IMAGES/assets/img/oztcard_flashgroup-cryptostations.png);
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -384,94 +418,106 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  .for-merchents-h {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
   .for-merchents {
-    margin: 5rem 0;
-
-    position: relative;
+    margin-bottom: 5rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
-    h4 {
-      color: #53fffc;
+    .slider-parent {
+      position: relative;
     }
 
-    span {
-      display: inline-block;
-      margin: 1rem 0;
-      width: 100%;
-      text-align: center;
-      img {
-        width: 80px;
-      }
-
-      // .location-img{
-      //     width: 120px;
-      // }
-      // .loyalty-img{
-      //     transform: translateY(30px) translateX(-50px);
-      //     width: 140px;
-      //     @include small{
-      //         transform: translateY(30px);
-      //     }
-      // }
-      // .maintain-img{
-      //     width: 60px;
-      // }
-
-      // .coins-img{
-      //     width: 100px;
-      // }
-    }
-
-    .store-img {
-      margin-top: 5rem;
-      img {
-        width: 80%;
-      }
-    }
-
-    .tr {
-      // text-align: right;
+    .next {
+      position: absolute;
+      right: -3rem;
+      top: -1rem;
       @include small {
-        text-align: center !important;
+        right: 1rem;
+        top: -4rem;
       }
-    }
-
-    p {
-      width: 500px;
-      margin: 0 !important;
-    }
-
-    .merchant-heading {
-      margin: 5rem 0;
-    }
-
-    .merchant-perk {
-      margin: 0.5rem 1rem;
-      width: 100%;
-      // height: 80px;
-      // background-color: #965ffc;
-      font-size: 12px;
-      text-align: center;
-
-      img {
-        width: 124px;
-        height: 124px;
-        transition: 0.3s;
-        &:hover {
+      z-index: 999;
+      button {
+        transition: .3s;
+        &:hover{
+          opacity: .5;
           transform: scale(1.1);
         }
-      }
-      @include small {
-        margin: 0;
-      }
-      button {
-        background: none;
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+        margin-top: 1rem;
+        @include small {
+          margin-top: 5rem;
+        }
         border: none;
-        transition: 0.3s;
-        border-radius: 4px;
-        &:hover {
-          // padding: -1rem;
-          background-color: rgba($color: #965ffc, $alpha: 0.5);
+        background-color: rgba(23, 10, 34, 0.1);
+        box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.2);
+        color: #fff;
+        // border-radius: 50px !important;
+        // padding: 1rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px !important;
+      }
+    }
+
+    .slides {
+      position: relative;
+      padding: 5rem;
+      // background-color: white;
+      width: 720px;
+      @include small {
+        width: 320px;
+      }
+      height: 420px;
+      .slide {
+        text-align: center;
+        border-radius: 8px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include small {
+          height: 470px;
+        }
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #5b02ff, $alpha: 1);
+        background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        padding: 2rem;
+        transition: 1s ease-in-out;
+        transform: scale(1);
+      }
+
+      .slide-left {
+        left: 100% !important;
+        opacity: 0 !important;
+        filter: blur(5px);
+      }
+
+      .merc-img {
+        img {
+          width: 132px;
+          height: 132px;
+          object-fit: cover;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .merc-header {
+        h2 {
+          font-weight: 400;
         }
       }
     }
@@ -482,17 +528,16 @@ p {
   margin-top: 5rem;
 
   h4 {
-    color: #53fffc;
+    color: #fff;
+    font-weight: 500;
   }
 
   .section {
     margin: 1rem 0;
-    // background-color: rgb(128, 128, 128);
   }
 
   .for-users {
     width: 100%;
-    // color: #965ffc;
     margin-top: 5rem;
   }
 
@@ -519,9 +564,9 @@ p {
       }
 
       svg {
-        width: 70%;
+        width: 80%;
         @include small {
-          width: 50%;
+          width: 90%;
         }
         filter: grayscale(0.4);
         #b1 {
@@ -562,14 +607,17 @@ p {
           0% {
             opacity: 0;
             transform: translateY(0);
+            filter: grayscale(0.4);
           }
           50% {
             opacity: 1;
             transform: translateY(10px);
+            filter: grayscale(0);
           }
           100% {
             opacity: 0;
             transform: translateY(0);
+            filter: grayscale(0.4);
           }
         }
       }
@@ -580,7 +628,12 @@ p {
     }
 
     .by-flash {
-      width: 115px;
+      image-rendering: -moz-crisp-edges; /* Firefox */
+      image-rendering: -o-crisp-edges; /* Opera */
+      image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+      width: 155px;
       margin: 0 0.2rem;
       transform: translateY(-3.5px);
 
@@ -608,7 +661,6 @@ p {
     }
 
     .easy-access {
-      // text-align: justify !important;
       margin-top: 5rem;
       .strong {
         font-size: 24px;
@@ -617,39 +669,32 @@ p {
     }
 
     .cryptostation-images {
+      padding: 2rem;
       display: flex;
       text-align: center;
-      padding: 5rem 0;
+      justify-content: center;
       background-color: #d9d9d9;
+      border-radius: 1rem;
+      box-shadow: 5px 15px 35px rgba($color: #1e0c3f, $alpha: 1);
+
       img {
-        width: 50%;
-        margin: 0 1rem;
-        transition: 0.3s;
-        &:hover {
-          transform: scale(1.1) !important;
+        width: 100%;
+        max-height: 440px;
+        image-rendering: -moz-crisp-edges; /* Firefox */
+        image-rendering: -o-crisp-edges; /* Opera */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+        @include small {
+          max-height: 130px;
         }
-      }
+        object-fit: contain;
+        opacity: 1;
+        transition: 0.3s;
 
-      .station-1 {
-        transform: translateY(10px) translateX(250px);
-      }
-
-      .station-2 {
-        transform: translateY(120px);
-        width: 90%;
-      }
-
-      .station-3 {
-        width: 50% !important;
-        transform: translateY(50px) translateX(-250px);
-      }
-      @include small {
-        img {
-          width: 50%;
-          margin: 0 1rem;
-          &:nth-child(2) {
-            width: 30%;
-          }
+        &:nth-child(2) {
+          opacity: 1 !important;
+          width: 50% !important;
         }
       }
     }

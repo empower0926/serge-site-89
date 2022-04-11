@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default class SapianCapital extends React.Component {
   render() {
     return (
       <div className="sapian-capital">
+       
         {/* cookie concent */}
         <div className="cookies-parent">
           <div className="cookies">
@@ -18,13 +20,14 @@ export default class SapianCapital extends React.Component {
         </div>
 
         <div className="capital-intro">
-          <video
+          <div className="scroll"><Link to="what-is"><img src="https://res.cloudinary.com/sapiangroup/image/upload/v1648562101/CRYPTOMONIAL/scroll_fraxvm.svg" alt="" /></Link></div>
+          {/* <video
             playsInline
-            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646694111/CRYPTOMONIAL/cryotomonial_d1z46v.mp4"
+            src="https://res.cloudinary.com/sapiangroup/video/upload/v1646686010/CRYPTOMONIAL/Abstract_-_26011_tltwuj.mp4"
             autoPlay
             muted
             loop
-          ></video>
+          ></video> */}
 
           <div className="capital-intro-content">
             <div className="capital-logo">
@@ -34,7 +37,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="300"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646826005/CRYPTOMONIAL/Sapian_group_logo_so1hkw.svg"
                   alt=""
                 />
               </div>
@@ -52,7 +55,7 @@ export default class SapianCapital extends React.Component {
           </div>
         </div>
 
-        <div className="capital-what-is-it">
+        <div className="capital-what-is-it mt-5" id="what-is">
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
@@ -70,19 +73,19 @@ export default class SapianCapital extends React.Component {
                 <div className="capital-what-tiles">
                   <div className="capital-what">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646837784/CRYPTOMONIAL/1_zsztxq.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646837784/CRYPTOMONIAL/1_zsztxq.svg"
                       alt=""
                     />
                   </div>
                   <div className="capital-what">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646837783/CRYPTOMONIAL/2_iwehft.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646837783/CRYPTOMONIAL/2_iwehft.svg"
                       alt=""
                     />
                   </div>
                   <div className="capital-what">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646837783/CRYPTOMONIAL/3_qstbcb.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646837783/CRYPTOMONIAL/3_qstbcb.svg"
                       alt=""
                     />
                   </div>
@@ -107,7 +110,7 @@ export default class SapianCapital extends React.Component {
                     <div>
                       <a
                         className="download"
-                        href="https://res.cloudinary.com/sapiangroup/image/upload/v1646905099/CRYPTOMONIAL/SAPIAN_CAPITAL_OTC_DESK_-_V3_v9xzj8.pdf"
+                        href="https://res.cloudinary.com/sapiangroup/image/upload/v1648494434/sapian/SAPIAN_CAPITAL_OTC_DESK_-_V3_hvadlq.pdf"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -122,99 +125,123 @@ export default class SapianCapital extends React.Component {
         </div>
 
         <div className="capital-four-parts">
-          <div className="container">
+          <div className="container four-parts-container">
             <div className="row">
               <div className="col text-center">
                 <h2>SERENITY CAN BE SUMMED UP IN 4 POINTS</h2>
               </div>
             </div>
-
-            <div className="capital-parts">
-              <div
-                className="capital-part discord"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="300"
-              >
-                <h4>24/7 SUPPORT</h4>
-                <div>
-                  <p>
-                    For any request for contact and interview, an email is at
-                    your disposal in addition to a phone number for urgent
-                    requests.
-                  </p>
-                  <p>We ensure appointments from Monday to Friday.</p>
-                </div>
-                <div>
-                  <span>Reach us: </span>
-                  <a href="mailto:mailto:support@sapiancapital.com">
-                    support@sapiancapital.com
-                  </a>
-                </div>
-              </div>
-
-              <div
-                className="capital-part capital-cryptomonial text-right"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="600"
-              >
-                <h4>CRYPTOMONIAL ENGINEERING</h4>
-                <div>
-                  <p>
-                    Every situation being different, customization is the key to
-                    your success.
-                  </p>
-                  <p>
-                    Therefore, we have developed, in addition to the traditional
-                    OTC, a service of follow-up, asset engineering and tax
-                    optimization.
-                  </p>
-                  <p>It is called Cryptomonial Engineering.</p>
-
-                  <div>
-                    <a href="/">Learn more about CRYPTOMONIAL</a>
+            <div className="row justify-content-center mt-0 mt-md-5">
+              <div className="col-md-3">
+                <div className="capital-part-nav d-none d-md-block">
+                  <div className="cap-nav">
+                    <span>Support 24/7</span>
+                  </div>
+                  <div className="cap-nav">
+                    <span>Cryptomonial Engineering</span>
+                  </div>
+                  <div className="cap-nav">
+                    <span>Fair fees</span>
+                  </div>
+                  <div className="cap-nav">
+                    <span>OZT CARD</span>
                   </div>
                 </div>
               </div>
 
-              <div
-                className="capital-part fair-fees"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="900"
-              >
-                <h4>FAIR FEES</h4>
-                <div>
-                  <p>
-                    Depending on your situation, we will work out the best
-                    market price for you in a clear and transparent manner.
-                  </p>
-                  <p>
-                    In order to be 100% in tune with your situation, it depends
-                    on the whole of it taking into account for example:{" "}
-                    <span className="capital-accent">
-                      Your country, The period, The amount, Liquidity and
-                      volatility of the desired asset base, Orientation of the
-                      fiat
-                    </span>
-                    ...
-                  </p>
-                </div>
-              </div>
+              <div className="col-md-6">
+                <div className="four-parts">
+                  <div className="part">
+                    <h2 className="d-block d-md-none">Support 24/7</h2>
+                    <p>
+                      For any request for contact and interview, an email is at
+                      your disposal in addition to a phone number for urgent
+                      requests.
+                    </p>
+                    <p>We ensure appointments from Monday to Friday.</p>
+                  </div>
+                  <div className="part">
+                    <h2 className="d-block d-md-none">
+                      Cryptomonial Engineering
+                    </h2>
+                    <p>
+                      Every situation being different, customization is the key
+                      to your success.
+                    </p>
+                    <p>
+                      Therefore, we have developed, in addition to the
+                      traditional OTC, a service of follow-up, asset engineering
+                      and tax optimization.
+                    </p>
+                    <p>It is called Cryptomonial Engineering.</p>
+                    <div>
+                      <a href="/">LEARN MORE</a>
+                    </div>
+                  </div>
+                  <div className="part">
+                    <h2 className="d-block d-md-none">Fair fees</h2>
+                    <p>
+                      Depending on your situation, we will work out the best
+                      market price for you in a clear and transparent manner.
+                    </p>
+                    <p>
+                      In order to be 100% in tune with your situation, it
+                      depends on the whole of it taking into account for
+                      example:
+                    </p>
 
-              <div
-                className="capital-part capital-oztcard"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="1200"
-              >
-                <h4>OZTCARD</h4>
-                <p>
-                  Benefiting from the highest level of security by being
-                  unlocked via a fingerprint sensor.
-                </p>
-                <p>the OZT CARD GOLD allow serenity during the transactions.</p>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-6">
+                          <ul>
+                            <li>
+                              <span>Your country</span>
+                            </li>
+                            <li>
+                              <span>The period</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="col-6">
+                          <ul>
+                            <li>
+                              <span>The amount</span>
+                            </li>
+                            {/* <li>
+                              <span>
+                                Liquidity and volatility of the desired asset
+                                base
+                              </span>
+                            </li> */}
+                            <li>
+                              <span>Orientation of the fiat</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="part">
+                    <h2 className="d-block d-md-none">OZT CARD</h2>
+                    <p>
+                      Benefiting from the highest level of security by being
+                      unlocked via a fingerprint sensor.
+                    </p>
+                    <p>
+                      the OZT CARD GOLD allow serenity during the transactions.
+                    </p>
+                    <div>
+                      <a
+                        href="https://oztcard.com/"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        OZTCARD.COM
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -229,7 +256,7 @@ export default class SapianCapital extends React.Component {
                   <div>
                     {" "}
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646857321/CRYPTOMONIAL/how-does-it-work_ditqq6.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1648551741/CRYPTOMONIAL/Asset_2_4x_tt8yyo.png"
                       alt=""
                     />
                   </div>
@@ -243,35 +270,29 @@ export default class SapianCapital extends React.Component {
           <h2>WHAT IS AN ESCROW?</h2>
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-sm-3">
+              <div className="col-sm-3 mt-2">
                 <div
                   className="escrow-point"
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  data-aos-delay="300"
+                  
                 >
                   Escrow involves placing the funds from the transaction in an
                   escrow account.
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-3 mt-2">
                 <div
                   className="escrow-point"
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  data-aos-delay="600"
+                  
                 >
                   The latter will then act as guarantor of the proper execution
                   of the contract by delivering the funds only if the terms of
                   the contract have been respected.
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-3 mt-2">
                 <div
                   className="escrow-point"
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  data-aos-delay="900"
+                 
                 >
                   TAs a true justice of the peace, the escrow account ensures
                   that all of the terms and conditions of each of the parties
@@ -281,7 +302,7 @@ export default class SapianCapital extends React.Component {
             </div>
 
             <div className="row justify-content-center mt-5">
-              <h4 className="text-center">ESCROW PROCESS</h4>
+              <h4 className="text-center mt-5">ESCROW PROCESS</h4>
               <div className="col-sm-6 text-center">
                 <div>
                   <p>
@@ -354,7 +375,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="200"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/oztg_q7buj2.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/oztg_q7buj2.svg"
                   alt=""
                 />
               </div>
@@ -365,7 +386,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="400"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/BTC_uujllp.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/BTC_uujllp.svg"
                   alt=""
                 />
               </div>
@@ -376,7 +397,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="600"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/eth_fpvjkw.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/eth_fpvjkw.svg"
                   alt=""
                 />
               </div>
@@ -387,7 +408,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="800"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865513/CRYPTOMONIAL/xmr_th3r0p.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865513/CRYPTOMONIAL/xmr_th3r0p.svg"
                   alt=""
                 />
               </div>
@@ -398,7 +419,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="1000"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/eur_vm2ho8.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/eur_vm2ho8.svg"
                   alt=""
                 />
               </div>
@@ -409,7 +430,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="1200"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/usd_a0vpk4.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/usd_a0vpk4.svg"
                   alt=""
                 />
               </div>
@@ -420,7 +441,7 @@ export default class SapianCapital extends React.Component {
                 data-aos-delay="1400"
               >
                 <img
-                  src="https://res.cloudinary.com/sapiangroup/image/upload/v1646865512/CRYPTOMONIAL/gbp_tihika.svg"
+                  src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646865512/CRYPTOMONIAL/gbp_tihika.svg"
                   alt=""
                 />
               </div>
@@ -444,7 +465,7 @@ export default class SapianCapital extends React.Component {
               <div className="col-sm-4">
                 <div className="text-center">
                   <img
-                    src="https://res.cloudinary.com/sapiangroup/image/upload/v1646857769/CRYPTOMONIAL/eligibility_dex3xq.svg"
+                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646857769/CRYPTOMONIAL/eligibility_dex3xq.svg"
                     alt=""
                   />
                 </div>
@@ -472,7 +493,7 @@ export default class SapianCapital extends React.Component {
                 <div class="col-sm-12 col-md-4 text-center text-md-left">
                   <div class="logo">
                     <img
-                      src="https://res.cloudinary.com/sapiangroup/image/upload/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
+                      src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/v1646592671/CRYPTOMONIAL/sapian-cryptomoni_nnpy9k.svg"
                       style={{ width: "40%" }}
                       alt="sapian group logo"
                     ></img>
@@ -540,7 +561,7 @@ export default class SapianCapital extends React.Component {
                       href="https://blog.flashmoni.io/"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275601/sapian-group/medium_sapian-group.svg"
                         alt="medium"
                       ></img>
                     </a>
@@ -551,7 +572,7 @@ export default class SapianCapital extends React.Component {
                       href="https://www.facebook.com/flashmoni.official"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275729/sapian-group/fb_sapian-group.svg"
                         alt="facebook"
                       ></img>
                     </a>
@@ -562,7 +583,7 @@ export default class SapianCapital extends React.Component {
                       href="https://twitter.com/Flashmoniltd"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275877/sapian-group/twitter_sapian-group.svg"
                         alt="twitter"
                       ></img>
                     </a>
@@ -573,7 +594,7 @@ export default class SapianCapital extends React.Component {
                       href="https://instagram.com/sapian_group?utm_medium=copy_link"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275889/sapian-group/insta_sapian-group.svg"
                         alt="instagram"
                       ></img>
                     </a>
@@ -584,12 +605,12 @@ export default class SapianCapital extends React.Component {
                       href="https://www.linkedin.com/company/sapian-group/"
                     >
                       <img
-                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
+                        src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275900/sapian-group/in_sapian-group.svg"
                         alt="linkedin"
                       ></img>
                     </a>
                     {/* <a class="mx-1" target="_blank" href="http://flashmoni.dribbble.com/"><img
-                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
+                                    src="https://res.cloudinary.com/sapiangroup/image/upload/f_auto/f_auto,q_auto,w_100/v1603275906/sapian-group/dribbble_sapian-group.svg"
                                     alt="dribbble"></img></a> */}
                   </div>
                 </div>
@@ -657,5 +678,32 @@ export default class SapianCapital extends React.Component {
       document.cookie = cookie;
       popup.style.display = "none";
     };
+
+    const partHeaders = Array.from(document.querySelectorAll(".cap-nav"));
+    const parts = Array.from(document.querySelectorAll(".part"));
+
+    const part = parts.shift();
+    part.classList.toggle("expand");
+    parts.push(part);
+
+    const partHeader = partHeaders.shift();
+    partHeader.classList.toggle("fill");
+    partHeaders.push(partHeader);
+
+    setInterval(() => {
+      const part = parts.shift();
+      part.classList.toggle("expand");
+      parts.forEach((element) => {
+        element.classList.remove("expand");
+      });
+      parts.push(part);
+
+      const partHeader = partHeaders.shift();
+      partHeader.classList.toggle("fill");
+      partHeaders.forEach((element) => {
+        element.classList.remove("fill");
+      });
+      partHeaders.push(partHeader);
+    }, 5000);
   }
 }
