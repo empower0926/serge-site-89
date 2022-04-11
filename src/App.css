@@ -371,6 +371,20 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: #965ffc;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -396,12 +410,13 @@ h6 {
 
 p {
   text-transform: capitalize;
+  font-size: 1.2rem !important;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 576px) {
   p {
-    text-align-last: center;
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
@@ -471,11 +486,16 @@ p {
   }
 }
 
+.intro .tunnel {
+  -webkit-filter: brightness(0.8) blur(15px);
+          filter: brightness(0.8) blur(15px);
+}
+
 .intro .bg-filter {
   width: 100%;
   height: 100vh;
-  background-color: #00020f;
-  opacity: 0.85;
+  background-color: #1e065f;
+  opacity: 0.5;
 }
 
 .intro .sapina-capital-video {
@@ -692,14 +712,87 @@ p {
   display: flex;
   padding: 3rem 0;
   width: 100%;
-  height: 60vh;
-  text-align: center;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 576px) {
   .definition {
-    font-size: 12px;
+    text-align: center;
+    padding: 2rem 0 !important;
+  }
+  .definition h1 {
+    text-align: center !important;
+  }
+}
+
+.definition img {
+  opacity: 1;
+  width: 100%;
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
+}
+
+@media screen and (max-width: 576px) {
+  .definition img {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.definition h1 {
+  font-size: 4rem;
+  text-align: left;
+}
+
+.definition p {
+  font-weight: 200;
+  font-size: 1.4rem !important;
+}
+
+@media screen and (max-width: 576px) {
+  .definition {
     padding: 1rem;
+  }
+  .definition h1 {
+    font-size: 1.4rem;
+  }
+  .definition p {
+    font-size: 1rem !important;
   }
 }
 
@@ -720,7 +813,9 @@ p {
      object-fit: cover;
   top: 0;
   left: 0;
-  opacity: 0.2;
+  z-index: -1;
+  -webkit-filter: brightness(0.2) contrast(1.4) grayscale(1) blur(1px);
+          filter: brightness(0.2) contrast(1.4) grayscale(1) blur(1px);
 }
 
 .definition .read-more {
@@ -780,79 +875,82 @@ p {
 }
 
 .sections-parent {
-  color: white;
+  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.sections-parent .for-merchants {
+.sections-parent .for-merchents {
   margin: 5rem 0;
   position: relative;
   width: 100%;
 }
 
-.sections-parent .for-merchants h4 {
+.sections-parent .for-merchents h4 {
   color: #53fffc;
 }
 
-.sections-parent .for-merchants span {
+.sections-parent .for-merchents span {
   display: inline-block;
   margin: 1rem 0;
   width: 100%;
   text-align: center;
 }
 
-.sections-parent .for-merchants span img {
+.sections-parent .for-merchents span img {
   width: 80px;
 }
 
-.sections-parent .for-merchants .store-img {
+.sections-parent .for-merchents .store-img {
   margin-top: 5rem;
 }
 
-.sections-parent .for-merchants .store-img img {
+.sections-parent .for-merchents .store-img img {
   width: 80%;
 }
 
 @media screen and (max-width: 576px) {
-  .sections-parent .for-merchants .tr {
+  .sections-parent .for-merchents .tr {
     text-align: center !important;
   }
 }
 
-.sections-parent .for-merchants p {
+.sections-parent .for-merchents p {
   width: 500px;
   margin: 0 !important;
 }
 
-.sections-parent .for-merchants .merchant-heading {
+.sections-parent .for-merchents .merchant-heading {
   margin: 5rem 0;
 }
 
-.sections-parent .for-merchants .merchant-perk {
+.sections-parent .for-merchents .merchant-perk {
   margin: 0.5rem 1rem;
   width: 100%;
   font-size: 12px;
   text-align: center;
 }
 
-.sections-parent .for-merchants .merchant-perk img {
+.sections-parent .for-merchents .merchant-perk img {
   width: 124px;
   height: 124px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.sections-parent .for-merchants .merchant-perk img:hover {
+.sections-parent .for-merchents .merchant-perk img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media screen and (max-width: 576px) {
-  .sections-parent .for-merchants .merchant-perk {
+  .sections-parent .for-merchents .merchant-perk {
     margin: 0;
   }
 }
 
-.sections-parent .for-merchants .merchant-perk button {
+.sections-parent .for-merchents .merchant-perk button {
   background: none;
   border: none;
   -webkit-transition: 0.3s;
@@ -860,7 +958,7 @@ p {
   border-radius: 4px;
 }
 
-.sections-parent .for-merchants .merchant-perk button:hover {
+.sections-parent .for-merchents .merchant-perk button:hover {
   background-color: rgba(150, 95, 252, 0.5);
 }
 
@@ -893,6 +991,119 @@ p {
 @media screen and (max-width: 576px) {
   .sections .cryptostations {
     text-align: center;
+  }
+}
+
+.sections .cryptostations .blockchains {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .blockchains {
+    text-align: center !important;
+  }
+}
+
+.sections .cryptostations .blockchains svg {
+  width: 70%;
+  -webkit-filter: grayscale(0.4);
+          filter: grayscale(0.4);
+}
+
+@media screen and (max-width: 576px) {
+  .sections .cryptostations .blockchains svg {
+    width: 50%;
+  }
+}
+
+.sections .cryptostations .blockchains svg #b1 {
+  -webkit-animation: scew 6s ease-in-out infinite;
+          animation: scew 6s ease-in-out infinite;
+}
+
+.sections .cryptostations .blockchains svg #b2 {
+  -webkit-animation: scew 6s ease-in-out 2s infinite;
+          animation: scew 6s ease-in-out 2s infinite;
+}
+
+.sections .cryptostations .blockchains svg #b3 {
+  -webkit-animation: scew 6s ease-in-out 2.5s infinite;
+          animation: scew 6s ease-in-out 2.5s infinite;
+}
+
+.sections .cryptostations .blockchains svg #b4 {
+  -webkit-animation: scew 6s ease-in-out 5s infinite;
+          animation: scew 6s ease-in-out 5s infinite;
+}
+
+.sections .cryptostations .blockchains svg #b5 {
+  -webkit-animation: scew 6s ease-in-out 7.5s infinite;
+          animation: scew 6s ease-in-out 7.5s infinite;
+}
+
+.sections .cryptostations .blockchains svg #b6 {
+  -webkit-animation: scew 6s ease-in-out 9s infinite;
+          animation: scew 6s ease-in-out 9s infinite;
+}
+
+.sections .cryptostations .blockchains svg #b8 {
+  -webkit-animation: scew 6s ease-in-out 12s infinite;
+          animation: scew 6s ease-in-out 12s infinite;
+}
+
+.sections .cryptostations .blockchains svg #b7 {
+  -webkit-animation: scew 6s ease-in-out infinite;
+          animation: scew 6s ease-in-out infinite;
+}
+
+.sections .cryptostations .blockchains svg #b14 {
+  -webkit-animation: scew 6s ease-in-out infinite;
+          animation: scew 6s ease-in-out infinite;
+}
+
+.sections .cryptostations .blockchains svg #b12 {
+  -webkit-animation: scew 6s ease-in-out infinite;
+          animation: scew 6s ease-in-out infinite;
+}
+
+.sections .cryptostations .blockchains svg #b14 {
+  -webkit-animation: scew 6s ease-in-out infinite;
+          animation: scew 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes scew {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes scew {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -937,7 +1148,6 @@ p {
 }
 
 .sections .cryptostations .easy-access {
-  text-align: justify !important;
   margin-top: 5rem;
 }
 
