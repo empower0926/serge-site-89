@@ -356,7 +356,7 @@ p {
   background-position: center;
   background-size: 100%;
   background-attachment: fixed;
-  animation: bg 60s ease-in-out infinite;
+  // animation: bg 60s ease-in-out infinite;
   @include small{
     animation: none;
     background-size: cover;
