@@ -414,11 +414,25 @@ p {
 }
 
 .sections-parent {
-  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
+  background: radial-gradient(circle, rgba(22,0,82,1) 0%, rgba(63,14,106,1) 49%, rgba(60,0,112,1) 100%);
 
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+
+  animation: bg 10s infinite ease-in-out;
+  @keyframes bg {
+    0%{
+      background-size: 100%;
+    }
+    50%{
+      background-size: 1000%;
+    }
+    100%{
+      background-size: 100%;
+    }
+  }
   .for-merchents-h {
     margin-top: 8rem;
     margin-bottom: 2rem;

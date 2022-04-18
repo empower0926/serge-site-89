@@ -1075,10 +1075,24 @@ p {
 }
 
 .sections-parent {
-  background-image: url(https://res.cloudinary.com/sapiangroup/image/upload/v1648366478/CRYPTOMONIAL/bg_vxhefl.svg);
+  background: radial-gradient(circle, #160052 0%, #3f0e6a 49%, #3c0070 100%);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position-x: center;
+  background-size: 100%;
+  -webkit-animation: bg 10s infinite ease-in-out;
+          animation: bg 10s infinite ease-in-out;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 1000%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 .sections-parent .for-merchents-h {
@@ -1461,21 +1475,33 @@ p {
   }
 }
 
-.sections .cryptostations .cryptostation-images .station-1 {
-  -webkit-transform: translateY(10px) translateX(250px);
-          transform: translateY(10px) translateX(250px);
-}
-
-.sections .cryptostations .cryptostation-images .station-2 {
-  -webkit-transform: translateY(120px);
-          transform: translateY(120px);
-  width: 90%;
-}
-
-.sections .cryptostations .cryptostation-images .station-3 {
+.sections .cryptostations .cryptostation-images img:nth-child(2) {
+  opacity: 1 !important;
   width: 50% !important;
-  -webkit-transform: translateY(50px) translateX(-250px);
-          transform: translateY(50px) translateX(-250px);
+}
+
+.sections .cryptostations .red-stations {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d9d9d9;
+}
+
+.sections .cryptostations .red-stations .red-station:nth-child(1) {
+  width: 50%;
+  -webkit-transform: translateY(-100px) translateX(100px);
+          transform: translateY(-100px) translateX(100px);
+}
+
+.sections .cryptostations .red-stations .red-station:nth-child(2) {
+  width: 50%;
+  -webkit-transform: translateY(155px) translateX(230px);
+          transform: translateY(155px) translateX(230px);
+}
+
+.sections .cryptostations .red-stations img {
+  width: 50%;
 }
 
 .sections .cryptostations .oztcard {
